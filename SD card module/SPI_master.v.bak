@@ -1,0 +1,17 @@
+module SPI_master(
+
+	//input pin definitions
+	input clk,
+	input rst_n,
+	input miso, 
+	
+	//output pin definitions
+	output clk,
+	output mosi,
+	output cs_n
+	
+)
+
+
+
+endmodule

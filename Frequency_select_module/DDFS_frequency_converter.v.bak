@@ -1,0 +1,10 @@
+module DDFS_frequency_converter(
+	
+	//input pin definitions
+	input [22:0] freq_C2,
+	
+	//output pin definitions
+	output reg [6:0] fw,
+	output reg [2:0] freq_control
+	
+)
