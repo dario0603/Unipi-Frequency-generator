@@ -102,20 +102,27 @@ module ddfs
 	end
 	
 	//calculate the output
+	reg [ADDR_WIDTH+1:0] act_cont;
 	parameter HALF_DATA = 2**(DATA_WIDTH-1);
 	always @(*) begin
 	
 		//not mirrored case
-		q = HALF_DATA + (q_tmp >> 1);
-	
+		q = HALF_DATA + (q_tmp >> 1) - 1;
+		
+		//select the correct counter for the wave we are using
+		if(sin)
+			act_cont = cont_rt;
+		else 
+			act_cont = cont;
+		
 		if(mirror_x && mirror_y) begin
 			//third quarter or fourth quarter
-			if( ((cont_rt > (2*MAX_LUT-1)) && (cont_rt <= (3*MAX_LUT-1))) || ((cont_rt > (3*MAX_LUT-1)) && (cont_rt <= (4*MAX_LUT-1))) )
+			if( ((act_cont > (2*MAX_LUT-1)) && (act_cont <= (3*MAX_LUT-1))) || ((act_cont > (3*MAX_LUT-1)) && (act_cont <= (4*MAX_LUT-1))) )
 				q = HALF_DATA - (q_tmp >> 1) - 1;
 				
 		end else if(mirror_x) begin
 			//second quarter or fourth quarter
-			if( ((cont_rt > (MAX_LUT-1)) && (cont_rt <= (2*MAX_LUT-1))) || ((cont_rt > (3*MAX_LUT-1)) && (cont_rt <= (4*MAX_LUT-1))) )
+			if( ((act_cont > (MAX_LUT-1)) && (act_cont <= (2*MAX_LUT-1))) || ((act_cont > (3*MAX_LUT-1)) && (act_cont <= (4*MAX_LUT-1))) )
 				q = HALF_DATA - (q_tmp >> 1) - 1;
 		
 		end
