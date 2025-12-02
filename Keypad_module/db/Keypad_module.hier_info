@@ -1,0 +1,47 @@
+|keypad_module
+clk => i_column[0].CLK
+clk => i_column[1].CLK
+clk => i_column[2].CLK
+clk => i_column[3].CLK
+rst_n => i_column.OUTPUTSELECT
+rst_n => i_column.OUTPUTSELECT
+rst_n => i_column.OUTPUTSELECT
+rst_n => i_column.OUTPUTSELECT
+column[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+column[1] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+column[2] <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+column[3] <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+row[0] => always2.IN1
+row[0] => always2.IN1
+row[0] => always2.IN1
+row[0] => always2.IN1
+row[1] => always2.IN1
+row[1] => always2.IN1
+row[1] => always2.IN1
+row[1] => always2.IN1
+row[2] => always2.IN1
+row[2] => always2.IN1
+row[2] => always2.IN1
+row[2] => always2.IN1
+row[3] => always2.IN1
+row[3] => always2.IN1
+row[3] => always2.IN1
+row[3] => always2.IN1
+out_keys[0] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[1] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[2] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[3] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[4] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[5] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[6] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[7] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[8] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[9] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[10] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[11] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[12] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[13] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[14] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+out_keys[15] <= always2.DB_MAX_OUTPUT_PORT_TYPE
+
+

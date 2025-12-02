@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\posta\Desktop\Programmi\Verilog\Function_generator\Keypad_module\simulation\modelsim
+vkeypad_module
+IVH]JE7UGK>aI_;EUZ2<5V2
+VaY4OJkc5II5P68><Rj3ba3
+Z1 dC:\Users\posta\Desktop\Programmi\Verilog\Function_generator\Keypad_module\simulation\modelsim
+w1764694178
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/keypad_module.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/keypad_module.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 bjkL0oAaEWXk8:gDo?ek22
+!s85 0
+!s108 1764694250.957000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/keypad_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/keypad_module.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module -O0
+vtb_keypad_module
+!i10b 1
+!s100 aQL_;G[4XJLQf;QM==iYX2
+IF=DUSMG=k<8zZ>[aR_bA=3
+Vn4G5i1zecYcDJH]LbfU4j0
+R1
+w1764694076
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1764694251.060000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v|
+!s101 -O0
+R3
+R4
