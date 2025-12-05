@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -5.089
+TNS   : -609.826
+
+Type  : Slow Model Setup 'lcd_driver:inst|page_index[1]'
+Slack : -2.637
+TNS   : -23.164
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.553
+TNS   : -15.682
+
+Type  : Slow Model Hold 'lcd_driver:inst|page_index[1]'
+Slack : -0.768
+TNS   : -2.980
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.423
+TNS   : -301.910
+
+Type  : Slow Model Minimum Pulse Width 'lcd_driver:inst|page_index[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.933
+TNS   : -187.663
+
+Type  : Fast Model Setup 'lcd_driver:inst|page_index[1]'
+Slack : -1.353
+TNS   : -11.642
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.594
+TNS   : -27.841
+
+Type  : Fast Model Hold 'lcd_driver:inst|page_index[1]'
+Slack : -0.206
+TNS   : -0.577
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.423
+TNS   : -301.910
+
+Type  : Fast Model Minimum Pulse Width 'lcd_driver:inst|page_index[1]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

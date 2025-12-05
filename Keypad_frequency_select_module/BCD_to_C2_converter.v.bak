@@ -1,0 +1,20 @@
+module BCD_to_C2_converter
+(
+	
+	// ---- C2 input ---- //
+	input [22:0] input_C2,
+
+	// ---- BCD output ---- //
+	output reg [4:0] q_1,
+	output reg [4:0] q_2,
+	output reg [4:0] q_3,
+	output reg [4:0] q_4,
+	output reg [4:0] q_5,
+	output reg [4:0] q_6,
+	output reg [4:0] q_7
+
+);
+
+
+
+endmodule

@@ -1,5 +1,0 @@
-`timescale 1ns/1ps
-
-module tb_DDFS_frequency_converter;
-
-endmodule

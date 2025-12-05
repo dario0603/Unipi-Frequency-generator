@@ -1,0 +1,154 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 360 256)
+	(text "lcd_driver" (rect 5 0 45 12)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "button_next" (rect 0 0 46 12)(font "Arial" ))
+		(text "button_next" (rect 21 43 67 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "button_prev" (rect 0 0 48 12)(font "Arial" ))
+		(text "button_prev" (rect 21 59 69 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "reset_n" (rect 0 0 30 12)(font "Arial" ))
+		(text "reset_n" (rect 21 75 51 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "bcd_freq[BCD_DIGITS*4-1..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "bcd_freq[BCD_DIGITS*4-1..0]" (rect 21 91 141 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 344 32)
+		(output)
+		(text "lcd_data[7..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "lcd_data[7..0]" (rect 270 27 323 39)(font "Arial" ))
+		(line (pt 344 32)(pt 328 32)(line_width 3))
+	)
+	(port
+		(pt 344 48)
+		(output)
+		(text "lcd_rw" (rect 0 0 25 12)(font "Arial" ))
+		(text "lcd_rw" (rect 298 43 323 55)(font "Arial" ))
+		(line (pt 344 48)(pt 328 48)(line_width 1))
+	)
+	(port
+		(pt 344 64)
+		(output)
+		(text "lcd_en" (rect 0 0 25 12)(font "Arial" ))
+		(text "lcd_en" (rect 298 59 323 71)(font "Arial" ))
+		(line (pt 344 64)(pt 328 64)(line_width 1))
+	)
+	(port
+		(pt 344 80)
+		(output)
+		(text "lcd_rs" (rect 0 0 24 12)(font "Arial" ))
+		(text "lcd_rs" (rect 299 75 323 87)(font "Arial" ))
+		(line (pt 344 80)(pt 328 80)(line_width 1))
+	)
+	(port
+		(pt 344 96)
+		(output)
+		(text "lcd_on" (rect 0 0 25 12)(font "Arial" ))
+		(text "lcd_on" (rect 298 91 323 103)(font "Arial" ))
+		(line (pt 344 96)(pt 328 96)(line_width 1))
+	)
+	(port
+		(pt 344 112)
+		(output)
+		(text "lcd_blon" (rect 0 0 31 12)(font "Arial" ))
+		(text "lcd_blon" (rect 292 107 323 119)(font "Arial" ))
+		(line (pt 344 112)(pt 328 112)(line_width 1))
+	)
+	(port
+		(pt 344 128)
+		(output)
+		(text "sin" (rect 0 0 10 12)(font "Arial" ))
+		(text "sin" (rect 313 123 323 135)(font "Arial" ))
+		(line (pt 344 128)(pt 328 128)(line_width 1))
+	)
+	(port
+		(pt 344 144)
+		(output)
+		(text "triang" (rect 0 0 21 12)(font "Arial" ))
+		(text "triang" (rect 302 139 323 151)(font "Arial" ))
+		(line (pt 344 144)(pt 328 144)(line_width 1))
+	)
+	(port
+		(pt 344 160)
+		(output)
+		(text "mirror_x" (rect 0 0 35 12)(font "Arial" ))
+		(text "mirror_x" (rect 288 155 323 167)(font "Arial" ))
+		(line (pt 344 160)(pt 328 160)(line_width 1))
+	)
+	(port
+		(pt 344 176)
+		(output)
+		(text "mirror_y" (rect 0 0 36 12)(font "Arial" ))
+		(text "mirror_y" (rect 287 171 323 183)(font "Arial" ))
+		(line (pt 344 176)(pt 328 176)(line_width 1))
+	)
+	(port
+		(pt 344 192)
+		(output)
+		(text "freq_leds[BCD_DIGITS*4-1..0]" (rect 0 0 121 12)(font "Arial" ))
+		(text "freq_leds[BCD_DIGITS*4-1..0]" (rect 202 187 323 199)(font "Arial" ))
+		(line (pt 344 192)(pt 328 192)(line_width 3))
+	)
+	(port
+		(pt 344 208)
+		(output)
+		(text "test_led" (rect 0 0 30 12)(font "Arial" ))
+		(text "test_led" (rect 293 203 323 215)(font "Arial" ))
+		(line (pt 344 208)(pt 328 208)(line_width 1))
+	)
+	(parameter
+		"BCD_DIGITS"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 328 224)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 360 -64 460 16))
+)

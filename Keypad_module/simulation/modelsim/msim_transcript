@@ -16,6 +16,12 @@
 # 
 # Top level modules:
 # 	keypad_module
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/freq_divider.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module freq_divider
+# 
+# Top level modules:
+# 	freq_divider
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -24,8 +30,8 @@
 # Top level modules:
 # 	tb_keypad_module
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  tb_keypad_module
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_keypad_module 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb_keypad_module
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_keypad_module 
 # Loading work.tb_keypad_module
 # Loading work.keypad_module
 # 
@@ -37,4 +43,10 @@
 # run -all
 # Break in Module tb_keypad_module at C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v line 56
 # Simulation Breakpoint: Break in Module tb_keypad_module at C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v line 56
-# MACRO ./Keypad_module_run_msim_rtl_verilog.do PAUSED at line 17
+# MACRO ./Keypad_module_run_msim_rtl_verilog.do PAUSED at line 18
+add wave -position end  sim:/tb_keypad_module/dut/i
+add wave -position end  sim:/tb_keypad_module/dut/j
+add wave -position end  sim:/tb_keypad_module/dut/i_column
+restart -f
+run -all
+# Break in Module tb_keypad_module at C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v line 56

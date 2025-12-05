@@ -1,0 +1,71 @@
+MIF/HEX Update report for funct_gen
+Wed Dec 03 16:18:00 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Wed Dec 03 16:18:00 2025 ;
+; Revision Name         ; funct_gen                             ;
+; Top-level Entity Name ; funct_gen                             ;
+; Family                ; Cyclone II                            ;
+; Device                ; EP2C35F672C6                          ;
++-----------------------+---------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                                         ;
++------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                              ;
++------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ;
++------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Dec 03 16:17:59 2025
+Info: Command: quartus_cdb funct_gen -c funct_gen --update_mif
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/db/funct_gen.ram0_sin_lut_4402771f.hdl.mif
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4622 megabytes
+    Info: Processing ended: Wed Dec 03 16:18:00 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

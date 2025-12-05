@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="LCD_module">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_module|lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_id71.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

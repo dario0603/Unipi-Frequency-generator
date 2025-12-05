@@ -1,0 +1,57 @@
+module C2_to_BCD_converter
+(
+	
+	// ---- C2 input ---- //
+	input [22:0] input_C2,
+
+	// ---- BCD output ---- //
+	output reg [3:0] q_1,
+	output reg [3:0] q_2,
+	output reg [3:0] q_3,
+	output reg [3:0] q_4,
+	output reg [3:0] q_5,
+	output reg [3:0] q_6,
+	output reg [3:0] q_7
+
+);
+
+	//implementation of the double dabble binary to BCD converter
+	integer i;
+	always @(*) begin
+	
+		//initialization
+		q_1 = 4'd0;
+		q_2 = 4'd0;
+		q_3 = 4'd0;
+		q_4 = 4'd0;
+		q_5 = 4'd0;
+		q_6 = 4'd0;
+		q_7 = 4'd0;
+		
+		//double dabble binary to BCD converter
+		for(i=0; i<23; i=i+1) begin
+			
+			//increase the value by 3 if is greather than 5
+			if(q_1 > 4'd5) 
+				q_1 = q_1 + 4'd3;
+			if(q_2 > 4'd5) 
+				q_2 = q_2 + 4'd3;
+			if(q_3 > 4'd5) 
+				q_3 = q_3 + 4'd3;
+			if(q_4 > 4'd5) 
+				q_4 = q_4 + 4'd3;
+			if(q_5 > 4'd5) 
+				q_5 = q_5 + 4'd3;
+			if(q_6 > 4'd5) 
+				q_6 = q_6 + 4'd3;
+			if(q_7 > 4'd5) 
+				q_7 = q_7 + 4'd3;
+			
+			//shift left the data with the input
+			{q_7, q_6, q_5, q_4, q_3, q_2, q_1} = {q_7, q_6, q_5, q_4, q_3, q_2, q_1, input_C2[22-i]};
+		
+		end
+	
+	end
+
+endmodule

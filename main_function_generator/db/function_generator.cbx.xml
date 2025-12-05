@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="function_generator">
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|ddfs:inst2|sin_lut:lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_m681.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|lcd_driver:inst11|text_lut:text_lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_6981.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

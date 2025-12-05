@@ -1,0 +1,117 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'inst|altpll_component|pll|clk[0]'
+Slack : -18.183
+TNS   : -483.326
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -6.721
+TNS   : -159.778
+
+Type  : Slow Model Setup 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : -1.429
+TNS   : -18.402
+
+Type  : Slow Model Setup 'lcd_driver:inst11|page_index[1]'
+Slack : -1.223
+TNS   : -9.669
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -2.534
+TNS   : -11.434
+
+Type  : Slow Model Hold 'lcd_driver:inst11|page_index[1]'
+Slack : -1.964
+TNS   : -15.547
+
+Type  : Slow Model Hold 'inst|altpll_component|pll|clk[0]'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow Model Hold 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow Model Removal 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : -0.500
+TNS   : -14.000
+
+Type  : Slow Model Minimum Pulse Width 'lcd_driver:inst11|page_index[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'inst|altpll_component|pll|clk[0]'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.077
+TNS   : 0.000
+
+Type  : Fast Model Setup 'inst|altpll_component|pll|clk[0]'
+Slack : -5.679
+TNS   : -160.941
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -2.598
+TNS   : -37.063
+
+Type  : Fast Model Setup 'lcd_driver:inst11|page_index[1]'
+Slack : -0.639
+TNS   : -5.116
+
+Type  : Fast Model Setup 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : -0.167
+TNS   : -2.004
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.577
+TNS   : -10.714
+
+Type  : Fast Model Hold 'lcd_driver:inst11|page_index[1]'
+Slack : -0.805
+TNS   : -6.305
+
+Type  : Fast Model Hold 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast Model Hold 'inst|altpll_component|pll|clk[0]'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Fast Model Removal 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'ddfs:inst2|freq_divider:f_div_inst|count[19]~_Duplicate_1'
+Slack : -0.500
+TNS   : -14.000
+
+Type  : Fast Model Minimum Pulse Width 'lcd_driver:inst11|page_index[1]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'inst|altpll_component|pll|clk[0]'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.077
+TNS   : 0.000
+
+------------------------------------------------------------

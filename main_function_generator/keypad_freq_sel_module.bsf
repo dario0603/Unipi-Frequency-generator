@@ -1,0 +1,171 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 296 320)
+	(text "keypad_freq_sel_module" (rect 5 0 107 12)(font "Arial" ))
+	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst_n" (rect 0 0 21 12)(font "Arial" ))
+		(text "rst_n" (rect 21 43 42 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "row[N_ROW-1..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "row[N_ROW-1..0]" (rect 21 59 95 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "column[N_COLUMN-1..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "column[N_COLUMN-1..0]" (rect 154 27 259 39)(font "Arial" ))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "fw[6..0]" (rect 0 0 29 12)(font "Arial" ))
+		(text "fw[6..0]" (rect 230 43 259 55)(font "Arial" ))
+		(line (pt 280 48)(pt 264 48)(line_width 3))
+	)
+	(port
+		(pt 280 64)
+		(output)
+		(text "freq_control[2..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "freq_control[2..0]" (rect 191 59 259 71)(font "Arial" ))
+		(line (pt 280 64)(pt 264 64)(line_width 3))
+	)
+	(port
+		(pt 280 80)
+		(output)
+		(text "freq_1[3..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "freq_1[3..0]" (rect 213 75 259 87)(font "Arial" ))
+		(line (pt 280 80)(pt 264 80)(line_width 3))
+	)
+	(port
+		(pt 280 96)
+		(output)
+		(text "freq_2[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "freq_2[3..0]" (rect 212 91 259 103)(font "Arial" ))
+		(line (pt 280 96)(pt 264 96)(line_width 3))
+	)
+	(port
+		(pt 280 112)
+		(output)
+		(text "freq_3[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "freq_3[3..0]" (rect 212 107 259 119)(font "Arial" ))
+		(line (pt 280 112)(pt 264 112)(line_width 3))
+	)
+	(port
+		(pt 280 128)
+		(output)
+		(text "freq_4[3..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "freq_4[3..0]" (rect 211 123 259 135)(font "Arial" ))
+		(line (pt 280 128)(pt 264 128)(line_width 3))
+	)
+	(port
+		(pt 280 144)
+		(output)
+		(text "freq_5[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "freq_5[3..0]" (rect 212 139 259 151)(font "Arial" ))
+		(line (pt 280 144)(pt 264 144)(line_width 3))
+	)
+	(port
+		(pt 280 160)
+		(output)
+		(text "freq_6[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "freq_6[3..0]" (rect 212 155 259 167)(font "Arial" ))
+		(line (pt 280 160)(pt 264 160)(line_width 3))
+	)
+	(port
+		(pt 280 176)
+		(output)
+		(text "freq_7[3..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "freq_7[3..0]" (rect 212 171 259 183)(font "Arial" ))
+		(line (pt 280 176)(pt 264 176)(line_width 3))
+	)
+	(port
+		(pt 280 192)
+		(output)
+		(text "digit_counter[2..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "digit_counter[2..0]" (rect 190 187 259 199)(font "Arial" ))
+		(line (pt 280 192)(pt 264 192)(line_width 3))
+	)
+	(port
+		(pt 280 208)
+		(output)
+		(text "sel_A" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_A" (rect 235 203 259 215)(font "Arial" ))
+		(line (pt 280 208)(pt 264 208)(line_width 1))
+	)
+	(port
+		(pt 280 224)
+		(output)
+		(text "sel_B" (rect 0 0 22 12)(font "Arial" ))
+		(text "sel_B" (rect 237 219 259 231)(font "Arial" ))
+		(line (pt 280 224)(pt 264 224)(line_width 1))
+	)
+	(port
+		(pt 280 240)
+		(output)
+		(text "sel_C" (rect 0 0 23 12)(font "Arial" ))
+		(text "sel_C" (rect 236 235 259 247)(font "Arial" ))
+		(line (pt 280 240)(pt 264 240)(line_width 1))
+	)
+	(port
+		(pt 280 256)
+		(output)
+		(text "next_page" (rect 0 0 41 12)(font "Arial" ))
+		(text "next_page" (rect 218 251 259 263)(font "Arial" ))
+		(line (pt 280 256)(pt 264 256)(line_width 1))
+	)
+	(parameter
+		"N_COLUMN"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"N_ROW"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"CLK_FREQ"
+		"0000000000000000000000000000000000001011111010111100001000000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 264 288)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 296 -64 396 16))
+)

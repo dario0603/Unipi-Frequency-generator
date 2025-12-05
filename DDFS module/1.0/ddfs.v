@@ -1,0 +1,116 @@
+module ddfs
+(
+	//input pin definitions
+	input sin,				//wave select sinusoidal
+	input triang,			//wave select tirngular
+	
+	input mirror_x,
+	input mirror_y,
+	
+	input [2:0] fw,		//frequency word of ddfs
+	
+	input clk,						//clock pin
+	input rst_n,					//asyncronous reset pin
+	
+	input [2:0] freq_cntrl,
+	
+	//output pin definitions
+	output reg [11:0] q,
+	output clk_div
+	
+);
+
+	//parameter definitions
+	parameter DATA_WIDTH = 12;
+	parameter ADDR_WIDTH = 7;
+	parameter MAX_LUT = 85;
+	
+	//lut module instance
+	reg [ADDR_WIDTH-1:0] addr;
+	wire [DATA_WIDTH-1:0] lut_out;
+	sin_lut #(.DATA_WIDTH(DATA_WIDTH), .ADDR_WIDTH(ADDR_WIDTH)) lut_inst(
+		.addr(addr),
+		.clk(clk),
+		.q(lut_out)
+	);
+	
+	//frequency divider module istance
+	freq_divider f_div_inst(
+		.clk_in(clk),
+		.arstn(rst_n),
+		.freq_cntrl(freq_cntrl),
+		.clk_out(clk_div)
+	);
+	
+	//select the output waveform
+	reg [11:0] q_tmp;
+	parameter HALF_ADDRESS = 2**(ADDR_WIDTH-1);
+	always @(*) begin
+		
+		//select the current output
+		if(sin)
+			q_tmp = lut_out;												//select the sinusoidal output
+		else if(triang)
+			q_tmp = addr*(12'hfff/(MAX_LUT-1));						//select the triangular output	
+		else
+			q_tmp = 12'hfff;												//select the square output
+	
+	end
+	
+	//address counter definition
+	reg [ADDR_WIDTH+1:0] cont;
+	always @(posedge clk_div or negedge rst_n) begin
+	
+		if(rst_n == 0) begin
+			cont <= 0;
+		end else begin
+			if(cont < 4*MAX_LUT-1)
+				cont <= cont + (fw+1);
+			else
+				cont <= 0;	
+		end
+	
+	end
+	
+	//retiming register for address counter
+	reg [ADDR_WIDTH+1:0] cont_rt;
+	always @(posedge clk_div)
+		cont_rt <= cont;
+	
+	//calculate address
+	always @(*) begin
+		
+		//not mirrored case
+		addr = cont%(MAX_LUT);
+		
+		//y mirrored output
+		if(mirror_y)
+			//second quarter or fouth quarter
+			if( (cont > (MAX_LUT-1)) && (cont <= (2*MAX_LUT-1)) || (cont > (3*MAX_LUT-1)) && (cont <= (4*MAX_LUT-1)) )
+				addr = (MAX_LUT-1) - cont%(MAX_LUT);
+				
+	
+	end
+	
+	//calculate the output
+	parameter HALF_DATA = 2**(DATA_WIDTH-1);
+	always @(*) begin
+	
+		//not mirrored case
+		q = HALF_DATA + (q_tmp >> 1);
+	
+		if(mirror_x && mirror_y) begin
+			//third quarter or fourth quarter
+			if( ((cont_rt > (2*MAX_LUT-1)) && (cont_rt <= (3*MAX_LUT-1))) || ((cont_rt > (3*MAX_LUT-1)) && (cont_rt <= (4*MAX_LUT-1))) )
+				q = HALF_DATA - (q_tmp >> 1);
+				
+		end else if(mirror_x) begin
+			//second quarter or fourth quarter
+			if( ((cont_rt > (MAX_LUT-1)) && (cont_rt <= (2*MAX_LUT-1))) || ((cont_rt > (3*MAX_LUT-1)) && (cont_rt <= (4*MAX_LUT-1))) )
+				q = HALF_DATA - (q_tmp >> 1);
+		
+		end
+			
+	end
+
+endmodule
