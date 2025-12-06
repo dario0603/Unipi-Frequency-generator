@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="funct_gen">
-		<CBX_INST_ENTRY INSTANCE_NAME="|funct_gen|ddfs:inst1|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_85m.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|funct_gen|ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_o171.tdf"/>
-	</PROJECT>
-</LOG_ROOT>

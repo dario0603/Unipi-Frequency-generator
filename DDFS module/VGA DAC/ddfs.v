@@ -57,7 +57,7 @@ module ddfs
 	
 	//select the output waveform
 	reg [11:0] q_tmp;
-	parameter HALF_ADDRESS = 2**(ADDR_WIDTH-1);
+	localparam HALF_ADDRESS = 2**(ADDR_WIDTH-1);
 	always @(*) begin
 		
 		//select the current output
@@ -107,7 +107,7 @@ module ddfs
 	
 	//calculate the output
 	reg [ADDR_WIDTH+1:0] act_cont;
-	parameter HALF_DATA = 2**(DATA_WIDTH-1);
+	localparam HALF_DATA = 2**(DATA_WIDTH-1);
 	always @(*) begin
 	
 		//not mirrored case

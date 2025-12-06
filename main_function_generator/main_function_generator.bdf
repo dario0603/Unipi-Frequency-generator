@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 120 64 288 80)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK_50" (rect 5 0 61 12)(font "Arial" ))
+	(text "CLOCK_50" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 120 240 288 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[0]" (rect 5 0 36 12)(font "Arial" ))
+	(text "SW[0]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -51,13 +51,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 128 168 184 184))
+	(annotation_block (location)(rect 64 240 120 256))
 )
 (pin
 	(input)
 	(rect 120 256 288 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "GPIO_0[3..0]" (rect 5 0 70 12)(font "Arial" ))
+	(text "GPIO_0[3..0]" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 232 256 288 272))
+	(annotation_block (location)(rect 64 256 120 272))
 )
 (pin
 	(output)
@@ -373,6 +373,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1128 224 1184 240))
 )
 (symbol
 	(rect 480 40 624 120)
@@ -402,124 +403,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 128 64))
 	)
-)
-(symbol
-	(rect 1408 216 1624 392)
-	(text "ddfs" (rect 5 0 27 12)(font "Arial" ))
-	(text "inst2" (rect 8 160 31 172)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "sin" (rect 0 0 14 12)(font "Arial" ))
-		(text "sin" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "triang" (rect 0 0 27 12)(font "Arial" ))
-		(text "triang" (rect 21 43 48 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "mirror_x" (rect 0 0 40 12)(font "Arial" ))
-		(text "mirror_x" (rect 21 59 61 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "mirror_y" (rect 0 0 41 12)(font "Arial" ))
-		(text "mirror_y" (rect 21 75 62 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "fw[6..0]" (rect 0 0 37 12)(font "Arial" ))
-		(text "fw[6..0]" (rect 21 91 58 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 107 35 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112))
-	)
-	(port
-		(pt 0 128)
-		(input)
-		(text "rst_n" (rect 0 0 24 12)(font "Arial" ))
-		(text "rst_n" (rect 21 123 45 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128))
-	)
-	(port
-		(pt 0 144)
-		(input)
-		(text "freq_cntrl[2..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "freq_cntrl[2..0]" (rect 21 139 94 151)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144)(line_width 3))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "q_VGA[9..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "q_VGA[9..0]" (rect 145 27 205 39)(font "Arial" ))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
-	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "VGA_clk" (rect 0 0 42 12)(font "Arial" ))
-		(text "VGA_clk" (rect 160 43 202 55)(font "Arial" ))
-		(line (pt 216 48)(pt 200 48))
-	)
-	(port
-		(pt 216 64)
-		(output)
-		(text "blank_n" (rect 0 0 37 12)(font "Arial" ))
-		(text "blank_n" (rect 164 59 201 71)(font "Arial" ))
-		(line (pt 216 64)(pt 200 64))
-	)
-	(port
-		(pt 216 80)
-		(output)
-		(text "sync_n" (rect 0 0 36 12)(font "Arial" ))
-		(text "sync_n" (rect 165 75 201 87)(font "Arial" ))
-		(line (pt 216 80)(pt 200 80))
-	)
-	(parameter
-		"DATA_WIDTH"
-		"12"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"ADDR_WIDTH"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"MAX_LUT"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"HALF_ADDRESS"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"HALF_DATA"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 200 160))
-	)
-	(annotation_block (parameter)(rect 1624 128 1832 216))
 )
 (symbol
 	(rect 480 200 760 504)
@@ -982,6 +865,109 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 328 224))
 	)
 	(annotation_block (parameter)(rect 1688 408 1875 436))
+)
+(symbol
+	(rect 1408 216 1624 392)
+	(text "ddfs" (rect 5 0 27 12)(font "Arial" ))
+	(text "inst1" (rect 8 160 31 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "sin" (rect 0 0 14 12)(font "Arial" ))
+		(text "sin" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "triang" (rect 0 0 27 12)(font "Arial" ))
+		(text "triang" (rect 21 43 48 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "mirror_x" (rect 0 0 40 12)(font "Arial" ))
+		(text "mirror_x" (rect 21 59 61 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "mirror_y" (rect 0 0 41 12)(font "Arial" ))
+		(text "mirror_y" (rect 21 75 62 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "fw[6..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "fw[6..0]" (rect 21 91 58 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 107 35 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "rst_n" (rect 0 0 24 12)(font "Arial" ))
+		(text "rst_n" (rect 21 123 45 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "freq_cntrl[2..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "freq_cntrl[2..0]" (rect 21 139 94 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "q_VGA[9..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "q_VGA[9..0]" (rect 145 27 205 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "VGA_clk" (rect 0 0 42 12)(font "Arial" ))
+		(text "VGA_clk" (rect 160 43 202 55)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "blank_n" (rect 0 0 37 12)(font "Arial" ))
+		(text "blank_n" (rect 164 59 201 71)(font "Arial" ))
+		(line (pt 216 64)(pt 200 64))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "sync_n" (rect 0 0 36 12)(font "Arial" ))
+		(text "sync_n" (rect 165 75 201 87)(font "Arial" ))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(parameter
+		"HALF_ADDRESS"
+		""
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"HALF_DATA"
+		""
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 200 160))
+	)
+	(annotation_block (parameter)(rect 1624 168 1832 216))
 )
 (connector
 	(text "freq_1[3..0]" (rect 919 264 976 276)(font "Arial" ))
