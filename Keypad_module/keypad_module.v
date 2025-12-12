@@ -72,15 +72,15 @@ module keypad_module
 	end
 	
 	//read the button values from the keypad
-	integer j;
+	integer i_col, i_row;
 	reg [N_COLUMN*N_ROW-1:0] key_pressed;
 	always @(*) begin
-		for(j=0; j<N_COLUMN; j=j+1) begin
-			for(i=0; i<N_ROW; i=i+1) begin
-				if(row[i] == 0 && j == i_column) begin
-					key_pressed[j*N_ROW + i] = 1; 
+		for(i_col=0; i_col<N_COLUMN; i_col=i_col+1) begin
+			for(i_row=0; i_row<N_ROW; i_row=i_row+1) begin
+				if(row[i_row] == 0 && i_col == i_column) begin
+					key_pressed[i_col*N_ROW + i_row] = 1; 
 				end else begin
-					key_pressed[j*N_ROW + i] = 0; 
+					key_pressed[i_col*N_ROW + i_row] = 0; 
 				end
 			end
 		end

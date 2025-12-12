@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Keypad_module
-Fri Dec 05 12:46:42 2025
+Fri Dec 12 14:34:00 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Dec 05 12:46:42 2025 ;
+; EDA Netlist Writer Status ; Successful - Fri Dec 12 14:34:00 2025 ;
 ; Revision Name             ; Keypad_module                         ;
 ; Top-level Entity Name     ; keypad                                ;
 ; Family                    ; Cyclone II                            ;
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 05 12:46:41 2025
+    Info: Processing started: Fri Dec 12 14:33:59 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Keypad_module -c Keypad_module
 Info (204026): Generated files "Keypad_module.vo", "Keypad_module_fast.vo", "Keypad_module_v.sdo" and "Keypad_module_v_fast.sdo" in directory "C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4525 megabytes
-    Info: Processing ended: Fri Dec 05 12:46:42 2025
+    Info: Processing ended: Fri Dec 12 14:34:00 2025
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

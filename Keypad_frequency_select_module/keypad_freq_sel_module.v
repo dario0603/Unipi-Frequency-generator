@@ -32,13 +32,18 @@ module keypad_freq_sel_module
 	output reg [2:0] digit_counter,
 	
 	output reg sel_A, sel_B, sel_C,
-	output reg next_page
+	output reg next_page,
+	
+	// ---- TST output ---- //
+	output data_valid,
+	output reg debounced_keypad_pressed
 	
 );
 	
+	localparam WAIT_DEBOUNCE = 100;
+	
 	//keypad module instance
 	wire [N_COLUMN*N_ROW-1:0] out_keys;
-	wire data_valid;
 	keypad_module #(.N_COLUMN(N_COLUMN), .N_ROW(N_ROW)) keypad_mod_inst(
 	
 		.clk(clk),
@@ -76,7 +81,35 @@ module keypad_freq_sel_module
 	
 	);
 	
-	reg button_released;
+	//debounce circuit
+	//reg debounced_keypad_pressed;
+	integer cont;
+	always @(*) begin
+		if(data_valid == 1) begin
+			if(out_keys == 16'd0) begin
+				cont <= 0;
+				debounced_keypad_pressed <= 1'b0;
+			end else begin
+				cont <= cont + 1;
+				if(cont >= WAIT_DEBOUNCE/N_COLUMN) begin
+					cont <= WAIT_DEBOUNCE/N_COLUMN;
+					debounced_keypad_pressed <= 1'b1;
+				end
+			end
+		end
+	end
+	
+	// ---- KEYPAD CONNECTION ---- //
+	//                             //
+	//  O   O O O O   O O O O   O  //
+	//  |   | | | |   | | | |   |  //
+	// N.C. 1 2 3 4   1 2 3 4  N.C.//
+	//     |-------| |-------|     //
+	//       input     output      //
+	//                             //
+	// --------------------------- //
+	
+	reg button_pressed;
 	always @(posedge clk) begin
 	
 		if(rst_n == 0) begin
@@ -102,26 +135,26 @@ module keypad_freq_sel_module
 			sel_B <= 0;
 			sel_C <= 0;
 			
-			next_page <= 0;
+			button_pressed <= 1'b0;
+			
+			next_page <= 1'b0;
 			
 		end else if(data_valid == 1) begin
-		
-			if(out_keys == 16'b0000_0000_0000_0000) begin
-				//button released condition
-				button_released <= 1'b1;
+			
+			if(debounced_keypad_pressed == 0) begin
+				//flag reset
+				button_pressed <= 1'b0;
+				
 				next_page <= 1'b0;
 			end
-		
-			if(button_released == 1) begin
 				
-				//button pressed condition
-				button_released <= 1'b0;
+			if(debounced_keypad_pressed == 1 && button_pressed == 0) begin
 				
 				case(out_keys)
 					
 					// ---- NUMBER KEY PRESSED ---- //
 					
-					16'b1000_0000_0000_0000: begin
+					(16'd1 << 0): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -135,7 +168,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0100_0000_0000_0000: begin
+					(16'd1 << 1): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -149,7 +182,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0010_0000_0000_0000: begin
+					(16'd1 << 2): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -163,7 +196,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0001_0000_0000_0000: begin
+					(16'd1 << 4): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -177,7 +210,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0000_1000_0000_0000: begin
+					(16'd1 << 5): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -191,7 +224,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0000_0100_0000_0000: begin
+					(16'd1 << 6): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -205,7 +238,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0000_0010_0000_0000: begin
+					(16'd1 << 8): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -219,7 +252,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0000_0001_0000_0000: begin
+					(16'd1 << 9): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -233,7 +266,7 @@ module keypad_freq_sel_module
 						end
 					end
 
-					16'b0000_0000_1000_0000: begin
+					(16'd1 << 10): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -247,7 +280,7 @@ module keypad_freq_sel_module
 						end
 					end
 					
-					16'b0000_0000_0100_0000: begin
+					(16'd1 << 13): begin
 						if(digit_counter < 7) begin
 							freq_7 <= freq_6;
 							freq_6 <= freq_5;
@@ -263,25 +296,25 @@ module keypad_freq_sel_module
 					
 					// ---- SELECT KEY PRESSED ---- //
 					
-					16'b0000_0000_0010_0000: begin
+					(16'd1 << 3): begin
 						sel_A <= !sel_A;
 						//do not increase the number of digit
 						digit_counter <= digit_counter;
 					end
 					
-					16'b0000_0000_0001_0000: begin
+					(16'd1 << 7): begin
 						sel_B <= !sel_B;
 						//do not increase the number of digit
 						digit_counter <= digit_counter;
 					end
 					
-					16'b0000_0000_0000_1000: begin
+					(16'd1 << 11): begin
 						sel_C <= !sel_C;
 						//do not increase the number of digit
 						digit_counter <= digit_counter;
 					end
 					
-					16'b0000_0000_0000_0100: begin
+					(16'd1 << 15): begin
 						next_page <= 1'b1;
 						//do not increase the number of digit
 						digit_counter <= digit_counter;
@@ -289,8 +322,8 @@ module keypad_freq_sel_module
 					
 					// ---- CONFIRM OR ERASE KEY PRESSED ---- //
 					
-					16'b0000_0000_0000_0010: begin
-						if(digit_counter > 1) begin
+					(16'd1 << 14): begin
+						if(digit_counter > 0) begin
 							//digit erased, shift left the digit
 							freq_6 <= freq_7;
 							freq_5 <= freq_6;
@@ -304,7 +337,7 @@ module keypad_freq_sel_module
 						end
 					end 
 					
-					16'b0000_0000_0000_0001: begin
+					(16'd1 << 12): begin
 						//frequency confirmed, save the frequency value
 						BCD_1 <= freq_1;
 						BCD_2 <= freq_2;
@@ -321,6 +354,7 @@ module keypad_freq_sel_module
 					// ---- DEFAULT CONDITION ---- //
 					
 					default: begin
+						
 						//do not shift
 						freq_7 <= freq_7;
 						freq_6 <= freq_6;
@@ -331,10 +365,13 @@ module keypad_freq_sel_module
 						freq_1 <= freq_1;
 						//do not increase the number of digit
 						digit_counter <= digit_counter;
-					
+						
 					end
 					
 				endcase
+				
+				//flag set
+				button_pressed <= 1'b1;
 				
 			end
 			

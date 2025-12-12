@@ -1,5 +1,5 @@
 Flow report for Keypad_module
-Fri Dec 05 12:46:42 2025
+Fri Dec 12 14:34:00 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 05 12:46:42 2025           ;
+; Flow Status                        ; Successful - Fri Dec 12 14:34:00 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Keypad_module                                   ;
 ; Top-level Entity Name              ; keypad                                          ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 130 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 116 / 33,216 ( < 1 % )                          ;
+; Total logic elements               ; 129 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 114 / 33,216 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 98 / 33,216 ( < 1 % )                           ;
 ; Total registers                    ; 98                                              ;
 ; Total pins                         ; 29 / 475 ( 6 % )                                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/05/2025 12:46:30 ;
+; Start date & time ; 12/12/2025 14:33:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Keypad_module       ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ applicable agreement for further details.
 ; Assignment Name                      ; Value                          ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+--------------------------------+---------------+-------------+------------------+
 ; BLOCK_DESIGN_NAMING                  ; MaxPlusII                      ; Auto          ; --          ; --               ;
-; COMPILER_SIGNATURE_ID                ; 62291085593680.176493519022460 ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 62291085593680.176554642326900 ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; tb_keypad_module ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_keypad_module               ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                    ; --            ; --          ; eda_simulation   ;
@@ -100,12 +100,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4597 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 4878 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4566 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4546 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4513 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4597 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 4886 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4562 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4557 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4513 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

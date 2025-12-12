@@ -1,5 +1,5 @@
 Analysis & Synthesis report for keypad_freq_sel_module
-Fri Dec 05 19:01:47 2025
+Fri Dec 12 13:12:32 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,14 +13,16 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Logic Cells Representing Combinational Loops
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst1
- 12. Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst
- 13. Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst13
+ 13. Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst
+ 14. Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst13|DDFS_frequency_converter:DDFS_freq_conv_inst
+ 15. Parameter Settings for User Entity Instance: freq_divider:inst1
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +48,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 05 19:01:47 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 13:12:32 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; keypad_freq_sel_module                          ;
 ; Top-level Entity Name              ; keypad_freq_sel                                 ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 678                                             ;
-;     Total combinational functions  ; 662                                             ;
-;     Dedicated logic registers      ; 129                                             ;
-; Total registers                    ; 129                                             ;
-; Total pins                         ; 76                                              ;
+; Total logic elements               ; 842                                             ;
+;     Total combinational functions  ; 826                                             ;
+;     Dedicated logic registers      ; 162                                             ;
+; Total registers                    ; 162                                             ;
+; Total pins                         ; 78                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -170,71 +172,116 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; BCD_to_C2_converter.v            ; yes             ; User Verilog HDL File              ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_frequency_select_module/BCD_to_C2_converter.v      ;         ;
 ; BCD_to_7seg.v                    ; yes             ; User Verilog HDL File              ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_frequency_select_module/BCD_to_7seg.v              ;         ;
 ; keypad_freq_sel.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_frequency_select_module/keypad_freq_sel.bdf        ;         ;
+; freq_divider.v                   ; yes             ; User Verilog HDL File              ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_frequency_select_module/freq_divider.v             ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 678      ;
-;                                             ;          ;
-; Total combinational functions               ; 662      ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 178      ;
-;     -- 3 input functions                    ; 185      ;
-;     -- <=2 input functions                  ; 299      ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 308      ;
-;     -- arithmetic mode                      ; 354      ;
-;                                             ;          ;
-; Total registers                             ; 129      ;
-;     -- Dedicated logic registers            ; 129      ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 76       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 129      ;
-; Total fan-out                               ; 2294     ;
-; Average fan-out                             ; 2.65     ;
-+---------------------------------------------+----------+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Estimated Total logic elements              ; 842                  ;
+;                                             ;                      ;
+; Total combinational functions               ; 826                  ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 228                  ;
+;     -- 3 input functions                    ; 234                  ;
+;     -- <=2 input functions                  ; 364                  ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 410                  ;
+;     -- arithmetic mode                      ; 416                  ;
+;                                             ;                      ;
+; Total registers                             ; 162                  ;
+;     -- Dedicated logic registers            ; 162                  ;
+;     -- I/O registers                        ; 0                    ;
+;                                             ;                      ;
+; I/O pins                                    ; 78                   ;
+; Embedded Multiplier 9-bit elements          ; 0                    ;
+; Maximum fan-out node                        ; freq_divider:inst1|q ;
+; Maximum fan-out                             ; 130                  ;
+; Total fan-out                               ; 2870                 ;
+; Average fan-out                             ; 2.69                 ;
++---------------------------------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                          ;
-+------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Library Name ;
-+------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
-; |keypad_freq_sel                                     ; 662 (0)           ; 129 (0)      ; 0           ; 0            ; 0       ; 0         ; 76   ; 0            ; |keypad_freq_sel                                                                           ; work         ;
-;    |keypad_freq_sel_module:inst1|                    ; 613 (129)         ; 129 (64)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst1                                              ; work         ;
-;       |BCD_to_C2_converter:BCD_C2_conv_inst|         ; 374 (374)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst         ; work         ;
-;       |DDFS_frequency_converter:DDFS_freq_conv_inst| ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst ; work         ;
-;       |keypad_module:keypad_mod_inst|                ; 65 (65)           ; 65 (65)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst                ; work         ;
-;    |mux7seg:inst2|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst2                                                             ; work         ;
-;    |mux7seg:inst3|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst3                                                             ; work         ;
-;    |mux7seg:inst4|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst4                                                             ; work         ;
-;    |mux7seg:inst5|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst5                                                             ; work         ;
-;    |mux7seg:inst6|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst6                                                             ; work         ;
-;    |mux7seg:inst7|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst7                                                             ; work         ;
-;    |mux7seg:inst|                                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst                                                              ; work         ;
-+------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                           ;
++------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                         ; Library Name ;
++------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+--------------+
+; |keypad_freq_sel                                     ; 826 (0)           ; 162 (0)      ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |keypad_freq_sel                                                                            ; work         ;
+;    |freq_divider:inst1|                              ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|freq_divider:inst1                                                         ; work         ;
+;    |keypad_freq_sel_module:inst13|                   ; 727 (243)         ; 129 (64)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst13                                              ; work         ;
+;       |BCD_to_C2_converter:BCD_C2_conv_inst|         ; 374 (374)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst         ; work         ;
+;       |DDFS_frequency_converter:DDFS_freq_conv_inst| ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst13|DDFS_frequency_converter:DDFS_freq_conv_inst ; work         ;
+;       |keypad_module:keypad_mod_inst|                ; 65 (65)           ; 65 (65)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst                ; work         ;
+;    |mux7seg:inst2|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst2                                                              ; work         ;
+;    |mux7seg:inst3|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst3                                                              ; work         ;
+;    |mux7seg:inst4|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst4                                                              ; work         ;
+;    |mux7seg:inst5|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst5                                                              ; work         ;
+;    |mux7seg:inst6|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst6                                                              ; work         ;
+;    |mux7seg:inst7|                                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst7                                                              ; work         ;
+;    |mux7seg:inst|                                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keypad_freq_sel|mux7seg:inst                                                               ; work         ;
++------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops                                  ;
-+---------------------------------------------------------------------------+---+
-; Logic Cell Name                                                           ;   ;
-+---------------------------------------------------------------------------+---+
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add4~0  ;   ;
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add9~0  ;   ;
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add15~0 ;   ;
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add23~0 ;   ;
-; Number of logic cells representing combinational loops                    ; 4 ;
-+---------------------------------------------------------------------------+---+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                      ;
++--------------------------------------------------------+------------------------------------------------------------------------+------------------------+
+; Latch Name                                             ; Latch Enable Signal                                                    ; Free of Timing Hazards ;
++--------------------------------------------------------+------------------------------------------------------------------------+------------------------+
+; keypad_freq_sel_module:inst13|debounced_keypad_pressed ; keypad_freq_sel_module:inst13|debounced_keypad_pressed                 ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[31]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[5]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[6]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[7]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[8]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[9]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[10]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[11]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[12]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[13]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[14]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[15]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[16]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[17]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[18]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[19]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[20]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[21]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[22]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[23]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[24]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[25]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[26]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[27]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[28]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[29]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[30]                 ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[3]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[4]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[0]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[1]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; keypad_freq_sel_module:inst13|cont[2]                  ; keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid ; yes                    ;
+; Number of user-specified and inferred latches = 33     ;                                                                        ;                        ;
++--------------------------------------------------------+------------------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                   ;
++----------------------------------------------------------------------------+---+
+; Logic Cell Name                                                            ;   ;
++----------------------------------------------------------------------------+---+
+; keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst|Add4~0  ;   ;
+; keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst|Add9~0  ;   ;
+; keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst|Add15~0 ;   ;
+; keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst|Add23~0 ;   ;
+; Number of logic cells representing combinational loops                     ; 4 ;
++----------------------------------------------------------------------------+---+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -243,12 +290,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 129   ;
+; Total registers                              ; 162   ;
 ; Number of registers using Synchronous Clear  ; 63    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 75    ;
+; Number of registers using Clock Enable       ; 109   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -258,15 +305,16 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 48 bits   ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|i_column[11] ;
-; 5:1                ; 28 bits   ; 84 LEs        ; 28 LEs               ; 56 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst1|BCD_3[3]                                   ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst1|freq_7[1]                                  ;
-; 8:1                ; 22 bits   ; 110 LEs       ; 44 LEs               ; 66 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst1|freq_2[2]                                  ;
+; 3:1                ; 48 bits   ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|i_column[5] ;
+; 5:1                ; 28 bits   ; 84 LEs        ; 28 LEs               ; 56 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst13|BCD_3[1]                                  ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst13|freq_7[2]                                 ;
+; 8:1                ; 22 bits   ; 110 LEs       ; 44 LEs               ; 66 LEs                 ; Yes        ; |keypad_freq_sel|keypad_freq_sel_module:inst13|freq_3[0]                                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |keypad_freq_sel|keypad_freq_sel_module:inst13|cont                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst1                           ;
+; Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst13                          ;
 +----------------+------------------------------------------------------------------+-----------------+
 ; Parameter Name ; Value                                                            ; Type            ;
 +----------------+------------------------------------------------------------------+-----------------+
@@ -277,24 +325,34 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst ;
-+----------------+-------+--------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                           ;
-+----------------+-------+--------------------------------------------------------------------------------+
-; N_COLUMN       ; 4     ; Signed Integer                                                                 ;
-; N_ROW          ; 4     ; Signed Integer                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; N_COLUMN       ; 4     ; Signed Integer                                                                  ;
+; N_ROW          ; 4     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst ;
-+----------------+------------------------------------------------------------------+------------------------------------+
-; Parameter Name ; Value                                                            ; Type                               ;
-+----------------+------------------------------------------------------------------+------------------------------------+
-; CLK_FREQ       ; 0000000000000000000000000000000000001011111010111100001000000000 ; Unsigned Binary                    ;
-+----------------+------------------------------------------------------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: keypad_freq_sel_module:inst13|DDFS_frequency_converter:DDFS_freq_conv_inst ;
++----------------+------------------------------------------------------------------+-------------------------------------+
+; Parameter Name ; Value                                                            ; Type                                ;
++----------------+------------------------------------------------------------------+-------------------------------------+
+; CLK_FREQ       ; 0000000000000000000000000000000000001011111010111100001000000000 ; Unsigned Binary                     ;
++----------------+------------------------------------------------------------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: freq_divider:inst1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; FREQ_DIV       ; 1000  ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -313,7 +371,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 05 19:01:43 2025
+    Info: Processing started: Fri Dec 12 13:12:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off keypad_freq_sel_module -c keypad_freq_sel_module
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file tb_keypad_module.v
@@ -336,24 +394,61 @@ Info (12021): Found 1 design units, including 1 entities, in source file keypad_
     Info (12023): Found entity 1: keypad_freq_sel
 Info (12021): Found 1 design units, including 1 entities, in source file c2_to_bcd_converter.v
     Info (12023): Found entity 1: C2_to_BCD_converter
+Info (12021): Found 1 design units, including 1 entities, in source file freq_divider.v
+    Info (12023): Found entity 1: freq_divider
 Info (12127): Elaborating entity "keypad_freq_sel" for the top level hierarchy
-Info (12128): Elaborating entity "keypad_freq_sel_module" for hierarchy "keypad_freq_sel_module:inst1"
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(134): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(148): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(162): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(176): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(190): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(204): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(218): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(232): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(246): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(260): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(303): truncated value with size 32 to match size of target (3)
-Info (10264): Verilog HDL Case Statement information at keypad_freq_sel_module.v(120): all case item expressions in this case statement are onehot
-Info (12128): Elaborating entity "keypad_module" for hierarchy "keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst"
-Info (12128): Elaborating entity "BCD_to_C2_converter" for hierarchy "keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst"
+Info (12128): Elaborating entity "keypad_freq_sel_module" for hierarchy "keypad_freq_sel_module:inst13"
+Warning (10240): Verilog HDL Always Construct warning at keypad_freq_sel_module.v(88): inferring latch(es) for variable "cont", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at keypad_freq_sel_module.v(88): inferring latch(es) for variable "debounced_keypad_pressed", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(167): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(181): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(195): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(209): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(223): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(237): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(251): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(265): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(279): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(293): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(336): truncated value with size 32 to match size of target (3)
+Info (10264): Verilog HDL Case Statement information at keypad_freq_sel_module.v(153): all case item expressions in this case statement are onehot
+Info (10041): Inferred latch for "debounced_keypad_pressed" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[0]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[1]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[2]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[3]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[4]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[5]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[6]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[7]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[8]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[9]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[10]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[11]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[12]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[13]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[14]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[15]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[16]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[17]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[18]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[19]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[20]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[21]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[22]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[23]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[24]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[25]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[26]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[27]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[28]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[29]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[30]" at keypad_freq_sel_module.v(88)
+Info (10041): Inferred latch for "cont[31]" at keypad_freq_sel_module.v(88)
+Info (12128): Elaborating entity "keypad_module" for hierarchy "keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst"
+Info (12128): Elaborating entity "BCD_to_C2_converter" for hierarchy "keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst"
 Warning (10230): Verilog HDL assignment warning at BCD_to_C2_converter.v(46): truncated value with size 24 to match size of target (23)
-Info (12128): Elaborating entity "DDFS_frequency_converter" for hierarchy "keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst"
+Info (12128): Elaborating entity "DDFS_frequency_converter" for hierarchy "keypad_freq_sel_module:inst13|DDFS_frequency_converter:DDFS_freq_conv_inst"
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(43): truncated value with size 64 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(44): truncated value with size 64 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(45): truncated value with size 64 to match size of target (7)
@@ -361,7 +456,10 @@ Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(46
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(47): truncated value with size 64 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(48): truncated value with size 64 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(49): truncated value with size 64 to match size of target (7)
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:inst1"
 Info (12128): Elaborating entity "mux7seg" for hierarchy "mux7seg:inst"
+Warning (13012): Latch keypad_freq_sel_module:inst13|debounced_keypad_pressed has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|out_keys[15]
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[9]" is stuck at GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND
@@ -372,14 +470,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[3]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 755 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 70 output pins
-    Info (21061): Implemented 679 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+Info (21057): Implemented 921 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 71 output pins
+    Info (21061): Implemented 843 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
     Info: Peak virtual memory: 4608 megabytes
-    Info: Processing ended: Fri Dec 05 19:01:47 2025
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Fri Dec 12 13:12:32 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

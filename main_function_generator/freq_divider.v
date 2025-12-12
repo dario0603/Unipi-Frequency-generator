@@ -53,10 +53,6 @@ module freq_divider
 			start_cnt = 20'h80000-100000/2;
 			end_cnt = start_cnt + 100000;
 			end
-		6: begin
-			start_cnt = 20'h80000-1000000/2;
-			end_cnt = start_cnt + 1000000;
-			end
 		default: begin
 			start_cnt = 20'h80000-1000000/2;
 			end_cnt = start_cnt + 1000000;

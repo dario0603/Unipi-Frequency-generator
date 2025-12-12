@@ -1,14 +1,15 @@
 |keypad_freq_sel
-GPIO_1[0] <= keypad_freq_sel_module:inst1.column[0]
-GPIO_1[1] <= keypad_freq_sel_module:inst1.column[1]
-GPIO_1[2] <= keypad_freq_sel_module:inst1.column[2]
-GPIO_1[3] <= keypad_freq_sel_module:inst1.column[3]
-CLOCK_50 => keypad_freq_sel_module:inst1.clk
-SW[0] => keypad_freq_sel_module:inst1.rst_n
-GPIO_0[0] => keypad_freq_sel_module:inst1.row[0]
-GPIO_0[1] => keypad_freq_sel_module:inst1.row[1]
-GPIO_0[2] => keypad_freq_sel_module:inst1.row[2]
-GPIO_0[3] => keypad_freq_sel_module:inst1.row[3]
+GPIO_1[0] <= keypad_freq_sel_module:inst13.column[0]
+GPIO_1[1] <= keypad_freq_sel_module:inst13.column[1]
+GPIO_1[2] <= keypad_freq_sel_module:inst13.column[2]
+GPIO_1[3] <= keypad_freq_sel_module:inst13.column[3]
+CLOCK_50 => freq_divider:inst1.clk
+SW[0] => keypad_freq_sel_module:inst13.rst_n
+SW[1] => freq_divider:inst1.ena
+GPIO_0[0] => keypad_freq_sel_module:inst13.row[0]
+GPIO_0[1] => keypad_freq_sel_module:inst13.row[1]
+GPIO_0[2] => keypad_freq_sel_module:inst13.row[2]
+GPIO_0[3] => keypad_freq_sel_module:inst13.row[3]
 HEX0[0] <= mux7seg:inst.s[0]
 HEX0[1] <= mux7seg:inst.s[1]
 HEX0[2] <= mux7seg:inst.s[2]
@@ -58,26 +59,27 @@ HEX6[3] <= mux7seg:inst7.s[3]
 HEX6[4] <= mux7seg:inst7.s[4]
 HEX6[5] <= mux7seg:inst7.s[5]
 HEX6[6] <= mux7seg:inst7.s[6]
-LEDG[0] <= keypad_freq_sel_module:inst1.digit_counter[0]
-LEDG[1] <= keypad_freq_sel_module:inst1.digit_counter[1]
-LEDG[2] <= keypad_freq_sel_module:inst1.digit_counter[2]
-LEDG[3] <= keypad_freq_sel_module:inst1.sel_A
-LEDG[4] <= keypad_freq_sel_module:inst1.sel_B
-LEDG[5] <= keypad_freq_sel_module:inst1.sel_C
-LEDG[6] <= keypad_freq_sel_module:inst1.next_page
-LEDR[0] <= keypad_freq_sel_module:inst1.freq_control[0]
-LEDR[1] <= keypad_freq_sel_module:inst1.freq_control[1]
-LEDR[2] <= keypad_freq_sel_module:inst1.freq_control[2]
-LEDR[3] <= keypad_freq_sel_module:inst1.fw[0]
-LEDR[4] <= keypad_freq_sel_module:inst1.fw[1]
-LEDR[5] <= keypad_freq_sel_module:inst1.fw[2]
-LEDR[6] <= keypad_freq_sel_module:inst1.fw[3]
-LEDR[7] <= keypad_freq_sel_module:inst1.fw[4]
-LEDR[8] <= keypad_freq_sel_module:inst1.fw[5]
-LEDR[9] <= keypad_freq_sel_module:inst1.fw[6]
+LEDG[0] <= keypad_freq_sel_module:inst13.digit_counter[0]
+LEDG[1] <= keypad_freq_sel_module:inst13.digit_counter[1]
+LEDG[2] <= keypad_freq_sel_module:inst13.digit_counter[2]
+LEDG[3] <= keypad_freq_sel_module:inst13.sel_A
+LEDG[4] <= keypad_freq_sel_module:inst13.sel_B
+LEDG[5] <= keypad_freq_sel_module:inst13.sel_C
+LEDG[6] <= keypad_freq_sel_module:inst13.next_page
+LEDG[7] <= keypad_freq_sel_module:inst13.debounced_keypad_pressed
+LEDR[0] <= keypad_freq_sel_module:inst13.freq_control[0]
+LEDR[1] <= keypad_freq_sel_module:inst13.freq_control[1]
+LEDR[2] <= keypad_freq_sel_module:inst13.freq_control[2]
+LEDR[3] <= keypad_freq_sel_module:inst13.fw[0]
+LEDR[4] <= keypad_freq_sel_module:inst13.fw[1]
+LEDR[5] <= keypad_freq_sel_module:inst13.fw[2]
+LEDR[6] <= keypad_freq_sel_module:inst13.fw[3]
+LEDR[7] <= keypad_freq_sel_module:inst13.fw[4]
+LEDR[8] <= keypad_freq_sel_module:inst13.fw[5]
+LEDR[9] <= keypad_freq_sel_module:inst13.fw[6]
 
 
-|keypad_freq_sel|keypad_freq_sel_module:inst1
+|keypad_freq_sel|keypad_freq_sel_module:inst13
 clk => clk.IN1
 rst_n => rst_n.IN1
 column[0] <= keypad_module:keypad_mod_inst.column
@@ -133,9 +135,11 @@ sel_A <= sel_A~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sel_B <= sel_B~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sel_C <= sel_C~reg0.DB_MAX_OUTPUT_PORT_TYPE
 next_page <= next_page~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_valid <= keypad_module:keypad_mod_inst.data_valid
+debounced_keypad_pressed <= debounced_keypad_pressed$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|keypad_freq_sel|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst
+|keypad_freq_sel|keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst
 clk => out_keys[0]~reg0.CLK
 clk => out_keys[1]~reg0.CLK
 clk => out_keys[2]~reg0.CLK
@@ -305,7 +309,7 @@ out_keys[15] <= out_keys[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_valid <= data_valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|keypad_freq_sel|keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst
+|keypad_freq_sel|keypad_freq_sel_module:inst13|BCD_to_C2_converter:BCD_C2_conv_inst
 d_1[0] => Add32.IN41
 d_1[1] => Add32.IN40
 d_1[2] => Add32.IN39
@@ -491,7 +495,7 @@ output_C2[21] <= Add37.DB_MAX_OUTPUT_PORT_TYPE
 output_C2[22] <= Add37.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|keypad_freq_sel|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst
+|keypad_freq_sel|keypad_freq_sel_module:inst13|DDFS_frequency_converter:DDFS_freq_conv_inst
 freq_C2[0] => LessThan0.IN46
 freq_C2[0] => LessThan1.IN46
 freq_C2[0] => LessThan2.IN46
@@ -640,6 +644,109 @@ fw[6] <= <GND>
 freq_control[0] <= freq_control.DB_MAX_OUTPUT_PORT_TYPE
 freq_control[1] <= freq_control.DB_MAX_OUTPUT_PORT_TYPE
 freq_control[2] <= freq_control.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|keypad_freq_sel|freq_divider:inst1
+clk => q~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+rst => q~reg0.ACLR
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+rst => count[4].ACLR
+rst => count[5].ACLR
+rst => count[6].ACLR
+rst => count[7].ACLR
+rst => count[8].ACLR
+rst => count[9].ACLR
+rst => count[10].ACLR
+rst => count[11].ACLR
+rst => count[12].ACLR
+rst => count[13].ACLR
+rst => count[14].ACLR
+rst => count[15].ACLR
+rst => count[16].ACLR
+rst => count[17].ACLR
+rst => count[18].ACLR
+rst => count[19].ACLR
+rst => count[20].ACLR
+rst => count[21].ACLR
+rst => count[22].ACLR
+rst => count[23].ACLR
+rst => count[24].ACLR
+rst => count[25].ACLR
+rst => count[26].ACLR
+rst => count[27].ACLR
+rst => count[28].ACLR
+rst => count[29].ACLR
+rst => count[30].ACLR
+rst => count[31].ACLR
+ena => q~reg0.ENA
+ena => count[31].ENA
+ena => count[30].ENA
+ena => count[29].ENA
+ena => count[28].ENA
+ena => count[27].ENA
+ena => count[26].ENA
+ena => count[25].ENA
+ena => count[24].ENA
+ena => count[23].ENA
+ena => count[22].ENA
+ena => count[21].ENA
+ena => count[20].ENA
+ena => count[19].ENA
+ena => count[18].ENA
+ena => count[17].ENA
+ena => count[16].ENA
+ena => count[15].ENA
+ena => count[14].ENA
+ena => count[13].ENA
+ena => count[12].ENA
+ena => count[11].ENA
+ena => count[10].ENA
+ena => count[9].ENA
+ena => count[8].ENA
+ena => count[7].ENA
+ena => count[6].ENA
+ena => count[5].ENA
+ena => count[4].ENA
+ena => count[3].ENA
+ena => count[2].ENA
+ena => count[1].ENA
+ena => count[0].ENA
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |keypad_freq_sel|mux7seg:inst

@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 120 240 288 256)
+	(rect 112 240 280 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "SW[0]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
@@ -51,11 +51,11 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 64 240 120 256))
+	(annotation_block (location)(rect 56 240 112 256))
 )
 (pin
 	(input)
-	(rect 120 256 288 272)
+	(rect 112 256 280 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "GPIO_0[3..0]" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 64 256 120 272))
+	(annotation_block (location)(rect 56 256 112 272))
 )
 (pin
 	(output)
@@ -157,22 +157,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1880 464 2056 480)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LCD_A[7..0]" (rect 90 0 151 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 1816 256 1992 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "VGA_CLK" (rect 90 0 139 12)(font "Arial" ))
@@ -241,7 +225,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2672 280 2848 296)
+	(rect 2672 272 2848 288)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "HEX0[6..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -254,7 +238,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2848 296 2912 312))
+	(annotation_block (location)(rect 2848 288 2912 304))
 )
 (pin
 	(output)
@@ -375,6 +359,57 @@ applicable agreement for further details.
 	)
 	(annotation_block (location)(rect 1128 224 1184 240))
 )
+(pin
+	(output)
+	(rect 1880 464 2058 480)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LCD_DATA[7..0]" (rect 90 0 172 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 2058 480 2106 496))
+)
+(pin
+	(output)
+	(rect 680 816 856 832)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LEDG[0]" (rect 90 0 132 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 856 832 920 848))
+)
+(pin
+	(output)
+	(rect 680 864 856 880)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LEDG[1]" (rect 90 0 132 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 856 880 920 896))
+)
 (symbol
 	(rect 480 40 624 120)
 	(text "ALTPLa" (rect 5 0 42 12)(font "Arial" ))
@@ -405,157 +440,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 480 200 760 504)
-	(text "keypad_freq_sel_module" (rect 5 0 128 12)(font "Arial" ))
-	(text "inst3" (rect 8 288 31 300)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "rst_n" (rect 0 0 24 12)(font "Arial" ))
-		(text "rst_n" (rect 21 43 45 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "row[N_ROW-1..0]" (rect 0 0 87 12)(font "Arial" ))
-		(text "row[N_ROW-1..0]" (rect 21 59 108 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 280 32)
-		(output)
-		(text "column[N_COLUMN-1..0]" (rect 0 0 126 12)(font "Arial" ))
-		(text "column[N_COLUMN-1..0]" (rect 153 27 279 39)(font "Arial" ))
-		(line (pt 280 32)(pt 264 32)(line_width 3))
-	)
-	(port
-		(pt 280 48)
-		(output)
-		(text "fw[6..0]" (rect 0 0 37 12)(font "Arial" ))
-		(text "fw[6..0]" (rect 228 43 265 55)(font "Arial" ))
-		(line (pt 280 48)(pt 264 48)(line_width 3))
-	)
-	(port
-		(pt 280 64)
-		(output)
-		(text "freq_control[2..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "freq_control[2..0]" (rect 188 59 272 71)(font "Arial" ))
-		(line (pt 280 64)(pt 264 64)(line_width 3))
-	)
-	(port
-		(pt 280 80)
-		(output)
-		(text "freq_1[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_1[3..0]" (rect 211 75 268 87)(font "Arial" ))
-		(line (pt 280 80)(pt 264 80)(line_width 3))
-	)
-	(port
-		(pt 280 96)
-		(output)
-		(text "freq_2[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_2[3..0]" (rect 211 91 268 103)(font "Arial" ))
-		(line (pt 280 96)(pt 264 96)(line_width 3))
-	)
-	(port
-		(pt 280 112)
-		(output)
-		(text "freq_3[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_3[3..0]" (rect 211 107 268 119)(font "Arial" ))
-		(line (pt 280 112)(pt 264 112)(line_width 3))
-	)
-	(port
-		(pt 280 128)
-		(output)
-		(text "freq_4[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_4[3..0]" (rect 211 123 268 135)(font "Arial" ))
-		(line (pt 280 128)(pt 264 128)(line_width 3))
-	)
-	(port
-		(pt 280 144)
-		(output)
-		(text "freq_5[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_5[3..0]" (rect 211 139 268 151)(font "Arial" ))
-		(line (pt 280 144)(pt 264 144)(line_width 3))
-	)
-	(port
-		(pt 280 160)
-		(output)
-		(text "freq_6[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_6[3..0]" (rect 211 155 268 167)(font "Arial" ))
-		(line (pt 280 160)(pt 264 160)(line_width 3))
-	)
-	(port
-		(pt 280 176)
-		(output)
-		(text "freq_7[3..0]" (rect 0 0 57 12)(font "Arial" ))
-		(text "freq_7[3..0]" (rect 211 171 268 183)(font "Arial" ))
-		(line (pt 280 176)(pt 264 176)(line_width 3))
-	)
-	(port
-		(pt 280 192)
-		(output)
-		(text "digit_counter[2..0]" (rect 0 0 88 12)(font "Arial" ))
-		(text "digit_counter[2..0]" (rect 185 187 273 199)(font "Arial" ))
-		(line (pt 280 192)(pt 264 192)(line_width 3))
-	)
-	(port
-		(pt 280 208)
-		(output)
-		(text "sel_A" (rect 0 0 28 12)(font "Arial" ))
-		(text "sel_A" (rect 236 203 264 215)(font "Arial" ))
-		(line (pt 280 208)(pt 264 208))
-	)
-	(port
-		(pt 280 224)
-		(output)
-		(text "sel_B" (rect 0 0 27 12)(font "Arial" ))
-		(text "sel_B" (rect 237 219 264 231)(font "Arial" ))
-		(line (pt 280 224)(pt 264 224))
-	)
-	(port
-		(pt 280 240)
-		(output)
-		(text "sel_C" (rect 0 0 28 12)(font "Arial" ))
-		(text "sel_C" (rect 236 235 264 247)(font "Arial" ))
-		(line (pt 280 240)(pt 264 240))
-	)
-	(port
-		(pt 280 256)
-		(output)
-		(text "next_page" (rect 0 0 50 12)(font "Arial" ))
-		(text "next_page" (rect 217 251 267 263)(font "Arial" ))
-		(line (pt 280 256)(pt 264 256))
-	)
-	(parameter
-		"N_COLUMN"
-		"4"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"N_ROW"
-		"4"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"CLK_FREQ"
-		"0000000000000000000000000000000000001011111010111100001000000000"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(drawing
-		(rectangle (rect 16 16 264 288))
-	)
-	(annotation_block (parameter)(rect 760 144 1040 200))
-)
-(symbol
-	(rect 2328 256 2480 336)
+	(rect 2328 248 2480 328)
 	(text "mux7seg" (rect 5 0 49 12)(font "Arial" ))
 	(text "inst4" (rect 8 64 31 76)(font "Arial" ))
 	(port
@@ -954,20 +839,287 @@ applicable agreement for further details.
 		(text "sync_n" (rect 165 75 201 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80))
 	)
-	(parameter
-		"HALF_ADDRESS"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"HALF_DATA"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 200 160))
 	)
-	(annotation_block (parameter)(rect 1624 168 1832 216))
+)
+(symbol
+	(rect 424 736 456 768)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 21 32 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 400 584 432 600)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 5 32 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 472 608 592 720)
+	(text "keypad_freq_divider" (rect 5 0 106 12)(font "Arial" ))
+	(text "inst3" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ena" (rect 0 0 17 12)(font "Arial" ))
+		(text "ena" (rect 21 59 38 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "q" (rect 0 0 5 12)(font "Arial" ))
+		(text "q" (rect 95 27 100 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(parameter
+		"FREQ_DIV"
+		"1000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 104 96))
+	)
+	(annotation_block (parameter)(rect 592 576 774 604))
+)
+(symbol
+	(rect 472 200 760 536)
+	(text "keypad_freq_sel_module" (rect 5 0 128 12)(font "Arial" ))
+	(text "inst15" (rect 8 320 37 332)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst_n" (rect 0 0 24 12)(font "Arial" ))
+		(text "rst_n" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "row[N_ROW-1..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "row[N_ROW-1..0]" (rect 21 59 108 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "column[N_COLUMN-1..0]" (rect 0 0 126 12)(font "Arial" ))
+		(text "column[N_COLUMN-1..0]" (rect 161 27 287 39)(font "Arial" ))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "fw[6..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "fw[6..0]" (rect 236 43 273 55)(font "Arial" ))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "freq_control[2..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "freq_control[2..0]" (rect 196 59 280 71)(font "Arial" ))
+		(line (pt 288 64)(pt 272 64)(line_width 3))
+	)
+	(port
+		(pt 288 80)
+		(output)
+		(text "freq_1[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_1[3..0]" (rect 219 75 276 87)(font "Arial" ))
+		(line (pt 288 80)(pt 272 80)(line_width 3))
+	)
+	(port
+		(pt 288 96)
+		(output)
+		(text "freq_2[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_2[3..0]" (rect 219 91 276 103)(font "Arial" ))
+		(line (pt 288 96)(pt 272 96)(line_width 3))
+	)
+	(port
+		(pt 288 112)
+		(output)
+		(text "freq_3[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_3[3..0]" (rect 219 107 276 119)(font "Arial" ))
+		(line (pt 288 112)(pt 272 112)(line_width 3))
+	)
+	(port
+		(pt 288 128)
+		(output)
+		(text "freq_4[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_4[3..0]" (rect 219 123 276 135)(font "Arial" ))
+		(line (pt 288 128)(pt 272 128)(line_width 3))
+	)
+	(port
+		(pt 288 144)
+		(output)
+		(text "freq_5[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_5[3..0]" (rect 219 139 276 151)(font "Arial" ))
+		(line (pt 288 144)(pt 272 144)(line_width 3))
+	)
+	(port
+		(pt 288 160)
+		(output)
+		(text "freq_6[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_6[3..0]" (rect 219 155 276 167)(font "Arial" ))
+		(line (pt 288 160)(pt 272 160)(line_width 3))
+	)
+	(port
+		(pt 288 176)
+		(output)
+		(text "freq_7[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "freq_7[3..0]" (rect 219 171 276 183)(font "Arial" ))
+		(line (pt 288 176)(pt 272 176)(line_width 3))
+	)
+	(port
+		(pt 288 192)
+		(output)
+		(text "digit_counter[2..0]" (rect 0 0 88 12)(font "Arial" ))
+		(text "digit_counter[2..0]" (rect 193 187 281 199)(font "Arial" ))
+		(line (pt 288 192)(pt 272 192)(line_width 3))
+	)
+	(port
+		(pt 288 208)
+		(output)
+		(text "sel_A" (rect 0 0 28 12)(font "Arial" ))
+		(text "sel_A" (rect 244 203 272 215)(font "Arial" ))
+		(line (pt 288 208)(pt 272 208))
+	)
+	(port
+		(pt 288 224)
+		(output)
+		(text "sel_B" (rect 0 0 27 12)(font "Arial" ))
+		(text "sel_B" (rect 245 219 272 231)(font "Arial" ))
+		(line (pt 288 224)(pt 272 224))
+	)
+	(port
+		(pt 288 240)
+		(output)
+		(text "sel_C" (rect 0 0 28 12)(font "Arial" ))
+		(text "sel_C" (rect 244 235 272 247)(font "Arial" ))
+		(line (pt 288 240)(pt 272 240))
+	)
+	(port
+		(pt 288 256)
+		(output)
+		(text "next_page" (rect 0 0 50 12)(font "Arial" ))
+		(text "next_page" (rect 225 251 275 263)(font "Arial" ))
+		(line (pt 288 256)(pt 272 256))
+	)
+	(port
+		(pt 288 272)
+		(output)
+		(text "data_valid" (rect 0 0 50 12)(font "Arial" ))
+		(text "data_valid" (rect 225 267 275 279)(font "Arial" ))
+		(line (pt 288 272)(pt 272 272))
+	)
+	(port
+		(pt 288 288)
+		(output)
+		(text "debounced_keypad_pressed" (rect 0 0 140 12)(font "Arial" ))
+		(text "debounced_keypad_pressed" (rect 149 283 289 295)(font "Arial" ))
+		(line (pt 288 288)(pt 272 288))
+	)
+	(parameter
+		"N_COLUMN"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"N_ROW"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"CLK_FREQ"
+		"0000000000000000000000000000000000001011111010111100001000000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 272 320))
+	)
+	(annotation_block (parameter)(rect 760 144 1312 200))
+)
+(symbol
+	(rect 1280 424 1312 440)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 824 440 872 472)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "int13" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
 )
 (connector
 	(text "freq_1[3..0]" (rect 919 264 976 276)(font "Arial" ))
@@ -1080,9 +1232,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "freq_1[3..0]" (rect 2112 272 2169 284)(font "Arial" ))
-	(pt 2328 288)
-	(pt 2136 288)
+	(text "freq_1[3..0]" (rect 2112 264 2169 276)(font "Arial" ))
+	(pt 2328 280)
+	(pt 2136 280)
 	(bus)
 )
 (connector
@@ -1092,20 +1244,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "next_page" (rect 894 440 944 452)(font "Arial" ))
-	(pt 952 456)
-	(pt 760 456)
-)
-(connector
 	(text "next_page" (rect 1160 472 1210 484)(font "Arial" ))
 	(pt 1152 488)
 	(pt 1344 488)
-)
-(connector
-	(text "freq_1[3..0],freq_2[3..0],freq_3[3..0],freq_4[3..0],freq_5[3..0],freq_6[3..0],freq_7[3..0]" (rect 1120 520 1545 532)(font "Arial" ))
-	(pt 1152 536)
-	(pt 1344 536)
-	(bus)
 )
 (connector
 	(text "CLK_IN" (rect 301 56 339 68)(font "Arial" ))
@@ -1116,11 +1257,6 @@ applicable agreement for further details.
 	(text "CLK_MUL" (rect 765 56 814 68)(font "Arial" ))
 	(pt 624 72)
 	(pt 816 72)
-)
-(connector
-	(text "CLK_IN" (rect 301 216 339 228)(font "Arial" ))
-	(pt 480 232)
-	(pt 288 232)
 )
 (connector
 	(text "<<__$DEF_ALIAS173>>" (rect 1822 472 1940 484)(font "Arial" )(invisible))
@@ -1221,14 +1357,9 @@ applicable agreement for further details.
 	(pt 1152 520)
 )
 (connector
-	(text "RST_N" (rect 301 232 336 244)(font "Arial" ))
-	(pt 480 248)
-	(pt 288 248)
-)
-(connector
-	(text "<<__$DEF_ALIAS247>>" (rect 2639 272 2757 284)(font "Arial" )(invisible))
-	(pt 2480 288)
-	(pt 2672 288)
+	(text "<<__$DEF_ALIAS247>>" (rect 2639 264 2757 276)(font "Arial" )(invisible))
+	(pt 2480 280)
+	(pt 2672 280)
 	(bus)
 )
 (connector
@@ -1274,8 +1405,77 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS263>>" (rect 348 248 466 260)(font "Arial" )(invisible))
-	(pt 480 264)
-	(pt 288 264)
+	(text "CLK_IN" (rect 293 624 331 636)(font "Arial" ))
+	(pt 280 640)
+	(pt 472 640)
+)
+(connector
+	(pt 416 600)
+	(pt 416 672)
+)
+(connector
+	(pt 416 672)
+	(pt 472 672)
+)
+(connector
+	(pt 472 656)
+	(pt 440 656)
+)
+(connector
+	(pt 440 656)
+	(pt 440 736)
+)
+(connector
+	(text "CLK_DIV" (rect 605 624 652 636)(font "Arial" ))
+	(pt 592 640)
+	(pt 784 640)
+)
+(connector
+	(text "RST_N" (rect 293 232 328 244)(font "Arial" ))
+	(pt 280 248)
+	(pt 472 248)
+)
+(connector
+	(text "<<__$DEF_ALIAS263>>" (rect 340 248 458 260)(font "Arial" )(invisible))
+	(pt 280 264)
+	(pt 472 264)
 	(bus)
+)
+(connector
+	(text "CLK_DIV" (rect 293 216 340 228)(font "Arial" ))
+	(pt 280 232)
+	(pt 472 232)
+)
+(connector
+	(text "freq_7[3..0],freq_6[3..0],freq_5[3..0],freq_4[3..0],freq_3[3..0],freq_2[3..0],freq_1[3..0]" (rect 1120 520 1545 532)(font "Arial" ))
+	(pt 1152 536)
+	(pt 1344 536)
+	(bus)
+)
+(connector
+	(text "next_page" (rect 622 856 672 868)(font "Arial" ))
+	(pt 680 872)
+	(pt 488 872)
+)
+(connector
+	(text "ENA_DDFS" (rect 608 808 667 820)(font "Arial" ))
+	(pt 488 824)
+	(pt 680 824)
+)
+(connector
+	(text "next_page" (rect 894 440 944 452)(font "Arial" ))
+	(pt 824 456)
+	(pt 760 456)
+)
+(connector
+	(pt 952 456)
+	(pt 872 456)
+)
+(connector
+	(pt 1296 440)
+	(pt 1296 504)
+)
+(connector
+	(pt 1296 504)
+	(pt 1344 504)
 )

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LCD_module
-Fri Dec 05 13:21:57 2025
+Fri Dec 12 14:54:33 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,18 +17,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. State Machine - |LCD_module|lcd_driver:inst|state_f
  10. State Machine - |LCD_module|lcd_driver:inst|state
  11. State Machine - |LCD_module|lcd_driver:inst|sub_state
- 12. User-Specified and Inferred Latches
- 13. Registers Removed During Synthesis
- 14. General Register Statistics
- 15. Registers Packed Into Inferred Megafunctions
- 16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Source assignments for lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated
- 18. Parameter Settings for User Entity Instance: lcd_driver:inst
- 19. Parameter Settings for User Entity Instance: lcd_driver:inst|text_lut:text_lut_inst
- 20. Parameter Settings for Inferred Entity Instance: lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0
- 21. altsyncram Parameter Settings by Entity Instance
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Registers Packed Into Inferred Megafunctions
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated
+ 17. Parameter Settings for User Entity Instance: lcd_driver:inst
+ 18. Parameter Settings for User Entity Instance: lcd_driver:inst|text_lut:text_lut_inst
+ 19. Parameter Settings for Inferred Entity Instance: lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -54,16 +53,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 05 13:21:57 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 14:54:33 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LCD_module                                      ;
 ; Top-level Entity Name              ; LCD_module                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 359                                             ;
-;     Total combinational functions  ; 359                                             ;
+; Total logic elements               ; 342                                             ;
+;     Total combinational functions  ; 342                                             ;
 ;     Dedicated logic registers      ; 143                                             ;
 ; Total registers                    ; 143                                             ;
-; Total pins                         ; 54                                              ;
+; Total pins                         ; 56                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 18,432                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -162,32 +161,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                     ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                            ; Library ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
-; text_lut.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/text_lut.v                                   ;         ;
-; lcd_driver.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/lcd_driver.v                                 ;         ;
-; LCD_module.bdf                               ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/LCD_module.bdf                               ;         ;
-; text_lut_init.txt                            ; yes             ; Auto-Found File                                       ; C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/text_lut_init.txt                            ;         ;
-; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                        ;         ;
-; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                 ;         ;
-; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                           ;         ;
-; lpm_decode.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                        ;         ;
-; aglobal130.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                        ;         ;
-; a_rdenreg.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                         ;         ;
-; altrom.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                            ;         ;
-; altram.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                            ;         ;
-; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                          ;         ;
-; db/altsyncram_id71.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/db/altsyncram_id71.tdf                       ;         ;
-; db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ;         ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                 ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                        ; Library ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+; text_lut.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/text_lut.v                                   ;         ;
+; lcd_driver.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/lcd_driver.v                                 ;         ;
+; LCD_module.bdf                               ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/LCD_module.bdf                               ;         ;
+; text_lut_init.txt                            ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/text_lut_init.txt                            ;         ;
+; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                    ;         ;
+; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ;
+; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ;
+; lpm_decode.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                    ;         ;
+; aglobal130.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                    ;         ;
+; a_rdenreg.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                     ;         ;
+; altrom.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                        ;         ;
+; altram.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                        ;         ;
+; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ;
+; db/altsyncram_id71.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/db/altsyncram_id71.tdf                       ;         ;
+; db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ;         ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -195,29 +194,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 359      ;
+; Estimated Total logic elements              ; 342      ;
 ;                                             ;          ;
-; Total combinational functions               ; 359      ;
+; Total combinational functions               ; 342      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 171      ;
-;     -- 3 input functions                    ; 51       ;
-;     -- <=2 input functions                  ; 137      ;
+;     -- 4 input functions                    ; 164      ;
+;     -- 3 input functions                    ; 47       ;
+;     -- <=2 input functions                  ; 131      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 253      ;
+;     -- normal mode                          ; 236      ;
 ;     -- arithmetic mode                      ; 106      ;
 ;                                             ;          ;
 ; Total registers                             ; 143      ;
 ;     -- Dedicated logic registers            ; 143      ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 54       ;
+; I/O pins                                    ; 56       ;
 ; Total memory bits                           ; 18432    ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 152      ;
-; Total fan-out                               ; 1768     ;
-; Average fan-out                             ; 3.13     ;
+; Total fan-out                               ; 1718     ;
+; Average fan-out                             ; 3.12     ;
 +---------------------------------------------+----------+
 
 
@@ -226,8 +225,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
-; |LCD_module                                  ; 359 (0)           ; 143 (0)      ; 18432       ; 0            ; 0       ; 0         ; 54   ; 0            ; |LCD_module                                                                                            ; work         ;
-;    |lcd_driver:inst|                         ; 359 (359)         ; 143 (143)    ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst                                                                            ; work         ;
+; |LCD_module                                  ; 342 (0)           ; 143 (0)      ; 18432       ; 0            ; 0       ; 0         ; 56   ; 0            ; |LCD_module                                                                                            ; work         ;
+;    |lcd_driver:inst|                         ; 342 (342)         ; 143 (143)    ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst                                                                            ; work         ;
 ;       |text_lut:text_lut_inst|               ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst|text_lut:text_lut_inst                                                     ; work         ;
 ;          |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0                                ; work         ;
 ;             |altsyncram_id71:auto_generated| ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated ; work         ;
@@ -291,26 +290,6 @@ Encoding Type:  One-Hot
 +------------------------+----------------------+------------------------+-----------------+-----------------+-----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                            ;
-+-----------------------------------------------------+---------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal             ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------------------+------------------------+
-; lcd_driver:inst|lcd_en_reg                          ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_rs_reg                          ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[7]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[6]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[5]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[4]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[3]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[2]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[1]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; lcd_driver:inst|lcd_data_reg[0]                     ; lcd_driver:inst|lcd_data_reg[7] ; yes                    ;
-; Number of user-specified and inferred latches = 10  ;                                 ;                        ;
-+-----------------------------------------------------+---------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +---------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                              ;
 +----------------------------------------+----------------------------------------+
@@ -364,15 +343,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|n_index[0]       ;
-; 7:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|char_index[0]    ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|btn_counter[22]  ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|char_index[5]    ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|btn_counter[17]  ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[6] ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[0] ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[3] ;
-; 11:1               ; 32 bits   ; 224 LEs       ; 32 LEs               ; 192 LEs                ; Yes        ; |LCD_module|lcd_driver:inst|counter_f[14]    ;
-; 12:1               ; 32 bits   ; 256 LEs       ; 32 LEs               ; 224 LEs                ; Yes        ; |LCD_module|lcd_driver:inst|counter[19]      ;
-; 17:1               ; 3 bits    ; 33 LEs        ; 12 LEs               ; 21 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|page_index[3]    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |LCD_module|lcd_driver:inst|Mux2             ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[1] ;
+; 11:1               ; 32 bits   ; 224 LEs       ; 32 LEs               ; 192 LEs                ; Yes        ; |LCD_module|lcd_driver:inst|counter_f[25]    ;
+; 12:1               ; 32 bits   ; 256 LEs       ; 32 LEs               ; 224 LEs                ; Yes        ; |LCD_module|lcd_driver:inst|counter[28]      ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 12 LEs               ; 21 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|page_index[4]    ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |LCD_module|lcd_driver:inst|Mux3             ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |LCD_module|lcd_driver:inst|sub_state        ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |LCD_module|lcd_driver:inst|sub_state        ;
 ; 12:1               ; 3 bits    ; 24 LEs        ; 15 LEs               ; 9 LEs                  ; No         ; |LCD_module|lcd_driver:inst|state_f          ;
@@ -507,7 +486,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 05 13:21:55 2025
+    Info: Processing started: Fri Dec 12 14:54:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_module -c LCD_module
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file text_lut.v
@@ -523,19 +502,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file lcd_mod
     Info (12023): Found entity 1: LCD_module
 Info (12127): Elaborating entity "LCD_module" for the top level hierarchy
 Info (12128): Elaborating entity "lcd_driver" for hierarchy "lcd_driver:inst"
-Warning (10240): Verilog HDL Always Construct warning at lcd_driver.v(125): inferring latch(es) for variable "lcd_rs_reg", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at lcd_driver.v(125): inferring latch(es) for variable "lcd_data_reg", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at lcd_driver.v(125): inferring latch(es) for variable "lcd_en_reg", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "lcd_en_reg" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[0]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[1]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[2]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[3]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[4]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[5]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[6]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_data_reg[7]" at lcd_driver.v(129)
-Info (10041): Inferred latch for "lcd_rs_reg" at lcd_driver.v(129)
 Info (12128): Elaborating entity "text_lut" for hierarchy "lcd_driver:inst|text_lut:text_lut_inst"
 Warning (10850): Verilog HDL warning at text_lut.v(27): number of words (443) in memory file does not match the number of elements in the address range [0:2047]
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(1): truncated value with size 12 to match size of target (9)
@@ -1010,26 +976,6 @@ Info (12133): Instantiated megafunction "lcd_driver:inst|text_lut:text_lut_inst|
     Info (12134): Parameter "INIT_FILE" = "db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_id71.tdf
     Info (12023): Found entity 1: altsyncram_id71
-Warning (13012): Latch lcd_driver:inst|lcd_en_reg has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_rs_reg has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[7] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[6] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[5] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[4] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
-Warning (13012): Latch lcd_driver:inst|lcd_data_reg[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal lcd_driver:inst|state.WAIT_BUTTON_SHORT
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LCD_RW" is stuck at GND
     Warning (13410): Pin "LCD_ON" is stuck at VCC
@@ -1037,15 +983,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (17049): 12 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 423 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 408 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
-    Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 360 logic cells
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 343 logic cells
     Info (21064): Implemented 9 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 475 warnings
-    Info: Peak virtual memory: 4627 megabytes
-    Info: Processing ended: Fri Dec 05 13:21:57 2025
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 452 warnings
+    Info: Peak virtual memory: 4628 megabytes
+    Info: Processing ended: Fri Dec 12 14:54:33 2025
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

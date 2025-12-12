@@ -57,7 +57,7 @@ module ddfs
 	
 	//select the output waveform
 	reg [11:0] q_tmp;
-	parameter HALF_ADDRESS = 2**(ADDR_WIDTH-1);
+	localparam HALF_ADDRESS = 2**(ADDR_WIDTH-1);
 	always @(*) begin
 		
 		//select the current output
@@ -99,7 +99,7 @@ module ddfs
 		//y mirrored output
 		if(mirror_y)
 			//second quarter or fouth quarter
-			if( (cont > (MAX_LUT-1)) && (cont <= (2*MAX_LUT-1)) || (cont > (3*MAX_LUT-1)) && (cont <= (4*MAX_LUT-1)) )
+			if( (act_cont > (MAX_LUT-1)) && (act_cont <= (2*MAX_LUT-1)) || (act_cont > (3*MAX_LUT-1)) && (act_cont <= (4*MAX_LUT-1)) )
 				addr = (MAX_LUT-1) - cont%(MAX_LUT);
 				
 	
@@ -107,7 +107,7 @@ module ddfs
 	
 	//calculate the output
 	reg [ADDR_WIDTH+1:0] act_cont;
-	parameter HALF_DATA = 2**(DATA_WIDTH-1);
+	localparam HALF_DATA = 2**(DATA_WIDTH-1);
 	always @(*) begin
 	
 		//not mirrored case

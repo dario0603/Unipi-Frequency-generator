@@ -107,18 +107,7 @@ applicable agreement for further details.
 		(text "sync_n" (rect 165 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 1))
 	)
-	(parameter
-		"HALF_ADDRESS"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"HALF_DATA"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 200 160)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 232 -64 332 16))
 )

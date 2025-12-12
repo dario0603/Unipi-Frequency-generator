@@ -126,7 +126,7 @@ module lcd_driver
 			 lcd_rs_reg = lut_out[DATA_WIDTH-1];
 			 lcd_data_reg = lut_out[DATA_WIDTH-2:0];
 			 lcd_en_reg = lcd_en_cntr;
-		 end else if( page_index >= PAGE_FIRST && page_index <= PAGE_LAST ) begin 
+		 end else begin 
 			 lcd_rs_reg = lcd_rs_freq;
 			 lcd_data_reg = lcd_data_freq; 		 
 			 lcd_en_reg = lcd_en_freq;

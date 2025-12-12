@@ -111,7 +111,7 @@ GND*                         : AA16      :        :                   :         
 GND*                         : AA17      :        :                   :         : 7         :                
 GND*                         : AA18      :        :                   :         : 7         :                
 VCCA_PLL4                    : AA19      : power  :                   : 1.2V    :           :                
-GND*                         : AA20      :        :                   :         : 7         :                
+LEDG[6]                      : AA20      : output : 3.3-V LVTTL       :         : 7         : Y              
 GND_PLL4                     : AA21      : gnd    :                   :         :           :                
 VCCIO6                       : AA22      : power  :                   : 3.3V    : 6         :                
 GND*                         : AA23      :        :                   :         : 6         :                
@@ -652,7 +652,7 @@ VCCINT                       : U13       : power  :                   : 1.2V    
 VCCINT                       : U14       : power  :                   : 1.2V    :           :                
 VCCINT                       : U15       : power  :                   : 1.2V    :           :                
 VCCINT                       : U16       : power  :                   : 1.2V    :           :                
-GND*                         : U17       :        :                   :         : 7         :                
+LEDG[5]                      : U17       : output : 3.3-V LVTTL       :         : 7         : Y              
 LEDG[4]                      : U18       : output : 3.3-V LVTTL       :         : 7         : Y              
 GND                          : U19       : gnd    :                   :         :           :                
 GND*                         : U20       :        :                   :         : 6         :                

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("C:/Users/tommy/Documents/Quartus_projects/Function generator/LCD_module_v7/output_files/") File("LCD_module.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/output_files/") File("LCD_module.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
