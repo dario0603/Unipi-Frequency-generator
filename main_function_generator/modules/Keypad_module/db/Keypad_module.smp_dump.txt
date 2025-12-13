@@ -1,0 +1,7 @@
+
+State Machine - |keypad|keypad_module:inst|s_reg
+Name s_reg.READ_ROWS s_reg.DATA_VALID s_reg.INCREASE_COLUMN s_reg.IDLE 
+s_reg.IDLE 0 0 0 0 
+s_reg.INCREASE_COLUMN 0 0 1 1 
+s_reg.DATA_VALID 0 1 0 1 
+s_reg.READ_ROWS 1 0 0 1 

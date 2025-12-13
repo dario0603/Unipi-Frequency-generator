@@ -1,0 +1,997 @@
+Analysis & Synthesis report for LCD_module
+Fri Dec 12 14:54:33 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |LCD_module|lcd_driver:inst|state_f
+ 10. State Machine - |LCD_module|lcd_driver:inst|state
+ 11. State Machine - |LCD_module|lcd_driver:inst|sub_state
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Registers Packed Into Inferred Megafunctions
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated
+ 17. Parameter Settings for User Entity Instance: lcd_driver:inst
+ 18. Parameter Settings for User Entity Instance: lcd_driver:inst|text_lut:text_lut_inst
+ 19. Parameter Settings for Inferred Entity Instance: lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 14:54:33 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; LCD_module                                      ;
+; Top-level Entity Name              ; LCD_module                                      ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 342                                             ;
+;     Total combinational functions  ; 342                                             ;
+;     Dedicated logic registers      ; 143                                             ;
+; Total registers                    ; 143                                             ;
+; Total pins                         ; 56                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 18,432                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; LCD_module         ; LCD_module         ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                 ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                        ; Library ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+; text_lut.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/text_lut.v                                   ;         ;
+; lcd_driver.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/lcd_driver.v                                 ;         ;
+; LCD_module.bdf                               ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/LCD_module.bdf                               ;         ;
+; text_lut_init.txt                            ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/text_lut_init.txt                            ;         ;
+; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                    ;         ;
+; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ;
+; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ;
+; lpm_decode.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                    ;         ;
+; aglobal130.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                    ;         ;
+; a_rdenreg.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                     ;         ;
+; altrom.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                        ;         ;
+; altram.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                        ;         ;
+; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ;
+; db/altsyncram_id71.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/db/altsyncram_id71.tdf                       ;         ;
+; db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/LCD_module/db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ;         ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 342      ;
+;                                             ;          ;
+; Total combinational functions               ; 342      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 164      ;
+;     -- 3 input functions                    ; 47       ;
+;     -- <=2 input functions                  ; 131      ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 236      ;
+;     -- arithmetic mode                      ; 106      ;
+;                                             ;          ;
+; Total registers                             ; 143      ;
+;     -- Dedicated logic registers            ; 143      ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 56       ;
+; Total memory bits                           ; 18432    ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 152      ;
+; Total fan-out                               ; 1718     ;
+; Average fan-out                             ; 3.12     ;
++---------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+; |LCD_module                                  ; 342 (0)           ; 143 (0)      ; 18432       ; 0            ; 0       ; 0         ; 56   ; 0            ; |LCD_module                                                                                            ; work         ;
+;    |lcd_driver:inst|                         ; 342 (342)         ; 143 (143)    ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst                                                                            ; work         ;
+;       |text_lut:text_lut_inst|               ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst|text_lut:text_lut_inst                                                     ; work         ;
+;          |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0                                ; work         ;
+;             |altsyncram_id71:auto_generated| ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_module|lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+----------------------------------------------+
+; Name                                                                                                  ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                          ;
++-------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+----------------------------------------------+
+; lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 2048         ; 9            ; --           ; --           ; 18432 ; db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif ;
++-------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+----------------------------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |LCD_module|lcd_driver:inst|state_f                                                                                                  ;
++------------------------+----------------------+--------------------+---------------+-------------------+------------------------+--------------------+
+; Name                   ; state_f.DIGIT_SELECT ; state_f.HZ_DISPLAY ; state_f.SETUP ; state_f.WAIT_EXEC ; state_f.CHECK_AND_WAIT ; state_f.WRITE_DATA ;
++------------------------+----------------------+--------------------+---------------+-------------------+------------------------+--------------------+
+; state_f.CHECK_AND_WAIT ; 0                    ; 0                  ; 0             ; 0                 ; 0                      ; 0                  ;
+; state_f.WAIT_EXEC      ; 0                    ; 0                  ; 0             ; 1                 ; 1                      ; 0                  ;
+; state_f.SETUP          ; 0                    ; 0                  ; 1             ; 0                 ; 1                      ; 0                  ;
+; state_f.WRITE_DATA     ; 0                    ; 0                  ; 0             ; 0                 ; 1                      ; 1                  ;
+; state_f.HZ_DISPLAY     ; 0                    ; 1                  ; 0             ; 0                 ; 1                      ; 0                  ;
+; state_f.DIGIT_SELECT   ; 1                    ; 0                  ; 0             ; 0                 ; 1                      ; 0                  ;
++------------------------+----------------------+--------------------+---------------+-------------------+------------------------+--------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |LCD_module|lcd_driver:inst|state                                                                                                                                                 ;
++---------------------------+------------+---------------------------+-------------------------+------------+------------------+-------------+-----------------+-------------------+----------------+
+; Name                      ; state.WAIT ; state.WAIT_BUTTON_RELEASE ; state.WAIT_BUTTON_SHORT ; state.DONE ; state.WRITE_DATA ; state.SETUP ; state.WAIT_EXEC ; state.PAGE_SELECT ; state.POWER_ON ;
++---------------------------+------------+---------------------------+-------------------------+------------+------------------+-------------+-----------------+-------------------+----------------+
+; state.POWER_ON            ; 0          ; 0                         ; 0                       ; 0          ; 0                ; 0           ; 0               ; 0                 ; 0              ;
+; state.PAGE_SELECT         ; 0          ; 0                         ; 0                       ; 0          ; 0                ; 0           ; 0               ; 1                 ; 1              ;
+; state.WAIT_EXEC           ; 0          ; 0                         ; 0                       ; 0          ; 0                ; 0           ; 1               ; 0                 ; 1              ;
+; state.SETUP               ; 0          ; 0                         ; 0                       ; 0          ; 0                ; 1           ; 0               ; 0                 ; 1              ;
+; state.WRITE_DATA          ; 0          ; 0                         ; 0                       ; 0          ; 1                ; 0           ; 0               ; 0                 ; 1              ;
+; state.DONE                ; 0          ; 0                         ; 0                       ; 1          ; 0                ; 0           ; 0               ; 0                 ; 1              ;
+; state.WAIT_BUTTON_SHORT   ; 0          ; 0                         ; 1                       ; 0          ; 0                ; 0           ; 0               ; 0                 ; 1              ;
+; state.WAIT_BUTTON_RELEASE ; 0          ; 1                         ; 0                       ; 0          ; 0                ; 0           ; 0               ; 0                 ; 1              ;
+; state.WAIT                ; 1          ; 0                         ; 0                       ; 0          ; 0                ; 0           ; 0               ; 0                 ; 1              ;
++---------------------------+------------+---------------------------+-------------------------+------------+------------------+-------------+-----------------+-------------------+----------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |LCD_module|lcd_driver:inst|sub_state                                                                        ;
++------------------------+----------------------+------------------------+-----------------+-----------------+-----------------+
+; Name                   ; sub_state.PAGE_ERROR ; sub_state.PAGE_DEFAULT ; sub_state.PAGE2 ; sub_state.PAGE1 ; sub_state.PAGE0 ;
++------------------------+----------------------+------------------------+-----------------+-----------------+-----------------+
+; sub_state.PAGE0        ; 0                    ; 0                      ; 0               ; 0               ; 0               ;
+; sub_state.PAGE1        ; 0                    ; 0                      ; 0               ; 1               ; 1               ;
+; sub_state.PAGE2        ; 0                    ; 0                      ; 1               ; 0               ; 1               ;
+; sub_state.PAGE_DEFAULT ; 0                    ; 1                      ; 0               ; 0               ; 1               ;
+; sub_state.PAGE_ERROR   ; 1                    ; 0                      ; 0               ; 0               ; 1               ;
++------------------------+----------------------+------------------------+-----------------+-----------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; lcd_driver:inst|sub_state_f[2]         ; Stuck at GND due to stuck port data_in ;
+; lcd_driver:inst|state_f~9              ; Lost fanout                            ;
+; lcd_driver:inst|state_f~10             ; Lost fanout                            ;
+; lcd_driver:inst|state_f~11             ; Lost fanout                            ;
+; lcd_driver:inst|state~11               ; Lost fanout                            ;
+; lcd_driver:inst|state~12               ; Lost fanout                            ;
+; lcd_driver:inst|state~13               ; Lost fanout                            ;
+; lcd_driver:inst|state~14               ; Lost fanout                            ;
+; lcd_driver:inst|sub_state~7            ; Lost fanout                            ;
+; lcd_driver:inst|sub_state~8            ; Lost fanout                            ;
+; lcd_driver:inst|sub_state~9            ; Lost fanout                            ;
+; lcd_driver:inst|sub_state~10           ; Lost fanout                            ;
+; lcd_driver:inst|sub_state~11           ; Lost fanout                            ;
+; lcd_driver:inst|sub_state.PAGE_DEFAULT ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 14 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 143   ;
+; Number of registers using Synchronous Clear  ; 115   ;
+; Number of registers using Synchronous Load   ; 2     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 120   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                             ;
++------------------------------------------------+--------------------------------------------------+------+
+; Register Name                                  ; Megafunction                                     ; Type ;
++------------------------------------------------+--------------------------------------------------+------+
+; lcd_driver:inst|text_lut:text_lut_inst|q[0..8] ; lcd_driver:inst|text_lut:text_lut_inst|rom_rtl_0 ; RAM  ;
++------------------------------------------------+--------------------------------------------------+------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|n_index[0]       ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|char_index[5]    ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|btn_counter[17]  ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[6] ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[0] ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |LCD_module|lcd_driver:inst|lcd_data_freq[1] ;
+; 11:1               ; 32 bits   ; 224 LEs       ; 32 LEs               ; 192 LEs                ; Yes        ; |LCD_module|lcd_driver:inst|counter_f[25]    ;
+; 12:1               ; 32 bits   ; 256 LEs       ; 32 LEs               ; 224 LEs                ; Yes        ; |LCD_module|lcd_driver:inst|counter[28]      ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 12 LEs               ; 21 LEs                 ; Yes        ; |LCD_module|lcd_driver:inst|page_index[4]    ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |LCD_module|lcd_driver:inst|Mux3             ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |LCD_module|lcd_driver:inst|sub_state        ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |LCD_module|lcd_driver:inst|sub_state        ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 15 LEs               ; 9 LEs                  ; No         ; |LCD_module|lcd_driver:inst|state_f          ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; No         ; |LCD_module|lcd_driver:inst|state            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Source assignments for lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_id71:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                  ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                   ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd_driver:inst ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; BCD_DIGITS     ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd_driver:inst|text_lut:text_lut_inst ;
++-----------------+-------+-----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                      ;
++-----------------+-------+-----------------------------------------------------------+
+; DATA_WIDTH      ; 9     ; Signed Integer                                            ;
+; ADDR_WIDTH      ; 6     ; Signed Integer                                            ;
+; PAGE_ADDR_WIDTH ; 5     ; Signed Integer                                            ;
++-----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0 ;
++------------------------------------+----------------------------------------------+--------------------------+
+; Parameter Name                     ; Value                                        ; Type                     ;
++------------------------------------+----------------------------------------------+--------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                            ; Untyped                  ;
+; AUTO_CARRY_CHAINS                  ; ON                                           ; AUTO_CARRY               ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                          ; IGNORE_CARRY             ;
+; AUTO_CASCADE_CHAINS                ; ON                                           ; AUTO_CASCADE             ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                          ; IGNORE_CASCADE           ;
+; WIDTH_BYTEENA                      ; 1                                            ; Untyped                  ;
+; OPERATION_MODE                     ; ROM                                          ; Untyped                  ;
+; WIDTH_A                            ; 9                                            ; Untyped                  ;
+; WIDTHAD_A                          ; 11                                           ; Untyped                  ;
+; NUMWORDS_A                         ; 2048                                         ; Untyped                  ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                 ; Untyped                  ;
+; ADDRESS_ACLR_A                     ; NONE                                         ; Untyped                  ;
+; OUTDATA_ACLR_A                     ; NONE                                         ; Untyped                  ;
+; WRCONTROL_ACLR_A                   ; NONE                                         ; Untyped                  ;
+; INDATA_ACLR_A                      ; NONE                                         ; Untyped                  ;
+; BYTEENA_ACLR_A                     ; NONE                                         ; Untyped                  ;
+; WIDTH_B                            ; 1                                            ; Untyped                  ;
+; WIDTHAD_B                          ; 1                                            ; Untyped                  ;
+; NUMWORDS_B                         ; 1                                            ; Untyped                  ;
+; INDATA_REG_B                       ; CLOCK1                                       ; Untyped                  ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                       ; Untyped                  ;
+; RDCONTROL_REG_B                    ; CLOCK1                                       ; Untyped                  ;
+; ADDRESS_REG_B                      ; CLOCK1                                       ; Untyped                  ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                 ; Untyped                  ;
+; BYTEENA_REG_B                      ; CLOCK1                                       ; Untyped                  ;
+; INDATA_ACLR_B                      ; NONE                                         ; Untyped                  ;
+; WRCONTROL_ACLR_B                   ; NONE                                         ; Untyped                  ;
+; ADDRESS_ACLR_B                     ; NONE                                         ; Untyped                  ;
+; OUTDATA_ACLR_B                     ; NONE                                         ; Untyped                  ;
+; RDCONTROL_ACLR_B                   ; NONE                                         ; Untyped                  ;
+; BYTEENA_ACLR_B                     ; NONE                                         ; Untyped                  ;
+; WIDTH_BYTEENA_A                    ; 1                                            ; Untyped                  ;
+; WIDTH_BYTEENA_B                    ; 1                                            ; Untyped                  ;
+; RAM_BLOCK_TYPE                     ; AUTO                                         ; Untyped                  ;
+; BYTE_SIZE                          ; 8                                            ; Untyped                  ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ; Untyped                  ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                         ; Untyped                  ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                         ; Untyped                  ;
+; INIT_FILE                          ; db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif ; Untyped                  ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                       ; Untyped                  ;
+; MAXIMUM_DEPTH                      ; 0                                            ; Untyped                  ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                       ; Untyped                  ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                       ; Untyped                  ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                       ; Untyped                  ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                       ; Untyped                  ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                              ; Untyped                  ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                              ; Untyped                  ;
+; ENABLE_ECC                         ; FALSE                                        ; Untyped                  ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                        ; Untyped                  ;
+; WIDTH_ECCSTATUS                    ; 3                                            ; Untyped                  ;
+; DEVICE_FAMILY                      ; Cyclone II                                   ; Untyped                  ;
+; CBXI_PARAMETER                     ; altsyncram_id71                              ; Untyped                  ;
++------------------------------------+----------------------------------------------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                        ;
++-------------------------------------------+-------------------------------------------------------------+
+; Name                                      ; Value                                                       ;
++-------------------------------------------+-------------------------------------------------------------+
+; Number of entity instances                ; 1                                                           ;
+; Entity Instance                           ; lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                         ;
+;     -- WIDTH_A                            ; 9                                                           ;
+;     -- NUMWORDS_A                         ; 2048                                                        ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                ;
+;     -- WIDTH_B                            ; 1                                                           ;
+;     -- NUMWORDS_B                         ; 1                                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                   ;
++-------------------------------------------+-------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Dec 12 14:54:31 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_module -c LCD_module
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file text_lut.v
+    Info (12023): Found entity 1: text_lut
+Info (12021): Found 1 design units, including 1 entities, in source file tb_text_lut.v
+    Info (12023): Found entity 1: tb_text_lut
+Info (12021): Found 1 design units, including 1 entities, in source file tb_lcd_driver.v
+    Info (12023): Found entity 1: tb_lcd_driver
+Info (12021): Found 0 design units, including 0 entities, in source file lcd_rom_generator.v
+Info (12021): Found 1 design units, including 1 entities, in source file lcd_driver.v
+    Info (12023): Found entity 1: lcd_driver
+Info (12021): Found 1 design units, including 1 entities, in source file lcd_module.bdf
+    Info (12023): Found entity 1: LCD_module
+Info (12127): Elaborating entity "LCD_module" for the top level hierarchy
+Info (12128): Elaborating entity "lcd_driver" for hierarchy "lcd_driver:inst"
+Info (12128): Elaborating entity "text_lut" for hierarchy "lcd_driver:inst|text_lut:text_lut_inst"
+Warning (10850): Verilog HDL warning at text_lut.v(27): number of words (443) in memory file does not match the number of elements in the address range [0:2047]
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(1): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(2): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(3): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(4): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(5): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(6): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(7): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(8): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(9): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(10): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(11): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(12): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(13): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(14): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(15): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(16): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(17): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(18): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(19): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(20): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(21): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(22): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(23): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(24): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(25): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(26): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(27): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(28): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(29): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(30): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(31): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(32): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(33): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(34): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(35): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(36): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(37): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(38): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(39): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(40): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(41): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(42): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(43): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(44): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(45): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(46): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(47): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(49): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(50): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(51): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(52): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(53): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(54): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(55): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(56): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(57): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(58): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(59): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(60): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(61): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(62): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(63): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(64): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(65): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(66): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(67): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(68): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(69): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(70): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(71): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(72): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(73): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(74): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(75): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(76): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(77): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(78): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(79): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(80): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(81): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(82): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(83): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(84): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(85): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(86): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(87): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(88): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(89): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(90): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(91): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(92): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(93): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(94): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(95): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(96): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(98): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(99): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(100): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(101): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(102): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(103): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(104): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(105): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(106): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(107): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(108): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(109): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(110): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(111): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(112): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(113): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(114): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(115): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(116): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(117): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(118): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(119): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(120): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(121): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(122): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(123): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(125): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(126): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(127): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(128): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(129): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(130): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(131): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(132): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(133): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(134): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(135): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(136): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(137): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(138): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(139): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(140): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(141): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(142): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(143): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(144): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(145): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(146): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(147): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(148): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(149): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(150): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(151): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(152): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(153): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(155): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(156): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(157): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(158): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(159): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(160): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(161): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(162): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(163): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(164): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(165): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(166): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(167): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(168): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(169): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(170): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(171): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(172): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(173): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(174): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(175): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(176): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(177): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(178): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(179): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(180): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(181): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(182): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(184): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(185): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(186): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(187): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(188): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(189): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(190): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(191): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(192): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(193): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(194): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(195): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(196): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(197): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(198): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(199): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(200): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(201): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(202): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(203): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(204): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(205): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(206): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(207): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(208): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(209): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(210): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(211): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(212): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(213): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(214): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(215): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(217): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(218): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(219): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(220): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(221): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(222): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(223): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(224): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(225): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(226): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(227): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(228): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(229): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(230): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(231): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(232): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(233): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(234): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(235): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(236): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(237): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(238): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(239): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(240): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(241): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(242): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(243): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(244): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(245): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(246): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(247): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(248): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(250): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(251): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(252): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(253): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(254): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(255): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(256): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(257): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(258): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(259): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(260): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(261): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(262): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(263): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(264): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(265): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(266): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(267): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(268): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(269): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(270): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(271): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(272): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(273): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(274): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(275): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(276): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(277): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(278): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(279): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(280): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(281): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(283): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(284): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(285): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(286): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(287): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(288): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(289): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(290): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(291): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(292): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(293): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(294): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(295): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(296): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(297): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(298): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(299): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(300): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(301): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(302): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(303): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(304): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(305): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(306): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(307): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(308): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(310): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(311): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(312): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(313): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(314): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(315): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(316): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(317): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(318): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(319): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(320): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(321): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(322): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(323): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(324): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(325): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(326): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(327): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(328): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(329): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(330): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(331): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(332): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(333): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(334): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(335): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(337): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(338): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(339): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(340): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(341): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(342): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(343): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(344): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(345): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(346): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(347): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(348): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(349): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(350): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(351): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(352): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(353): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(354): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(355): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(356): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(357): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(358): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(359): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(360): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(361): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(362): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(363): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(364): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(365): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(366): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(368): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(369): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(370): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(371): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(372): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(373): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(374): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(375): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(376): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(377): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(378): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(379): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(380): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(381): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(382): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(383): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(384): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(385): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(386): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(387): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(388): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(389): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(390): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(391): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(392): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(393): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(394): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(395): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(396): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(397): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(398): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(399): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(400): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(401): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(402): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(403): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(404): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(405): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(406): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(407): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(408): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(409): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(410): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(411): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(412): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(413): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(414): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(416): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(417): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(418): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(419): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(420): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(421): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(422): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(423): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(424): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(425): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(426): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(427): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(428): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(429): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(430): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(431): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(432): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(433): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(434): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(435): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(436): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(437): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(438): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(439): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(440): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(441): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(442): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(443): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(444): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(445): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(446): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(447): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(448): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(449): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(450): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(451): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(452): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(453): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(454): truncated value with size 12 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(455): truncated value with size 12 to match size of target (9)
+Warning (10030): Net "rom.data_a" at text_lut.v(15) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.waddr_a" at text_lut.v(15) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.we_a" at text_lut.v(15) has no driver or initial value, using a default initial value '0'
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "lcd_driver:inst|text_lut:text_lut_inst|rom_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 9
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 2048
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif
+Info (12130): Elaborated megafunction instantiation "lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0"
+Info (12133): Instantiated megafunction "lcd_driver:inst|text_lut:text_lut_inst|altsyncram:rom_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "9"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "2048"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_id71.tdf
+    Info (12023): Found entity 1: altsyncram_id71
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LCD_RW" is stuck at GND
+    Warning (13410): Pin "LCD_ON" is stuck at VCC
+    Warning (13410): Pin "LCD_BLON" is stuck at VCC
+Info (17049): 12 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 408 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 343 logic cells
+    Info (21064): Implemented 9 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 452 warnings
+    Info: Peak virtual memory: 4628 megabytes
+    Info: Processing ended: Fri Dec 12 14:54:33 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

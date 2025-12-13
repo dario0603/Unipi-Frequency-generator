@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at keypad_module.v(19): object "data_valid" differs only in case from object "DATA_VALID" in the same scope

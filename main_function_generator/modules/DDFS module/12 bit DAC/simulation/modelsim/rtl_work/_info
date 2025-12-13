@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\posta\Desktop\Programmi\Verilog\Function_generator\DDFS module\1.1\simulation\modelsim
+vddfs
+I]K0MemDBJH`1??Jc5IGUO0
+V?z_C]3bk<Z2Yo2Y>b8J>g2
+Z1 dC:\Users\posta\Desktop\Programmi\Verilog\Function_generator\DDFS module\1.1\simulation\modelsim
+w1764666261
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/ddfs.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/ddfs.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1} -O0
+!i10b 1
+!s100 dShd5cZz[iQNEz<;O;92`3
+!s85 0
+!s108 1764666300.740000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/ddfs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/ddfs.v|
+!s101 -O0
+vfreq_divider
+IJJ=9CX`kdb[7H`BnOz^NV3
+VKC7O_z2H1Y@0YA3O[JZ1=1
+R1
+w1764663805
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/freq_divider.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/freq_divider.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Vhhe3?@N3ERLKfXojN4PL2
+!s85 0
+!s108 1764666300.818000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/freq_divider.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/freq_divider.v|
+!s101 -O0
+vsin_lut
+Ik:;dWb`J[FcGAM2@IXSU12
+VXTg8^PLTAio[_DF1KbMNM1
+R1
+w1763116362
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/sin_lut.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/sin_lut.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 :BJfV2z4fMGR?ZacaI^0W2
+!s85 0
+!s108 1764666300.888000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/sin_lut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/sin_lut.v|
+!s101 -O0
+vtb_ddfs
+!i10b 1
+!s100 QH[jfNN>o:LS0eJcE<o5T0
+I][mlCzjn`50ha`[Ta?Q2_0
+V=HY>MFV7d3W>HhWebU`Hh3
+R1
+w1764664924
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/tb_ddfs.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/tb_ddfs.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1764666300.965000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/tb_ddfs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/tb_ddfs.v|
+!s101 -O0
+R3
+R4

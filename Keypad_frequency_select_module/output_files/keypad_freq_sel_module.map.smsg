@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at keypad_freq_sel_module.v(133): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at keypad_freq_sel_module.v(49): object "FREQ_DIV" differs only in case from object "freq_div" in the same scope

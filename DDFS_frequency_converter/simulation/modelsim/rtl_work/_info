@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\posta\Desktop\Programmi\Verilog\Function_generator\DDFS_frequency_converter\simulation\modelsim
+vDDFS_frequency_converter
+IkTCafAH>0Wg6EE>m2mC750
+VC=Nh[0XojmHmA4WNc1JVg0
+Z1 dC:\Users\posta\Desktop\Programmi\Verilog\Function_generator\DDFS_frequency_converter\simulation\modelsim
+w1765643251
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/DDFS_frequency_converter.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/DDFS_frequency_converter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@d@d@f@s_frequency_converter
+!i10b 1
+!s100 1O^^455]NBPXC^VW8IV6^1
+!s85 0
+!s108 1765643285.693000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/DDFS_frequency_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/DDFS_frequency_converter.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter -O0
+vtb_DDFS_frequency_converter
+!i10b 1
+!s100 hMQ1OdEZeFLg767I4YDoe0
+I?GfHzcPZF[S`RPW`oglW>3
+VnDDLbC0RnU;::^cY1j`1a3
+R1
+w1765643179
+8C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1765643285.811000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter|C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v|
+!s101 -O0
+R3
+R4
+ntb_@d@d@f@s_frequency_converter

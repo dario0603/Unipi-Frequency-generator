@@ -2,76 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'freq_divider:inst1|q'
-Slack : -5.421
-TNS   : -522.053
-
-Type  : Slow Model Setup 'keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid'
-Slack : -5.277
-TNS   : -154.922
+Type  : Slow Model Setup 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
+Slack : -5.883
+TNS   : -692.088
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -2.992
-TNS   : -67.920
+Slack : -2.838
+TNS   : -60.322
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.526
-TNS   : -2.526
+Slack : -2.549
+TNS   : -2.549
 
-Type  : Slow Model Hold 'freq_divider:inst1|q'
-Slack : -1.282
-TNS   : -32.021
-
-Type  : Slow Model Hold 'keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid'
-Slack : 1.348
+Type  : Slow Model Hold 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
+Slack : 0.391
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -34.380
 
-Type  : Slow Model Minimum Pulse Width 'freq_divider:inst1|q'
+Type  : Slow Model Minimum Pulse Width 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
 Slack : -0.500
-TNS   : -129.000
+TNS   : -166.000
 
-Type  : Slow Model Minimum Pulse Width 'keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid'
-Slack : 0.500
-TNS   : 0.000
-
-Type  : Fast Model Setup 'keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid'
-Slack : -2.069
-TNS   : -64.274
-
-Type  : Fast Model Setup 'freq_divider:inst1|q'
-Slack : -2.061
-TNS   : -157.424
+Type  : Fast Model Setup 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
+Slack : -2.120
+TNS   : -231.512
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.926
-TNS   : -15.115
+Slack : -0.854
+TNS   : -11.992
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.570
-TNS   : -1.570
+Slack : -1.592
+TNS   : -1.592
 
-Type  : Fast Model Hold 'freq_divider:inst1|q'
-Slack : -0.934
-TNS   : -36.849
-
-Type  : Fast Model Hold 'keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid'
-Slack : 0.578
+Type  : Fast Model Hold 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
+Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -34.380
 
-Type  : Fast Model Minimum Pulse Width 'freq_divider:inst1|q'
+Type  : Fast Model Minimum Pulse Width 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
 Slack : -0.500
-TNS   : -129.000
-
-Type  : Fast Model Minimum Pulse Width 'keypad_freq_sel_module:inst13|keypad_module:keypad_mod_inst|data_valid'
-Slack : 0.500
-TNS   : 0.000
+TNS   : -166.000
 
 ------------------------------------------------------------

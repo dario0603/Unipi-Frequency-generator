@@ -6,7 +6,7 @@ module tb_DDFS_frequency_converter;
 	localparam [63:0] CLK_FREQ = 200000000;
 	
 	//testbench signals
-	reg [22:0] freq_C2;
+	reg [22:0] freq;
 	wire [6:0] fw;
 	wire [2:0] freq_control;
 	
@@ -16,7 +16,9 @@ module tb_DDFS_frequency_converter;
 
 	//instantiate the DUT (Device Under Test)
 	DDFS_frequency_converter #(.CLK_FREQ(CLK_FREQ)) DUT(
-		.freq_C2(freq_C2),
+		.freq(freq),
+		.mirror_x(1'b0),		//no mirror test
+		.mirror_y(1'b0),		//no mirror test
 		.fw(fw),
 		.freq_control(freq_control)
 	);
@@ -53,13 +55,13 @@ module tb_DDFS_frequency_converter;
 	end
 	
 	assign freq_calculated = ((fw+1)*divided_clock)/1024;
-	assign delta_freq = freq_C2 - freq_calculated;
+	assign delta_freq = freq - freq_calculated;
 	
 	integer i;
 	initial begin
 	
 		for(i=0; i<=MAX_FREQ; i=i+100) begin
-			#10 freq_C2 = i;
+			#10 freq = i;
 		end
 		
 		#100 $stop;
