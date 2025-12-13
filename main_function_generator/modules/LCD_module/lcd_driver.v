@@ -59,14 +59,14 @@ module lcd_driver
 	 localparam PAGE_FIRST = 5'd2;
 	 localparam PAGE_LAST = 5'd9;
 	 
-	 localparam PAGE_SQUARED = 5'd2; 
-	 localparam PAGE_TRIANGULAR = 5'd3; 
-	 localparam PAGE_SINE = 5'd4; 
-	 localparam PAGE_TRIANGULAR1 = 5'd5;
-	 localparam PAGE_TRIANGULAR2 = 5'd6; 
-	 localparam PAGE_TRIANGULAR3 = 5'd7; 
-	 localparam PAGE_SINE1 = 5'd8; 
-	 localparam PAGE_SINE2 = 5'd9;	 
+	 localparam PAGE_SQUARED = 5'd3; 
+	 localparam PAGE_TRIANGULAR = 5'd4; 
+	 localparam PAGE_SINE = 5'd5; 
+	 localparam PAGE_TRIANGULAR1 = 5'd6;
+	 localparam PAGE_TRIANGULAR2 = 5'd7; 
+	 localparam PAGE_TRIANGULAR3 = 5'd8; 
+	 localparam PAGE_SINE1 = 5'd9;
+	 localparam PAGE_SINE2 = 5'd2;	 
 	 
 	 // delays are based on 50MHz clock frequency 
 	 localparam wait40us = 32'd2000; 

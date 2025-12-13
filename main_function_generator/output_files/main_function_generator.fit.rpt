@@ -1,5 +1,5 @@
 Fitter report for main_function_generator
-Sat Dec 13 18:23:25 2025
+Sat Dec 13 18:43:46 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -69,14 +69,14 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Dec 13 18:23:25 2025           ;
+; Fitter Status                      ; Successful - Sat Dec 13 18:43:46 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; main_function_generator                         ;
 ; Top-level Entity Name              ; main_function_generator                         ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,944 / 33,216 ( 9 % )                          ;
+; Total logic elements               ; 2,948 / 33,216 ( 9 % )                          ;
 ;     Total combinational functions  ; 2,939 / 33,216 ( 9 % )                          ;
 ;     Dedicated logic registers      ; 378 / 33,216 ( 1 % )                            ;
 ; Total registers                    ; 378                                             ;
@@ -529,16 +529,16 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Total logic elements                        ; 2,944 / 33,216 ( 9 % )   ;
-;     -- Combinational with no register       ; 2566                     ;
-;     -- Register only                        ; 5                        ;
-;     -- Combinational with a register        ; 373                      ;
+; Total logic elements                        ; 2,948 / 33,216 ( 9 % )   ;
+;     -- Combinational with no register       ; 2570                     ;
+;     -- Register only                        ; 9                        ;
+;     -- Combinational with a register        ; 369                      ;
 ;                                             ;                          ;
 ; Logic element usage by number of LUT inputs ;                          ;
 ;     -- 4 input functions                    ; 496                      ;
 ;     -- 3 input functions                    ; 1627                     ;
 ;     -- <=2 input functions                  ; 816                      ;
-;     -- Register only                        ; 5                        ;
+;     -- Register only                        ; 9                        ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
 ;     -- normal mode                          ; 870                      ;
@@ -548,7 +548,7 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ;     -- Dedicated logic registers            ; 378 / 33,216 ( 1 % )     ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )        ;
 ;                                             ;                          ;
-; Total LABs:  partially or completely used   ; 232 / 2,076 ( 11 % )     ;
+; Total LABs:  partially or completely used   ; 233 / 2,076 ( 11 % )     ;
 ; Virtual pins                                ; 0                        ;
 ; I/O pins                                    ; 108 / 475 ( 23 % )       ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )           ;
@@ -563,11 +563,11 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ; JTAGs                                       ; 0 / 1 ( 0 % )            ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )            ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )            ;
-; Average interconnect usage (total/H/V)      ; 4% / 3% / 5%             ;
-; Peak interconnect usage (total/H/V)         ; 28% / 24% / 33%          ;
+; Average interconnect usage (total/H/V)      ; 4% / 4% / 5%             ;
+; Peak interconnect usage (total/H/V)         ; 30% / 27% / 35%          ;
 ; Maximum fan-out                             ; 185                      ;
 ; Highest non-global fan-out                  ; 128                      ;
-; Total fan-out                               ; 10415                    ;
+; Total fan-out                               ; 10418                    ;
 ; Average fan-out                             ; 2.96                     ;
 +---------------------------------------------+--------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -581,16 +581,16 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 2944 / 33216 ( 9 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 2566                 ; 0                              ;
-;     -- Register only                        ; 5                    ; 0                              ;
-;     -- Combinational with a register        ; 373                  ; 0                              ;
+; Total logic elements                        ; 2948 / 33216 ( 9 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 2570                 ; 0                              ;
+;     -- Register only                        ; 9                    ; 0                              ;
+;     -- Combinational with a register        ; 369                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 496                  ; 0                              ;
 ;     -- 3 input functions                    ; 1627                 ; 0                              ;
 ;     -- <=2 input functions                  ; 816                  ; 0                              ;
-;     -- Register only                        ; 5                    ; 0                              ;
+;     -- Register only                        ; 9                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
 ;     -- normal mode                          ; 870                  ; 0                              ;
@@ -599,7 +599,7 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ; Total registers                             ; 378                  ; 0                              ;
 ;     -- Dedicated logic registers            ; 378 / 33216 ( 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 232 / 2076 ( 11 % )  ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 233 / 2076 ( 11 % )  ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 108                  ; 0                              ;
@@ -617,7 +617,7 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 11680                ; 25                             ;
+;     -- Total Connections                    ; 11683                ; 25                             ;
 ;     -- Registered Connections               ; 1746                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -1550,15 +1550,15 @@ Note: User assignments will override these defaults. The user specified values a
 +---------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main_function_generator                                      ; 2944 (5)    ; 378 (4)                   ; 0 (0)         ; 29696       ; 8    ; 70           ; 0       ; 35        ; 108  ; 0            ; 2566 (1)     ; 5 (1)             ; 373 (0)          ; |main_function_generator                                                                                                                                                                                                                                                                ; work         ;
+; |main_function_generator                                      ; 2948 (5)    ; 378 (4)                   ; 0 (0)         ; 29696       ; 8    ; 70           ; 0       ; 35        ; 108  ; 0            ; 2570 (1)     ; 9 (4)             ; 369 (0)          ; |main_function_generator                                                                                                                                                                                                                                                                ; work         ;
 ;    |ALTPLa:inst|                                              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|ALTPLa:inst                                                                                                                                                                                                                                                    ; work         ;
 ;       |altpll:altpll_component|                               ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|ALTPLa:inst|altpll:altpll_component                                                                                                                                                                                                                            ; work         ;
-;    |ddfs:inst15|                                              ; 168 (73)    ; 34 (14)                   ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 133 (58)     ; 1 (1)             ; 34 (14)          ; |main_function_generator|ddfs:inst15                                                                                                                                                                                                                                                    ; work         ;
+;    |ddfs:inst15|                                              ; 168 (73)    ; 34 (14)                   ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 134 (59)     ; 1 (1)             ; 33 (13)          ; |main_function_generator|ddfs:inst15                                                                                                                                                                                                                                                    ; work         ;
 ;       |freq_divider_DDFS:f_div_inst|                          ; 95 (95)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 75 (75)      ; 0 (0)             ; 20 (20)          ; |main_function_generator|ddfs:inst15|freq_divider_DDFS:f_div_inst                                                                                                                                                                                                                       ; work         ;
 ;       |sin_lut:lut_inst|                                      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|ddfs:inst15|sin_lut:lut_inst                                                                                                                                                                                                                                   ; work         ;
 ;          |altsyncram:rom_rtl_0|                               ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0                                                                                                                                                                                                              ; work         ;
 ;             |altsyncram_qm81:auto_generated|                  ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_qm81:auto_generated                                                                                                                                                                               ; work         ;
-;    |keypad_freq_sel_module:inst1|                             ; 2396 (181)  ; 197 (99)                  ; 0 (0)         ; 0           ; 0    ; 70           ; 0       ; 35        ; 0    ; 0            ; 2199 (85)    ; 2 (0)             ; 195 (108)        ; |main_function_generator|keypad_freq_sel_module:inst1                                                                                                                                                                                                                                   ; work         ;
+;    |keypad_freq_sel_module:inst1|                             ; 2396 (181)  ; 197 (99)                  ; 0 (0)         ; 0           ; 0    ; 70           ; 0       ; 35        ; 0    ; 0            ; 2199 (85)    ; 3 (3)             ; 194 (107)        ; |main_function_generator|keypad_freq_sel_module:inst1                                                                                                                                                                                                                                   ; work         ;
 ;       |BCD_to_C2_converter:BCD_C2_conv_inst|                  ; 374 (374)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 369 (369)    ; 0 (0)             ; 5 (5)            ; |main_function_generator|keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst                                                                                                                                                                                              ; work         ;
 ;       |DDFS_frequency_converter:DDFS_freq_conv_inst|          ; 1701 (573)  ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 70           ; 0       ; 35        ; 0    ; 0            ; 1701 (573)   ; 0 (0)             ; 0 (0)            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst                                                                                                                                                                                      ; work         ;
 ;          |lpm_mult:Mult0|                                     ; 147 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 14           ; 0       ; 7         ; 0    ; 0            ; 147 (0)      ; 0 (0)             ; 0 (0)            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0                                                                                                                                                                       ; work         ;
@@ -1675,8 +1675,8 @@ Note: User assignments will override these defaults. The user specified values a
 ;                               |lpm_add_sub:adder[0]|          ; 19 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (0)       ; 0 (0)             ; 0 (0)            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|alt_mac_mult:mac_mult5|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                             ; work         ;
 ;                                  |add_sub_f8h:auto_generated| ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|alt_mac_mult:mac_mult5|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_f8h:auto_generated  ; work         ;
 ;       |freq_divider_keypad_module:freq_div|                   ; 50 (50)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 33 (33)          ; |main_function_generator|keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div                                                                                                                                                                                               ; work         ;
-;       |keypad_module:keypad_mod_inst|                         ; 92 (92)     ; 65 (65)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (27)      ; 2 (2)             ; 63 (63)          ; |main_function_generator|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst                                                                                                                                                                                                     ; work         ;
-;    |lcd_driver:inst14|                                        ; 330 (330)   ; 143 (143)                 ; 0 (0)         ; 18432       ; 5    ; 0            ; 0       ; 0         ; 0    ; 0            ; 184 (184)    ; 1 (1)             ; 145 (145)        ; |main_function_generator|lcd_driver:inst14                                                                                                                                                                                                                                              ; work         ;
+;       |keypad_module:keypad_mod_inst|                         ; 92 (92)     ; 65 (65)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (27)      ; 0 (0)             ; 65 (65)          ; |main_function_generator|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst                                                                                                                                                                                                     ; work         ;
+;    |lcd_driver:inst14|                                        ; 330 (330)   ; 143 (143)                 ; 0 (0)         ; 18432       ; 5    ; 0            ; 0       ; 0         ; 0    ; 0            ; 187 (187)    ; 1 (1)             ; 142 (142)        ; |main_function_generator|lcd_driver:inst14                                                                                                                                                                                                                                              ; work         ;
 ;       |text_lut:text_lut_inst|                                ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 18432       ; 5    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|lcd_driver:inst14|text_lut:text_lut_inst                                                                                                                                                                                                                       ; work         ;
 ;          |altsyncram:rom_rtl_0|                               ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 18432       ; 5    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|lcd_driver:inst14|text_lut:text_lut_inst|altsyncram:rom_rtl_0                                                                                                                                                                                                  ; work         ;
 ;             |altsyncram_ap81:auto_generated|                  ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 18432       ; 5    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main_function_generator|lcd_driver:inst14|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_ap81:auto_generated                                                                                                                                                                   ; work         ;
@@ -1815,10 +1815,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLOCK_50                                                                          ;                   ;         ;
 ; SW[0]                                                                             ;                   ;         ;
 ; GPIO_0[2]                                                                         ;                   ;         ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~2  ; 1                 ; 6       ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~13 ; 1                 ; 6       ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~14 ; 1                 ; 6       ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~19 ; 1                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~2  ; 0                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~13 ; 0                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~14 ; 0                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~19 ; 0                 ; 6       ;
 ; GPIO_0[0]                                                                         ;                   ;         ;
 ;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~4  ; 1                 ; 6       ;
 ;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~9  ; 1                 ; 6       ;
@@ -1830,10 +1830,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~17 ; 1                 ; 6       ;
 ;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~21 ; 1                 ; 6       ;
 ; GPIO_0[1]                                                                         ;                   ;         ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~7  ; 0                 ; 6       ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~15 ; 0                 ; 6       ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~16 ; 0                 ; 6       ;
-;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~18 ; 0                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~7  ; 1                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~15 ; 1                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~16 ; 1                 ; 6       ;
+;      - keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys~18 ; 1                 ; 6       ;
 +-----------------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1846,32 +1846,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLOCK_50                                                                     ; PIN_N2             ; 2       ; Clock                      ; no     ; --                   ; --               ; --                        ;
 ; CLOCK_50                                                                     ; PIN_N2             ; 185     ; Clock                      ; yes    ; Global Clock         ; GCLK2            ; --                        ;
 ; SW[0]                                                                        ; PIN_N25            ; 91      ; Clock enable, Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; ddfs:inst15|LessThan0~3                                                      ; LCCOMB_X43_Y24_N30 ; 12      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]                           ; LCFF_X41_Y22_N23   ; 14      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; keypad_freq_sel_module:inst1|BCD_4[3]~0                                      ; LCCOMB_X27_Y23_N6  ; 28      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|Equal16~0                                       ; LCCOMB_X23_Y23_N0  ; 37      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|cont[6]~98                                      ; LCCOMB_X24_Y23_N26 ; 32      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|digit_counter_BCD[2]~1                          ; LCCOMB_X27_Y23_N10 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|freq_6[3]~4                                     ; LCCOMB_X23_Y24_N2  ; 26      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|freq_6[3]~6                                     ; LCCOMB_X23_Y24_N30 ; 26      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q           ; LCFF_X32_Y2_N1     ; 164     ; Clock                      ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-; keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|i_column[26]~40   ; LCCOMB_X45_Y23_N10 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|out_keys[15]~0    ; LCCOMB_X45_Y23_N28 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys[0]~3 ; LCCOMB_X44_Y23_N26 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|number_not_sel~0                                ; LCCOMB_X25_Y24_N26 ; 6       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; keypad_freq_sel_module:inst1|sel_A                                           ; LCFF_X42_Y24_N21   ; 35      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|btn_counter[5]~72                                          ; LCCOMB_X22_Y20_N12 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|btn_counter[8]~73                                          ; LCCOMB_X25_Y21_N6  ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|char_index[2]~8                                            ; LCCOMB_X25_Y21_N2  ; 6       ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|char_index[2]~9                                            ; LCCOMB_X25_Y21_N24 ; 6       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|counter[4]~95                                              ; LCCOMB_X23_Y19_N8  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|counter[4]~96                                              ; LCCOMB_X25_Y21_N26 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|counter_f[17]~107                                          ; LCCOMB_X21_Y22_N6  ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|counter_f[17]~78                                           ; LCCOMB_X20_Y20_N2  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|lcd_data_freq[6]~4                                         ; LCCOMB_X21_Y22_N26 ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|n_index[2]~4                                               ; LCCOMB_X21_Y22_N12 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|page_index[2]~9                                            ; LCCOMB_X22_Y23_N10 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_driver:inst14|state_f.HZ_DISPLAY                                         ; LCFF_X21_Y22_N9    ; 11      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; ddfs:inst15|LessThan0~3                                                      ; LCCOMB_X31_Y23_N6  ; 12      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]                           ; LCFF_X48_Y17_N23   ; 14      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; keypad_freq_sel_module:inst1|BCD_4[3]~0                                      ; LCCOMB_X33_Y16_N26 ; 28      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|Equal16~0                                       ; LCCOMB_X32_Y18_N24 ; 37      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|cont[6]~98                                      ; LCCOMB_X33_Y18_N2  ; 32      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|digit_counter_BCD[2]~1                          ; LCCOMB_X31_Y19_N28 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|freq_6[3]~4                                     ; LCCOMB_X31_Y18_N26 ; 26      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|freq_6[3]~6                                     ; LCCOMB_X31_Y18_N2  ; 26      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q           ; LCFF_X31_Y35_N25   ; 164     ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|i_column[26]~40   ; LCCOMB_X34_Y25_N0  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|out_keys[15]~0    ; LCCOMB_X33_Y25_N16 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys[0]~3 ; LCCOMB_X34_Y25_N16 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|number_not_sel~0                                ; LCCOMB_X30_Y18_N0  ; 6       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; keypad_freq_sel_module:inst1|sel_A                                           ; LCFF_X28_Y23_N13   ; 35      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|btn_counter[5]~72                                          ; LCCOMB_X30_Y21_N26 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|btn_counter[8]~73                                          ; LCCOMB_X28_Y21_N26 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|char_index[2]~8                                            ; LCCOMB_X27_Y17_N0  ; 6       ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|char_index[2]~9                                            ; LCCOMB_X27_Y17_N14 ; 6       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|counter[4]~95                                              ; LCCOMB_X32_Y21_N2  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|counter[4]~96                                              ; LCCOMB_X31_Y19_N14 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|counter_f[17]~107                                          ; LCCOMB_X29_Y19_N6  ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|counter_f[17]~78                                           ; LCCOMB_X28_Y21_N16 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|lcd_data_freq[6]~4                                         ; LCCOMB_X28_Y19_N24 ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|n_index[2]~4                                               ; LCCOMB_X28_Y19_N18 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|page_index[2]~9                                            ; LCCOMB_X31_Y19_N16 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_driver:inst14|state_f.HZ_DISPLAY                                         ; LCFF_X28_Y17_N29   ; 11      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1882,8 +1882,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
 ; ALTPLa:inst|altpll:altpll_component|_clk0                          ; PLL_1            ; 23      ; Global Clock         ; GCLK3            ; --                        ;
 ; CLOCK_50                                                           ; PIN_N2           ; 185     ; Global Clock         ; GCLK2            ; --                        ;
-; ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]                 ; LCFF_X41_Y22_N23 ; 14      ; Global Clock         ; GCLK6            ; --                        ;
-; keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q ; LCFF_X32_Y2_N1   ; 164     ; Global Clock         ; GCLK14           ; --                        ;
+; ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]                 ; LCFF_X48_Y17_N23 ; 14      ; Global Clock         ; GCLK4            ; --                        ;
+; keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q ; LCFF_X31_Y35_N25 ; 164     ; Global Clock         ; GCLK9            ; --                        ;
 +--------------------------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -2044,8 +2044,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; keypad_freq_sel_module:inst1|BCD_4[1]                                                                                                                                                                                                                            ; 7       ;
 ; keypad_freq_sel_module:inst1|BCD_4[2]                                                                                                                                                                                                                            ; 7       ;
 ; keypad_freq_sel_module:inst1|BCD_3[0]                                                                                                                                                                                                                            ; 7       ;
-; lcd_driver:inst14|WideOr3~0                                                                                                                                                                                                                                      ; 7       ;
 ; lcd_driver:inst14|WideOr2~0                                                                                                                                                                                                                                      ; 7       ;
+; lcd_driver:inst14|WideOr3~0                                                                                                                                                                                                                                      ; 7       ;
 ; lcd_driver:inst14|counter[31]                                                                                                                                                                                                                                    ; 7       ;
 ; lcd_driver:inst14|sub_state_f[1]                                                                                                                                                                                                                                 ; 7       ;
 ; lcd_driver:inst14|char_index[3]                                                                                                                                                                                                                                  ; 7       ;
@@ -2900,8 +2900,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------------------------+-----------------------------------------------------------------+----------------------+-----------------+-----------------+
 ; Name                                                                                                    ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF                                                       ; Location                                                        ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +---------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------------------------+-----------------------------------------------------------------+----------------------+-----------------+-----------------+
-; ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_qm81:auto_generated|ALTSYNCRAM             ; AUTO ; ROM  ; Single Clock ; 1024         ; 12           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 12288 ; 1024                        ; 11                          ; --                          ; --                          ; 11264               ; 3    ; db/main_function_generator.ram0_sin_lut_da7c88ef.hdl.mif  ; M4K_X52_Y24, M4K_X52_Y25, M4K_X52_Y23                           ; Don't care           ; Don't care      ; Don't care      ;
-; lcd_driver:inst14|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_ap81:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 2048         ; 9            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 18432 ; 2048                        ; 9                           ; --                          ; --                          ; 18432               ; 5    ; db/main_function_generator.ram0_text_lut_af7c7a3e.hdl.mif ; M4K_X26_Y21, M4K_X26_Y20, M4K_X26_Y23, M4K_X26_Y22, M4K_X26_Y19 ; Don't care           ; Don't care      ; Don't care      ;
+; ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_qm81:auto_generated|ALTSYNCRAM             ; AUTO ; ROM  ; Single Clock ; 1024         ; 12           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 12288 ; 1024                        ; 11                          ; --                          ; --                          ; 11264               ; 3    ; db/main_function_generator.ram0_sin_lut_da7c88ef.hdl.mif  ; M4K_X26_Y23, M4K_X26_Y24, M4K_X26_Y22                           ; Don't care           ; Don't care      ; Don't care      ;
+; lcd_driver:inst14|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_ap81:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 2048         ; 9            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 18432 ; 2048                        ; 9                           ; --                          ; --                          ; 18432               ; 5    ; db/main_function_generator.ram0_text_lut_af7c7a3e.hdl.mif ; M4K_X26_Y18, M4K_X26_Y19, M4K_X26_Y17, M4K_X26_Y16, M4K_X26_Y15 ; Don't care           ; Don't care      ; Don't care      ;
 +---------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------------------------+-----------------------------------------------------------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -2928,76 +2928,76 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +--------------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
 ; Name                                                                                                                           ; Mode                       ; Location           ; Sign Representation ; Has Input Shift Register Chain ; Data A Input Register ; Data B Input Register ; Pipeline Register ; Output Register ;
 +--------------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y29_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y29_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y15_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y15_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y13_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y13_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|w672w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y9_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y9_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y32_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y32_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y33_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y33_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y34_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y34_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|w705w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y35_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y35_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y19_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y19_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y21_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y21_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y20_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y20_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|w738w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y23_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y23_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y16_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y16_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y17_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y17_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y18_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y18_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|w771w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y22_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y22_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y27_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y27_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out16     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y24_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult15 ;                            ; DSPMULT_X39_Y24_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out6      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y31_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult5  ;                            ; DSPMULT_X39_Y31_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out14     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y26_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult13 ;                            ; DSPMULT_X39_Y26_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y1_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y1_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y2_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y2_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y4_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y4_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|w672w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y3_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y3_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y34_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y34_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y32_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y32_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y35_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y35_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|w705w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y33_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y33_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y20_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y20_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y18_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y18_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y17_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y17_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|w738w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y19_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y19_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y22_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y22_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y21_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y21_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y25_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y25_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|w771w[0]      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y29_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y29_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y26_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y26_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out16     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y27_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult15 ;                            ; DSPMULT_X39_Y27_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out6      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y30_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult5  ;                            ; DSPMULT_X39_Y30_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out14     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y23_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult13 ;                            ; DSPMULT_X39_Y23_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
 ; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y28_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
 ;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y28_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y25_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y25_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|w1220w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y30_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y30_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y4_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y4_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out6      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y3_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult5  ;                            ; DSPMULT_X39_Y3_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y5_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y5_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y8_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y8_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|w1033w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y6_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y6_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y11_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y11_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out14     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y12_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult13 ;                            ; DSPMULT_X39_Y12_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out16     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y7_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult15 ;                            ; DSPMULT_X39_Y7_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out6      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y1_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult5  ;                            ; DSPMULT_X39_Y1_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y10_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y10_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y14_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y14_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
-; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|w1085w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y2_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y2_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y24_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y24_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|w1220w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y31_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y31_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y10_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y10_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out6      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y7_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult5  ;                            ; DSPMULT_X39_Y7_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y11_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y11_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y13_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y13_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|w1033w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y8_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y8_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out10     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y14_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult9  ;                            ; DSPMULT_X39_Y14_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out14     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y15_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult13 ;                            ; DSPMULT_X39_Y15_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out16     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y9_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult15 ;                            ; DSPMULT_X39_Y9_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out6      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y6_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult5  ;                            ; DSPMULT_X39_Y6_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out4      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y12_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult3  ;                            ; DSPMULT_X39_Y12_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_out8      ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y16_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult7  ;                            ; DSPMULT_X39_Y16_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|w1085w[0]     ; Simple Multiplier (18-bit) ; DSPOUT_X39_Y5_N2   ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1|mult_ect:auto_generated|mac_mult1  ;                            ; DSPMULT_X39_Y5_N0  ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
 +--------------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
 
 
@@ -3006,51 +3006,52 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 5,020 / 94,460 ( 5 % ) ;
-; C16 interconnects           ; 97 / 3,315 ( 3 % )     ;
-; C4 interconnects            ; 2,948 / 60,840 ( 5 % ) ;
-; Direct links                ; 1,157 / 94,460 ( 1 % ) ;
+; Block interconnects         ; 4,977 / 94,460 ( 5 % ) ;
+; C16 interconnects           ; 109 / 3,315 ( 3 % )    ;
+; C4 interconnects            ; 2,882 / 60,840 ( 5 % ) ;
+; Direct links                ; 1,159 / 94,460 ( 1 % ) ;
 ; Global clocks               ; 4 / 16 ( 25 % )        ;
-; Local interconnects         ; 700 / 33,216 ( 2 % )   ;
-; R24 interconnects           ; 99 / 3,091 ( 3 % )     ;
-; R4 interconnects            ; 3,140 / 81,294 ( 4 % ) ;
+; Local interconnects         ; 721 / 33,216 ( 2 % )   ;
+; R24 interconnects           ; 89 / 3,091 ( 3 % )     ;
+; R4 interconnects            ; 3,383 / 81,294 ( 4 % ) ;
 +-----------------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.69) ; Number of LABs  (Total = 232) ;
+; Number of Logic Elements  (Average = 12.65) ; Number of LABs  (Total = 233) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 4                             ;
+; 1                                           ; 3                             ;
 ; 2                                           ; 3                             ;
-; 3                                           ; 2                             ;
-; 4                                           ; 1                             ;
-; 5                                           ; 2                             ;
-; 6                                           ; 1                             ;
+; 3                                           ; 1                             ;
+; 4                                           ; 3                             ;
+; 5                                           ; 5                             ;
+; 6                                           ; 3                             ;
 ; 7                                           ; 6                             ;
-; 8                                           ; 3                             ;
-; 9                                           ; 16                            ;
-; 10                                          ; 17                            ;
-; 11                                          ; 19                            ;
-; 12                                          ; 15                            ;
-; 13                                          ; 29                            ;
-; 14                                          ; 27                            ;
-; 15                                          ; 8                             ;
-; 16                                          ; 79                            ;
+; 8                                           ; 1                             ;
+; 9                                           ; 15                            ;
+; 10                                          ; 12                            ;
+; 11                                          ; 23                            ;
+; 12                                          ; 9                             ;
+; 13                                          ; 31                            ;
+; 14                                          ; 29                            ;
+; 15                                          ; 18                            ;
+; 16                                          ; 71                            ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.48) ; Number of LABs  (Total = 232) ;
+; LAB-wide Signals  (Average = 0.46) ; Number of LABs  (Total = 233) ;
 +------------------------------------+-------------------------------+
 ; 1 Async. clear                     ; 1                             ;
-; 1 Clock                            ; 58                            ;
-; 1 Clock enable                     ; 31                            ;
-; 1 Sync. clear                      ; 18                            ;
-; 1 Sync. load                       ; 3                             ;
+; 1 Clock                            ; 54                            ;
+; 1 Clock enable                     ; 28                            ;
+; 1 Sync. clear                      ; 16                            ;
+; 1 Sync. load                       ; 6                             ;
+; 2 Clock enables                    ; 1                             ;
 ; 2 Clocks                           ; 1                             ;
 +------------------------------------+-------------------------------+
 
@@ -3058,115 +3059,113 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 13.14) ; Number of LABs  (Total = 232) ;
+; Number of Signals Sourced  (Average = 13.09) ; Number of LABs  (Total = 233) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 14                            ;
 ; 1                                            ; 3                             ;
-; 2                                            ; 4                             ;
+; 2                                            ; 2                             ;
 ; 3                                            ; 2                             ;
-; 4                                            ; 1                             ;
-; 5                                            ; 2                             ;
-; 6                                            ; 0                             ;
-; 7                                            ; 12                            ;
-; 8                                            ; 2                             ;
-; 9                                            ; 13                            ;
-; 10                                           ; 19                            ;
-; 11                                           ; 21                            ;
-; 12                                           ; 15                            ;
-; 13                                           ; 19                            ;
+; 4                                            ; 3                             ;
+; 5                                            ; 4                             ;
+; 6                                            ; 3                             ;
+; 7                                            ; 13                            ;
+; 8                                            ; 0                             ;
+; 9                                            ; 14                            ;
+; 10                                           ; 11                            ;
+; 11                                           ; 23                            ;
+; 12                                           ; 9                             ;
+; 13                                           ; 24                            ;
 ; 14                                           ; 21                            ;
-; 15                                           ; 9                             ;
+; 15                                           ; 11                            ;
 ; 16                                           ; 36                            ;
 ; 17                                           ; 5                             ;
 ; 18                                           ; 2                             ;
-; 19                                           ; 3                             ;
-; 20                                           ; 7                             ;
-; 21                                           ; 3                             ;
-; 22                                           ; 2                             ;
+; 19                                           ; 9                             ;
+; 20                                           ; 4                             ;
+; 21                                           ; 2                             ;
+; 22                                           ; 1                             ;
 ; 23                                           ; 0                             ;
-; 24                                           ; 1                             ;
+; 24                                           ; 0                             ;
 ; 25                                           ; 0                             ;
-; 26                                           ; 1                             ;
-; 27                                           ; 0                             ;
+; 26                                           ; 2                             ;
+; 27                                           ; 1                             ;
 ; 28                                           ; 2                             ;
 ; 29                                           ; 0                             ;
-; 30                                           ; 0                             ;
+; 30                                           ; 1                             ;
 ; 31                                           ; 0                             ;
-; 32                                           ; 13                            ;
+; 32                                           ; 11                            ;
 +----------------------------------------------+-------------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                          ;
 +--------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 10.19) ; Number of LABs  (Total = 232) ;
+; Number of Signals Sourced Out  (Average = 10.16) ; Number of LABs  (Total = 233) ;
 +--------------------------------------------------+-------------------------------+
 ; 0                                                ; 14                            ;
-; 1                                                ; 8                             ;
-; 2                                                ; 4                             ;
-; 3                                                ; 3                             ;
-; 4                                                ; 3                             ;
-; 5                                                ; 4                             ;
+; 1                                                ; 9                             ;
+; 2                                                ; 3                             ;
+; 3                                                ; 2                             ;
+; 4                                                ; 2                             ;
+; 5                                                ; 6                             ;
 ; 6                                                ; 10                            ;
-; 7                                                ; 14                            ;
-; 8                                                ; 7                             ;
-; 9                                                ; 21                            ;
-; 10                                               ; 18                            ;
-; 11                                               ; 19                            ;
+; 7                                                ; 19                            ;
+; 8                                                ; 5                             ;
+; 9                                                ; 20                            ;
+; 10                                               ; 17                            ;
+; 11                                               ; 21                            ;
 ; 12                                               ; 16                            ;
-; 13                                               ; 30                            ;
+; 13                                               ; 24                            ;
 ; 14                                               ; 23                            ;
-; 15                                               ; 5                             ;
-; 16                                               ; 32                            ;
+; 15                                               ; 10                            ;
+; 16                                               ; 31                            ;
 ; 17                                               ; 0                             ;
 ; 18                                               ; 0                             ;
 ; 19                                               ; 0                             ;
 ; 20                                               ; 0                             ;
 ; 21                                               ; 0                             ;
-; 22                                               ; 0                             ;
-; 23                                               ; 0                             ;
-; 24                                               ; 1                             ;
+; 22                                               ; 1                             ;
 +--------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 18.34) ; Number of LABs  (Total = 232) ;
+; Number of Distinct Inputs  (Average = 18.21) ; Number of LABs  (Total = 233) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 3                             ;
-; 3                                            ; 6                             ;
-; 4                                            ; 14                            ;
-; 5                                            ; 0                             ;
+; 2                                            ; 2                             ;
+; 3                                            ; 7                             ;
+; 4                                            ; 13                            ;
+; 5                                            ; 3                             ;
 ; 6                                            ; 1                             ;
-; 7                                            ; 6                             ;
-; 8                                            ; 9                             ;
-; 9                                            ; 2                             ;
+; 7                                            ; 5                             ;
+; 8                                            ; 10                            ;
+; 9                                            ; 4                             ;
 ; 10                                           ; 11                            ;
 ; 11                                           ; 9                             ;
-; 12                                           ; 7                             ;
-; 13                                           ; 10                            ;
-; 14                                           ; 3                             ;
-; 15                                           ; 17                            ;
-; 16                                           ; 7                             ;
-; 17                                           ; 3                             ;
-; 18                                           ; 6                             ;
-; 19                                           ; 11                            ;
-; 20                                           ; 6                             ;
-; 21                                           ; 3                             ;
-; 22                                           ; 8                             ;
-; 23                                           ; 3                             ;
-; 24                                           ; 11                            ;
+; 12                                           ; 6                             ;
+; 13                                           ; 8                             ;
+; 14                                           ; 4                             ;
+; 15                                           ; 11                            ;
+; 16                                           ; 8                             ;
+; 17                                           ; 5                             ;
+; 18                                           ; 9                             ;
+; 19                                           ; 7                             ;
+; 20                                           ; 8                             ;
+; 21                                           ; 5                             ;
+; 22                                           ; 7                             ;
+; 23                                           ; 4                             ;
+; 24                                           ; 12                            ;
 ; 25                                           ; 3                             ;
 ; 26                                           ; 22                            ;
-; 27                                           ; 6                             ;
-; 28                                           ; 8                             ;
+; 27                                           ; 3                             ;
+; 28                                           ; 13                            ;
 ; 29                                           ; 14                            ;
-; 30                                           ; 4                             ;
-; 31                                           ; 3                             ;
-; 32                                           ; 1                             ;
+; 30                                           ; 2                             ;
+; 31                                           ; 2                             ;
+; 32                                           ; 0                             ;
 ; 33                                           ; 14                            ;
 +----------------------------------------------+-------------------------------+
 
@@ -3566,11 +3565,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:10
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 3% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 22% of the available device resources in the region that extends from location X33_Y12 to location X43_Y23
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+    Info (170196): Router estimated peak interconnect usage is 25% of the available device resources in the region that extends from location X33_Y12 to location X43_Y23
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 2.59 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 2.92 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 102 output pins without output pin load capacitance assignment
     Info (306007): Pin "LCD_RW" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -3684,10 +3683,10 @@ Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments 
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/main_function_generator/output_files/main_function_generator.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 324 warnings
-    Info: Peak virtual memory: 4922 megabytes
-    Info: Processing ended: Sat Dec 13 18:23:26 2025
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 4924 megabytes
+    Info: Processing ended: Sat Dec 13 18:43:47 2025
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +----------------------------+
