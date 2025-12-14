@@ -178,7 +178,7 @@ module keypad_freq_sel_module
 					(16'd1 << 0): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000001;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000001;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -195,7 +195,7 @@ module keypad_freq_sel_module
 					(16'd1 << 1): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000002;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000002;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -212,7 +212,7 @@ module keypad_freq_sel_module
 					(16'd1 << 2): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000003;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000003;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -229,7 +229,7 @@ module keypad_freq_sel_module
 					(16'd1 << 4): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000004;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000004;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -246,7 +246,7 @@ module keypad_freq_sel_module
 					(16'd1 << 5): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000005;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000005;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -263,7 +263,7 @@ module keypad_freq_sel_module
 					(16'd1 << 6): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000006;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000006;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -280,7 +280,7 @@ module keypad_freq_sel_module
 					(16'd1 << 8): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000007;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000007;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -297,7 +297,7 @@ module keypad_freq_sel_module
 					(16'd1 << 9): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000008;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000008;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 
@@ -314,7 +314,7 @@ module keypad_freq_sel_module
 					(16'd1 << 10): begin
 						if(number_not_sel == 1) begin
 							
-							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} = 28'h0000009;
+							{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000009;
 							digit_counter <= 3'd1;
 							number_not_sel <= 1'b0;
 						end 

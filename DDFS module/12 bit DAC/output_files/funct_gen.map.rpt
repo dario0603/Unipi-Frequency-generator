@@ -1,5 +1,5 @@
 Analysis & Synthesis report for funct_gen
-Tue Dec 02 10:04:28 2025
+Sun Dec 14 19:43:46 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -18,14 +18,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  10. General Register Statistics
  11. Registers Packed Into Inferred Megafunctions
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated
- 14. Parameter Settings for User Entity Instance: ddfs:inst1
- 15. Parameter Settings for User Entity Instance: ddfs:inst1|sin_lut:lut_inst
- 16. Parameter Settings for Inferred Entity Instance: ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0
- 17. altsyncram Parameter Settings by Entity Instance
- 18. Port Connectivity Checks: "ddfs:inst1|sin_lut:lut_inst"
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 13. Source assignments for ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated
+ 14. Parameter Settings for User Entity Instance: ddfs:inst|sin_lut:lut_inst
+ 15. Parameter Settings for Inferred Entity Instance: ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "ddfs:inst|sin_lut:lut_inst"
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -51,7 +50,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 02 10:04:28 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 14 19:43:46 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; funct_gen                                       ;
 ; Top-level Entity Name              ; funct_gen                                       ;
@@ -164,28 +163,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                  ;
-+--------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                           ; Library ;
-+--------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
-; sin_lut.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/sin_lut.v                                  ;         ;
-; ddfs.v                                     ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/ddfs.v                                     ;         ;
-; freq_divider.v                             ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/freq_divider.v                             ;         ;
-; funct_gen.bdf                              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/funct_gen.bdf                              ;         ;
-; sin_lut_init.txt                           ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/sin_lut_init.txt                           ;         ;
-; altsyncram.tdf                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                       ;         ;
-; stratix_ram_block.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                ;         ;
-; lpm_mux.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                          ;         ;
-; lpm_decode.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                       ;         ;
-; aglobal130.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                       ;         ;
-; a_rdenreg.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                        ;         ;
-; altrom.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                           ;         ;
-; altram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                           ;         ;
-; altdpram.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                         ;         ;
-; db/altsyncram_p171.tdf                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/db/altsyncram_p171.tdf                     ;         ;
-; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1/db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ;         ;
-+--------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                         ;
++--------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                  ; Library ;
++--------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; sin_lut.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/sin_lut.v                                  ;         ;
+; ddfs.v                                     ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/ddfs.v                                     ;         ;
+; freq_divider.v                             ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/freq_divider.v                             ;         ;
+; funct_gen.bdf                              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/funct_gen.bdf                              ;         ;
+; sin_lut_init.txt                           ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/sin_lut_init.txt                           ;         ;
+; altsyncram.tdf                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                              ;         ;
+; stratix_ram_block.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                       ;         ;
+; lpm_mux.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                 ;         ;
+; lpm_decode.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                              ;         ;
+; aglobal130.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                              ;         ;
+; a_rdenreg.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                               ;         ;
+; altrom.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                  ;         ;
+; altram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                  ;         ;
+; altdpram.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                ;         ;
+; db/altsyncram_p171.tdf                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/db/altsyncram_p171.tdf                     ;         ;
+; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ;         ;
++--------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -219,28 +218,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                  ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
-; |funct_gen                                   ; 169 (0)           ; 34 (0)       ; 11264       ; 0            ; 0       ; 0         ; 28   ; 0            ; |funct_gen                                                                                 ; work         ;
-;    |ddfs:inst1|                              ; 169 (73)          ; 34 (14)      ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst1                                                                      ; work         ;
-;       |freq_divider:f_div_inst|              ; 96 (96)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst1|freq_divider:f_div_inst                                              ; work         ;
-;       |sin_lut:lut_inst|                     ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst1|sin_lut:lut_inst                                                     ; work         ;
-;          |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0                                ; work         ;
-;             |altsyncram_p171:auto_generated| ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; |funct_gen                                   ; 169 (0)           ; 34 (0)       ; 11264       ; 0            ; 0       ; 0         ; 28   ; 0            ; |funct_gen                                                                                ; work         ;
+;    |ddfs:inst|                               ; 169 (73)          ; 34 (14)      ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst                                                                      ; work         ;
+;       |freq_divider:f_div_inst|              ; 96 (96)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|freq_divider:f_div_inst                                              ; work         ;
+;       |sin_lut:lut_inst|                     ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|sin_lut:lut_inst                                                     ; work         ;
+;          |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0                                ; work         ;
+;             |altsyncram_p171:auto_generated| ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                          ;
-+--------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
-; Name                                                                                       ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                        ;
-+--------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
-; ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 1024         ; 12           ; --           ; --           ; 12288 ; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ;
-+--------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
+; Name                                                                                      ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                        ;
++-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
+; ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 1024         ; 12           ; --           ; --           ; 12288 ; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ;
++-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -248,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+--------------------+
 ; Register name                          ; Reason for Removal ;
 +----------------------------------------+--------------------+
-; ddfs:inst1|cont_rt[0..9]               ; Lost fanout        ;
+; ddfs:inst|cont_rt[0..9]                ; Lost fanout        ;
 ; Total Number of Removed Registers = 10 ;                    ;
 +----------------------------------------+--------------------+
 
@@ -268,145 +267,131 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                        ;
-+--------------------------------------+---------------------------------------+------+
-; Register Name                        ; Megafunction                          ; Type ;
-+--------------------------------------+---------------------------------------+------+
-; ddfs:inst1|sin_lut:lut_inst|q[1..11] ; ddfs:inst1|sin_lut:lut_inst|rom_rtl_0 ; RAM  ;
-+--------------------------------------+---------------------------------------+------+
++-----------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                      ;
++-------------------------------------+--------------------------------------+------+
+; Register Name                       ; Megafunction                         ; Type ;
++-------------------------------------+--------------------------------------+------+
+; ddfs:inst|sin_lut:lut_inst|q[1..11] ; ddfs:inst|sin_lut:lut_inst|rom_rtl_0 ; RAM  ;
++-------------------------------------+--------------------------------------+------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |funct_gen|ddfs:inst1|freq_divider:f_div_inst|count[19] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |funct_gen|ddfs:inst1|freq_divider:f_div_inst|count[6]  ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |funct_gen|ddfs:inst1|q_tmp[6]                          ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |funct_gen|ddfs:inst1|addr[0]                           ;
-; 5:1                ; 11 bits   ; 33 LEs        ; 11 LEs               ; 22 LEs                 ; No         ; |funct_gen|ddfs:inst1|q[6]                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |funct_gen|ddfs:inst|freq_divider:f_div_inst|count[19] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |funct_gen|ddfs:inst|freq_divider:f_div_inst|count[6]  ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |funct_gen|ddfs:inst|q_tmp[6]                          ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |funct_gen|ddfs:inst|addr[0]                           ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 11 LEs               ; 22 LEs                 ; No         ; |funct_gen|ddfs:inst|q[6]                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Source assignments for ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated ;
-+---------------------------------+--------------------+------+------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                       ;
-+---------------------------------+--------------------+------+------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                        ;
-+---------------------------------+--------------------+------+------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ddfs:inst1 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; DATA_WIDTH     ; 12    ; Signed Integer                 ;
-; ADDR_WIDTH     ; 10    ; Signed Integer                 ;
-; MAX_LUT        ; 1024  ; Signed Integer                 ;
-; HALF_ADDRESS   ; 512   ; Signed Integer                 ;
-; HALF_DATA      ; 2048  ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ddfs:inst|sin_lut:lut_inst ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; DATA_WIDTH     ; 12    ; Signed Integer                                 ;
+; ADDR_WIDTH     ; 10    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ddfs:inst1|sin_lut:lut_inst ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; DATA_WIDTH     ; 12    ; Signed Integer                                  ;
-; ADDR_WIDTH     ; 10    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0 ;
++------------------------------------+--------------------------------------------+----------------+
+; Parameter Name                     ; Value                                      ; Type           ;
++------------------------------------+--------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                          ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                         ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                        ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                         ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                        ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                          ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                        ; Untyped        ;
+; WIDTH_A                            ; 12                                         ; Untyped        ;
+; WIDTHAD_A                          ; 10                                         ; Untyped        ;
+; NUMWORDS_A                         ; 1024                                       ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                               ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                       ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                       ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                       ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                       ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                       ; Untyped        ;
+; WIDTH_B                            ; 1                                          ; Untyped        ;
+; WIDTHAD_B                          ; 1                                          ; Untyped        ;
+; NUMWORDS_B                         ; 1                                          ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                     ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                     ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                     ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                     ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                               ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                     ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                       ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                       ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                       ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                       ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                       ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                       ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                          ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                          ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                       ; Untyped        ;
+; BYTE_SIZE                          ; 8                                          ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                       ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                       ; Untyped        ;
+; INIT_FILE                          ; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                     ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                          ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                     ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                     ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                     ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                     ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                            ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                            ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                      ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                      ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                          ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone II                                 ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_p171                            ; Untyped        ;
++------------------------------------+--------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0 ;
-+------------------------------------+--------------------------------------------+-----------------+
-; Parameter Name                     ; Value                                      ; Type            ;
-+------------------------------------+--------------------------------------------+-----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                          ; Untyped         ;
-; AUTO_CARRY_CHAINS                  ; ON                                         ; AUTO_CARRY      ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                        ; IGNORE_CARRY    ;
-; AUTO_CASCADE_CHAINS                ; ON                                         ; AUTO_CASCADE    ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                        ; IGNORE_CASCADE  ;
-; WIDTH_BYTEENA                      ; 1                                          ; Untyped         ;
-; OPERATION_MODE                     ; ROM                                        ; Untyped         ;
-; WIDTH_A                            ; 12                                         ; Untyped         ;
-; WIDTHAD_A                          ; 10                                         ; Untyped         ;
-; NUMWORDS_A                         ; 1024                                       ; Untyped         ;
-; OUTDATA_REG_A                      ; UNREGISTERED                               ; Untyped         ;
-; ADDRESS_ACLR_A                     ; NONE                                       ; Untyped         ;
-; OUTDATA_ACLR_A                     ; NONE                                       ; Untyped         ;
-; WRCONTROL_ACLR_A                   ; NONE                                       ; Untyped         ;
-; INDATA_ACLR_A                      ; NONE                                       ; Untyped         ;
-; BYTEENA_ACLR_A                     ; NONE                                       ; Untyped         ;
-; WIDTH_B                            ; 1                                          ; Untyped         ;
-; WIDTHAD_B                          ; 1                                          ; Untyped         ;
-; NUMWORDS_B                         ; 1                                          ; Untyped         ;
-; INDATA_REG_B                       ; CLOCK1                                     ; Untyped         ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                     ; Untyped         ;
-; RDCONTROL_REG_B                    ; CLOCK1                                     ; Untyped         ;
-; ADDRESS_REG_B                      ; CLOCK1                                     ; Untyped         ;
-; OUTDATA_REG_B                      ; UNREGISTERED                               ; Untyped         ;
-; BYTEENA_REG_B                      ; CLOCK1                                     ; Untyped         ;
-; INDATA_ACLR_B                      ; NONE                                       ; Untyped         ;
-; WRCONTROL_ACLR_B                   ; NONE                                       ; Untyped         ;
-; ADDRESS_ACLR_B                     ; NONE                                       ; Untyped         ;
-; OUTDATA_ACLR_B                     ; NONE                                       ; Untyped         ;
-; RDCONTROL_ACLR_B                   ; NONE                                       ; Untyped         ;
-; BYTEENA_ACLR_B                     ; NONE                                       ; Untyped         ;
-; WIDTH_BYTEENA_A                    ; 1                                          ; Untyped         ;
-; WIDTH_BYTEENA_B                    ; 1                                          ; Untyped         ;
-; RAM_BLOCK_TYPE                     ; AUTO                                       ; Untyped         ;
-; BYTE_SIZE                          ; 8                                          ; Untyped         ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ; Untyped         ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                       ; Untyped         ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                       ; Untyped         ;
-; INIT_FILE                          ; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ; Untyped         ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                     ; Untyped         ;
-; MAXIMUM_DEPTH                      ; 0                                          ; Untyped         ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                     ; Untyped         ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                     ; Untyped         ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                     ; Untyped         ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                     ; Untyped         ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                            ; Untyped         ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                            ; Untyped         ;
-; ENABLE_ECC                         ; FALSE                                      ; Untyped         ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                      ; Untyped         ;
-; WIDTH_ECCSTATUS                    ; 3                                          ; Untyped         ;
-; DEVICE_FAMILY                      ; Cyclone II                                 ; Untyped         ;
-; CBXI_PARAMETER                     ; altsyncram_p171                            ; Untyped         ;
-+------------------------------------+--------------------------------------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                             ;
-+-------------------------------------------+--------------------------------------------------+
-; Name                                      ; Value                                            ;
-+-------------------------------------------+--------------------------------------------------+
-; Number of entity instances                ; 1                                                ;
-; Entity Instance                           ; ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0 ;
-;     -- OPERATION_MODE                     ; ROM                                              ;
-;     -- WIDTH_A                            ; 12                                               ;
-;     -- NUMWORDS_A                         ; 1024                                             ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                     ;
-;     -- WIDTH_B                            ; 1                                                ;
-;     -- NUMWORDS_B                         ; 1                                                ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                           ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                     ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                             ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                        ;
-+-------------------------------------------+--------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                            ;
++-------------------------------------------+-------------------------------------------------+
+; Name                                      ; Value                                           ;
++-------------------------------------------+-------------------------------------------------+
+; Number of entity instances                ; 1                                               ;
+; Entity Instance                           ; ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                             ;
+;     -- WIDTH_A                            ; 12                                              ;
+;     -- NUMWORDS_A                         ; 1024                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                    ;
+;     -- WIDTH_B                            ; 1                                               ;
+;     -- NUMWORDS_B                         ; 1                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ;
++-------------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ddfs:inst1|sin_lut:lut_inst"                                                        ;
+; Port Connectivity Checks: "ddfs:inst|sin_lut:lut_inst"                                                         ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -429,7 +414,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Dec 02 10:04:27 2025
+    Info: Processing started: Sun Dec 14 19:43:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off funct_gen -c funct_gen
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file sin_lut.v
@@ -447,7 +432,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file freq_di
 Info (12021): Found 1 design units, including 1 entities, in source file funct_gen.bdf
     Info (12023): Found entity 1: funct_gen
 Info (12127): Elaborating entity "funct_gen" for the top level hierarchy
-Info (12128): Elaborating entity "ddfs" for hierarchy "ddfs:inst1"
+Info (12128): Elaborating entity "ddfs" for hierarchy "ddfs:inst"
 Warning (10230): Verilog HDL assignment warning at ddfs.v(54): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(68): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(84): truncated value with size 32 to match size of target (10)
@@ -455,11 +440,7 @@ Warning (10230): Verilog HDL assignment warning at ddfs.v(90): truncated value w
 Warning (10230): Verilog HDL assignment warning at ddfs.v(101): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(112): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(117): truncated value with size 32 to match size of target (12)
-Info (12128): Elaborating entity "sin_lut" for hierarchy "ddfs:inst1|sin_lut:lut_inst"
-Warning (10030): Net "rom.data_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "rom.waddr_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "rom.we_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "freq_divider" for hierarchy "ddfs:inst1|freq_divider:f_div_inst"
+Info (12128): Elaborating entity "freq_divider" for hierarchy "ddfs:inst|freq_divider:f_div_inst"
 Warning (10230): Verilog HDL assignment warning at freq_divider.v(33): truncated value with size 32 to match size of target (20)
 Warning (10230): Verilog HDL assignment warning at freq_divider.v(34): truncated value with size 32 to match size of target (20)
 Warning (10230): Verilog HDL assignment warning at freq_divider.v(37): truncated value with size 32 to match size of target (20)
@@ -474,8 +455,12 @@ Warning (10230): Verilog HDL assignment warning at freq_divider.v(53): truncated
 Warning (10230): Verilog HDL assignment warning at freq_divider.v(54): truncated value with size 32 to match size of target (20)
 Warning (10230): Verilog HDL assignment warning at freq_divider.v(57): truncated value with size 32 to match size of target (20)
 Warning (10230): Verilog HDL assignment warning at freq_divider.v(58): truncated value with size 32 to match size of target (20)
+Info (12128): Elaborating entity "sin_lut" for hierarchy "ddfs:inst|sin_lut:lut_inst"
+Warning (10030): Net "rom.data_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.waddr_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.we_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
 Info (19000): Inferred 1 megafunctions from design logic
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "ddfs:inst1|sin_lut:lut_inst|rom_rtl_0" 
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "ddfs:inst|sin_lut:lut_inst|rom_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 12
         Info (286033): Parameter WIDTHAD_A set to 10
@@ -486,8 +471,8 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/funct_gen.ram0_sin_lut_4402771f.hdl.mif
-Info (12130): Elaborated megafunction instantiation "ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0"
-Info (12133): Instantiated megafunction "ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0"
+Info (12133): Instantiated megafunction "ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "12"
     Info (12134): Parameter "WIDTHAD_A" = "10"
@@ -502,7 +487,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_p171
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ddfs:inst1|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated|ram_block1a0"
+        Warning (14320): Synthesized away node "ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated|ram_block1a0"
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -513,8 +498,8 @@ Info (21057): Implemented 210 device resources after synthesis - the final resou
     Info (21064): Implemented 11 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
     Info: Peak virtual memory: 4627 megabytes
-    Info: Processing ended: Tue Dec 02 10:04:28 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sun Dec 14 19:43:46 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

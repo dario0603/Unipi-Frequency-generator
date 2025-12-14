@@ -9,7 +9,7 @@ module tb_freq_divider;
     wire clk_out;
 
     // Instantiate the DUT (Device Under Test)
-    freq_divider_DDFS dut (
+    freq_divider dut (
         .clk_in(clk_in),
         .rst_n(rst_n),
         .freq_cntrl(freq_cntrl),

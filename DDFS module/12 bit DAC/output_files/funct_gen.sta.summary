@@ -3,51 +3,51 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -2.965
-TNS   : -94.692
+Slack : -3.109
+TNS   : -56.507
 
-Type  : Slow Model Setup 'ddfs:inst1|freq_divider:f_div_inst|count[19]'
-Slack : -1.461
-TNS   : -17.880
+Type  : Slow Model Setup 'ddfs:inst|freq_divider:f_div_inst|count[19]'
+Slack : -1.444
+TNS   : -49.237
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -1.672
-TNS   : -23.109
+Slack : -1.767
+TNS   : -29.434
 
-Type  : Slow Model Hold 'ddfs:inst1|freq_divider:f_div_inst|count[19]'
-Slack : 0.703
+Type  : Slow Model Hold 'ddfs:inst|freq_divider:f_div_inst|count[19]'
+Slack : 0.818
 TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'ddfs:inst|freq_divider:f_div_inst|count[19]'
+Slack : -1.423
+TNS   : -99.380
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
-Slack : -1.423
-TNS   : -106.760
-
-Type  : Slow Model Minimum Pulse Width 'ddfs:inst1|freq_divider:f_div_inst|count[19]'
-Slack : -0.500
-TNS   : -14.000
+Slack : -1.380
+TNS   : -21.380
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.867
-TNS   : -16.131
+Slack : -0.914
+TNS   : -15.859
 
-Type  : Fast Model Setup 'ddfs:inst1|freq_divider:f_div_inst|count[19]'
-Slack : -0.151
-TNS   : -1.812
+Type  : Fast Model Setup 'ddfs:inst|freq_divider:f_div_inst|count[19]'
+Slack : -0.143
+TNS   : -1.997
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.242
-TNS   : -19.722
+Slack : -1.279
+TNS   : -22.942
 
-Type  : Fast Model Hold 'ddfs:inst1|freq_divider:f_div_inst|count[19]'
-Slack : 0.320
+Type  : Fast Model Hold 'ddfs:inst|freq_divider:f_div_inst|count[19]'
+Slack : 0.368
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Type  : Fast Model Minimum Pulse Width 'ddfs:inst|freq_divider:f_div_inst|count[19]'
 Slack : -1.423
-TNS   : -106.760
+TNS   : -99.380
 
-Type  : Fast Model Minimum Pulse Width 'ddfs:inst1|freq_divider:f_div_inst|count[19]'
-Slack : -0.500
-TNS   : -14.000
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -21.380
 
 ------------------------------------------------------------

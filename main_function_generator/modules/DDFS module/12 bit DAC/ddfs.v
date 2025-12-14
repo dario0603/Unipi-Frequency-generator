@@ -24,22 +24,22 @@ module ddfs
 	localparam ADDR_WIDTH = 10;
 	localparam MAX_LUT = 2**(ADDR_WIDTH);
 	
+	//frequency divider module istance
+	wire clk_div;
+	freq_divider f_div_inst(
+		.clk_in(clk),
+		.rst_n(rst_n),
+		.freq_cntrl(freq_cntrl),
+		.clk_out(clk_div)
+	);
+	
 	//lut module instance
 	reg [ADDR_WIDTH-1:0] addr;
 	wire [DATA_WIDTH-1:0] lut_out;
 	sin_lut #(.DATA_WIDTH(DATA_WIDTH), .ADDR_WIDTH(ADDR_WIDTH)) lut_inst(
 		.addr(addr),
-		.clk(clk),
+		.clk(clk_div),
 		.q(lut_out)
-	);
-	
-	//frequency divider module istance
-	wire clk_div;
-	freq_divider_DDFS f_div_inst(
-		.clk_in(clk),
-		.rst_n(rst_n),
-		.freq_cntrl(freq_cntrl),
-		.clk_out(clk_div)
 	);
 	
 	//select the output waveform

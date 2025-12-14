@@ -109,7 +109,7 @@ q_VGA[6] <= q.DB_MAX_OUTPUT_PORT_TYPE
 q_VGA[7] <= q.DB_MAX_OUTPUT_PORT_TYPE
 q_VGA[8] <= q.DB_MAX_OUTPUT_PORT_TYPE
 q_VGA[9] <= q.DB_MAX_OUTPUT_PORT_TYPE
-VGA_clk <= freq_divider_DDFS:f_div_inst.clk_out
+VGA_clk <= freq_divider:f_div_inst.clk_out
 blank_n <= <VCC>
 sync_n <= <VCC>
 
@@ -151,7 +151,7 @@ q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|funct_gen|ddfs:inst|freq_divider_DDFS:f_div_inst
+|funct_gen|ddfs:inst|freq_divider:f_div_inst
 clk_in => count[0].CLK
 clk_in => count[1].CLK
 clk_in => count[2].CLK
