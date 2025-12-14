@@ -21,17 +21,6 @@ module ddfs
 	
 );
 	
-	//convert the 12 bit output into 10 bit VGA DAC output
-	reg [11:0] q;
-	assign q_VGA = q[11:2];
-	
-	//disable the blank and sync modes
-	assign blank_n = 1;
-	assign sync_n = 1;
-	
-	//connect the VGA clock signal
-	assign VGA_clk = clk_div;
-	
 	//parameter definitions
 	localparam DATA_WIDTH = 12;
 	localparam ADDR_WIDTH = 10;
@@ -54,6 +43,17 @@ module ddfs
 		.clk(clk_div),
 		.q(lut_out)
 	);
+	
+	//convert the 12 bit output into 10 bit VGA DAC output
+	reg [11:0] q;
+	assign q_VGA = q[11:2];
+	
+	//disable the blank and sync modes
+	assign blank_n = 1;
+	assign sync_n = 1;
+	
+	//connect the VGA clock signal
+	assign VGA_clk = clk_div;
 	
 	//select the output waveform
 	reg [11:0] q_tmp;
