@@ -1,5 +1,35 @@
 `timescale 1ns/1ps
 
+module keypad_4x4
+(
+	
+	// ---- KEYPAD PINS ---- //
+	
+	input [3:0] column,
+	output reg [3:0] row,
+	
+	// ---- BUTTON PINS ---- //
+	
+	input [3:0] button,
+	input button_pressed
+	
+);
+	integer i;
+	always @(*) begin		
+		//assign button value
+		if(button_pressed == 1)
+			for(i=0; i<4; i=i+1) begin
+				if(i == button >> 2)
+					row[i] = column[button % 4];
+				else
+					row[i] = 1;
+			end
+		else
+			row = 4'b1111;
+	end
+
+endmodule
+
 module tb_keypad_module;
 	
 	//parameter definition
@@ -9,10 +39,13 @@ module tb_keypad_module;
 	
 	reg clk;
 	reg rst_n;
-	reg [N_ROW-1:0] row;
+	wire [N_ROW-1:0] row;
+	reg [3:0] button;
+	reg button_pressed;
 	
 	wire [N_COL-1:0] column;
 	wire [N_COL*N_ROW-1:0] out_keys;
+	wire data_valid;
 	
 	//istantiate the dut
 	keypad_module #(.N_COLUMN(N_COL), .N_ROW(N_ROW)) dut(
@@ -22,8 +55,21 @@ module tb_keypad_module;
 		.row(row),
 		
 		.column(column),
-		.out_keys(out_keys)
+		.out_keys(out_keys),
+		
+		.data_valid(data_valid)
 	
+	);
+	
+	//instantiate the keypad
+	keypad_4x4 sim(
+	
+		.column(column),
+		.row(row),
+		
+		.button(button),
+		.button_pressed(button_pressed)
+		
 	);
 	
 	//clock signal generator
@@ -39,21 +85,24 @@ module tb_keypad_module;
 		#(CLK_PERIOD*2) rst_n = 1;
 	
 	//check the keypad button pressed
+	integer i;
 	initial begin
 		
-		//initialize the signals
-		row = 4'b0000;
+		//none button pressed
+		button_pressed = 0;
 		
-		//wait for the power on reset
-		#(CLK_PERIOD*2) row = 4'b0000;
+		for(i=0; i<=4'b1111; i=i+1) begin
+			//press a button
+			#100
+			button_pressed = 1;
+			button = i;		
+		end
 		
-		//simulate the button pressed
-		#(CLK_PERIOD*2) row = 4'b0100;
-		//simulate the button released
-		#(CLK_PERIOD*2) row = 4'b0000;
+		//none button pressed
+		#100 button_pressed = 0;
 		
 		//stop simulation
-		#(CLK_PERIOD*2) $stop;
+		#1000 $stop;
 	
 	end
 

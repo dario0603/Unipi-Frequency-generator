@@ -10,13 +10,14 @@ module keypad_4x4
 	
 	// ---- BUTTON PINS ---- //
 	
-	input [3:0] button
+	input [3:0] button,
+	input button_pressed
 	
 );
 	integer i;
 	always @(*) begin		
 		//assign button value
-		if(button != 4'b1111)
+		if(button_pressed == 1)
 			for(i=0; i<4; i=i+1) begin
 				if(i == button >> 2)
 					row[i] = column[button % 4];
@@ -40,6 +41,7 @@ module tb_keypad_module;
 	reg rst_n;
 	wire [N_ROW-1:0] row;
 	reg [3:0] button;
+	reg button_pressed;
 	
 	wire [N_COL-1:0] column;
 	wire [N_COL*N_ROW-1:0] out_keys;
@@ -65,7 +67,8 @@ module tb_keypad_module;
 		.column(column),
 		.row(row),
 		
-		.button(button)
+		.button(button),
+		.button_pressed(button_pressed)
 		
 	);
 	
@@ -82,26 +85,21 @@ module tb_keypad_module;
 		#(CLK_PERIOD*2) rst_n = 1;
 	
 	//check the keypad button pressed
+	integer i;
 	initial begin
 		
 		//none button pressed
-		button = 4'hf;
+		button_pressed = 0;
 		
-		//press a button
-		#1000
-		button = 4'd1;
+		for(i=0; i<=4'b1111; i=i+1) begin
+			//press a button
+			#100
+			button_pressed = 1;
+			button = i;		
+		end
 		
-		//press a button
-		#1000
-		button = 4'd2;
-		
-		//press a button
-		#1000
-		button = 4'd5;
-		
-		//press a button
-		#1000
-		button = 4'd10;
+		//none button pressed
+		#100 button_pressed = 0;
 		
 		//stop simulation
 		#1000 $stop;
