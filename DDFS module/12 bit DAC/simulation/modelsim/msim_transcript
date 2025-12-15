@@ -10,26 +10,26 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/12 bit DAC/ddfs.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/ddfs.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ddfs
 # 
 # Top level modules:
 # 	ddfs
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/12 bit DAC/freq_divider.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/freq_divider.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module freq_divider
 # 
 # Top level modules:
 # 	freq_divider
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/12 bit DAC/sin_lut.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/sin_lut.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sin_lut
 # 
 # Top level modules:
 # 	sin_lut
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/12 bit DAC/tb_ddfs.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS\ module/12\ bit\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/tb_ddfs.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module tb_ddfs
 # 
@@ -48,16 +48,16 @@
 # 
 #           File in use by: Tonarini Tommaso  Hostname: MSI-TT  ProcessID: 3700
 # 
-#           Attempting to use alternate WLF file "./wlftvcavfb".
+#           Attempting to use alternate WLF file "./wlfty83nie".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftvcavfb
+#           Using alternate file: ./wlfty83nie
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break in Module tb_ddfs at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/12 bit DAC/tb_ddfs.v line 71
-# Simulation Breakpoint: Break in Module tb_ddfs at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/12 bit DAC/tb_ddfs.v line 71
+# Break in Module tb_ddfs at C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/tb_ddfs.v line 71
+# Simulation Breakpoint: Break in Module tb_ddfs at C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/tb_ddfs.v line 71
 # MACRO ./funct_gen_run_msim_rtl_verilog.do PAUSED at line 19

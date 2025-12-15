@@ -19,6 +19,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_nct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|alt_mac_mult:mac_mult11|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_e8h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5|mult_mct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_4n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|lcd_driver:inst8|text_lut:text_lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_ap81.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult1" CBX_FILE_NAME="mult_ect.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|alt_mac_out:mac_out14" CBX_FILE_NAME="mac_out_in82.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult3|mult_hct:auto_generated|alt_mac_mult:mac_mult11|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_k8h.tdf"/>
@@ -44,6 +45,5 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_oct:auto_generated|alt_mac_mult:mac_mult11|lpm_mult:mult|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_m8h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult4|mult_jct:auto_generated|alt_mac_mult:mac_mult5|lpm_mult:mult|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_m8h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult5" CBX_FILE_NAME="mult_mct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|lcd_driver:inst14|text_lut:text_lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_ap81.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

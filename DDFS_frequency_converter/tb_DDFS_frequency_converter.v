@@ -17,8 +17,6 @@ module tb_DDFS_frequency_converter;
 	//instantiate the DUT (Device Under Test)
 	DDFS_frequency_converter #(.CLK_FREQ(CLK_FREQ)) DUT(
 		.freq(freq),
-		.mirror_x(1'b0),		//no mirror test
-		.mirror_y(1'b0),		//no mirror test
 		.fw(fw),
 		.freq_control(freq_control)
 	);

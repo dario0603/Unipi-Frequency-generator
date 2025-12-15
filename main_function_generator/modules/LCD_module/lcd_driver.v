@@ -1,5 +1,5 @@
 module lcd_driver 
-#(parameter BCD_DIGITS=6)
+#(parameter BCD_DIGITS=7)
 (
     input  clk,  
 	 input  button_next, 
@@ -16,19 +16,13 @@ module lcd_driver
 	 output reg sin,
 	 output reg triang,
 	 output reg mirror_x,
-	 output reg mirror_y,
-	 
-	 output [(BCD_DIGITS*4)-1:0] freq_leds,
-	 output reg test_led
-	 
-	
+	 output reg mirror_y
+
 );
 
     assign lcd_on   = 1'b1; // LCD always on 
     assign lcd_blon = 1'b1; // Backlight on
     assign lcd_rw   = 1'b0; // Always writing (Busy Flag unused)
-	 
-	 assign freq_leds = bcd_freq;
 
     localparam SETUP  = 4'd0;
 	 localparam PAGE_SELECT = 4'd1;
@@ -47,6 +41,7 @@ module lcd_driver
 	 localparam DIGIT_SELECT = 4'd14;
 	 localparam BUTTON_RELEASED = 4'd15;
 
+	 
     localparam PAGE0 = 5'd0;
 	 localparam PAGE1 = 5'd1; 
 	 localparam PAGE2 = 5'd2; 
@@ -59,14 +54,15 @@ module lcd_driver
 	 localparam PAGE_FIRST = 5'd2;
 	 localparam PAGE_LAST = 5'd9;
 	 
-	 localparam PAGE_SQUARED = 5'd3; 
-	 localparam PAGE_TRIANGULAR = 5'd4; 
-	 localparam PAGE_SINE = 5'd5; 
-	 localparam PAGE_TRIANGULAR1 = 5'd6;
-	 localparam PAGE_TRIANGULAR2 = 5'd7; 
-	 localparam PAGE_TRIANGULAR3 = 5'd8; 
-	 localparam PAGE_SINE1 = 5'd9;
-	 localparam PAGE_SINE2 = 5'd2;	 
+	 localparam PAGE_SQUARED = 5'd2; 
+	 localparam PAGE_TRIANGULAR = 5'd3; 
+	 localparam PAGE_SINE = 5'd4; 
+	 localparam PAGE_TRIANGULAR1 = 5'd5;
+	 localparam PAGE_TRIANGULAR2 = 5'd6; 
+	 localparam PAGE_SINE1 = 5'd7; 
+	 localparam PAGE_SINE2 = 5'd8; 
+	 localparam PAGE_SINE3 = 5'd9;
+	 
 	 
 	 // delays are based on 50MHz clock frequency 
 	 localparam wait40us = 32'd2000; 
@@ -76,6 +72,10 @@ module lcd_driver
 	 localparam wait20ms = 32'd1000000; 
 	 localparam wait100ms = 32'd5000000; 
 	 localparam wait2s = 32'd100000000; 
+	 
+	 localparam BTN_NEXT = 1'b0;
+	 localparam BTN_PREV = 1'b1;
+	 reg btn_pressed;
 	 
     reg [3:0] state;
 	 reg [3:0] state_f;
@@ -143,53 +143,53 @@ module lcd_driver
 			PAGE_SQUARED: begin
 				triang = 0;
 				sin = 0;
-				mirror_x = 0;
-				mirror_y = 0;		
+				mirror_x = 1;
+				mirror_y = 1;		
 			end
 			
 			PAGE_TRIANGULAR: begin
 				triang = 1;
 				sin = 0;
-				mirror_x = 0;
-				mirror_y = 0;		
+				mirror_x = 1;
+				mirror_y = 1;		
 			end
 			
 			PAGE_SINE: begin
 				triang = 0;
 				sin = 1;
-				mirror_x = 0;
-				mirror_y = 0;		
+				mirror_x = 1;
+				mirror_y = 1;		
 			end
 			
 			PAGE_TRIANGULAR1: begin
 				triang = 1;
 				sin = 0;
-				mirror_x = 1;
+				mirror_x = 0;
 				mirror_y = 0;		
 			end
 			
 			PAGE_TRIANGULAR2: begin
 				triang = 1;
 				sin = 0;
-				mirror_x = 0;
-				mirror_y = 1;		
-			end
-			
-			PAGE_TRIANGULAR3: begin
-				triang = 1;
-				sin = 0;
 				mirror_x = 1;
-				mirror_y = 1;		
+				mirror_y = 0;		
 			end
 			
 			PAGE_SINE1: begin
+				triang = 0;
+				sin = 1;
+				mirror_x = 0;
+				mirror_y = 0;		
+			end
+			
+			PAGE_SINE2: begin
 				triang = 0;
 				sin = 1;
 				mirror_x = 1;
 				mirror_y = 0;		
 			end
 			
-			PAGE_SINE2: begin
+			PAGE_SINE3: begin
 				triang = 0;
 				sin = 1;
 				mirror_x = 0;
@@ -205,13 +205,13 @@ module lcd_driver
 		endcase 
 	 end
 	
-	// State machine to handle timing
-	// The HD44780 controller is SLOW.
-	// Clear Display requires ~1.64 ms. Other commands ~40 µs.
-	// We use a conservative delay of ~2 ms for each operation for simplicity.
-
-	always @(posedge clk) begin
-		  if (!reset_n) begin
+    // Macchina a stati per gestire il timing
+    // Il controller HD44780 è LENTO. 
+    // Clear Display richiede ~1.64ms. Altri comandi ~40us.
+    // Usiamo un ritardo conservativo di ~2ms per ogni operazione per semplicità.
+    
+    always @(posedge clk) begin
+        if (!reset_n) begin
 				char_index <= 0;
 				page_index <= 0;
 				counter <= 0;
@@ -360,54 +360,51 @@ module lcd_driver
 					 end
 
 					 WAIT_BUTTON_SHORT: begin 			     
-						  if(button_next == 1'b0) begin 
+						  if(button_next == 1'b0 || button_prev == 1'b0) begin 
 								btn_counter <= btn_counter + 1'b1;
-								test_led <= 1;
-							   if (btn_counter >= wait10ms) begin 
-									state <= WAIT_BUTTON_RELEASE;
+								if (btn_counter >= wait10ms) begin
+									state <= WAIT_BUTTON_RELEASE ;
 									btn_counter <= 0;
-									
+									if (button_next == 1'b0) begin
+										btn_pressed <= BTN_NEXT;
+									end else begin
+										btn_pressed <= BTN_PREV;
+									end
+								end			
+						  end else begin
+								btn_counter <= 0;
+								state <= WAIT_BUTTON_SHORT;
+						  end					
+					 end		 
+					 
+					 WAIT_BUTTON_RELEASE: begin 			     
+						  if(button_next == 1'b1 && btn_pressed == BTN_NEXT) begin 
+								btn_counter <= btn_counter + 1'b1;
+							   if (btn_counter >= wait10ms) begin 
+									state <= SETUP;
+									btn_counter <= 0;								
 									if (page_index >= PAGE_FIRST && page_index < PAGE_LAST) begin
 										page_index <= page_index + 1'b1;
 									end else if ( page_index == PAGE_LAST ) begin
 										page_index <= PAGE_FIRST;
-									end
-									
+									end							
 								end		
-						  end else if (button_prev == 1'b0) begin
+						  end else if (button_prev == 1'b1 && btn_pressed == BTN_PREV) begin
 								btn_counter <= btn_counter + 1'b1;
 							   if (btn_counter >= wait10ms) begin 
-									state <= WAIT_BUTTON_RELEASE;
-									btn_counter <= 0;
-									
+									state <= SETUP;
+									btn_counter <= 0;								
 									if (page_index > PAGE_FIRST && page_index <= PAGE_LAST) begin
 										page_index <= page_index - 1'b1;
 									end else if ( page_index == PAGE_FIRST ) begin
 										page_index <= PAGE_LAST;
-									end
-									
-								end					  
+									end							
+								end
 						  end else begin
-								btn_counter <= 0;
-								test_led <= 0;
-								state <= WAIT_BUTTON_SHORT;
-						  end					
-					 end			 
-					 
-					 WAIT_BUTTON_RELEASE: begin 			     
-						  if(button_next == 1'b0 || button_prev == 1'b0) begin 
 								state <= WAIT_BUTTON_RELEASE;
 								btn_counter <= 0;
-								test_led <= 1;
-						  end else begin
-								btn_counter <= btn_counter + 1'b1;
-								if (btn_counter >= wait10ms) begin
-									state <= SETUP ;
-									test_led <= 0;
-									btn_counter <= 0;
-								end
-						  end					
-					 end	 
+						  end				
+					 end
 					 
                 DONE: begin
 						  lcd_en_cntr <= 0;

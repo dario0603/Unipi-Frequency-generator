@@ -28,7 +28,7 @@ module ddfs
 	
 	//frequency divider module istance
 	wire clk_div;
-	freq_divider f_div_inst(
+	freq_divider_DDFS f_div_inst(
 		.clk_in(clk),
 		.rst_n(rst_n),
 		.freq_cntrl(freq_cntrl),

@@ -22,19 +22,19 @@ module DDFS_frequency_converter
 	reg [22:0] final_freq;
 	always @(*) begin
 		if(mirror_x == 0 && mirror_y == 0) begin
-			final_freq = freq;
+			final_freq = freq >> 2;			//no mirroring multiply by four the output frequency
 		end
 		else if(mirror_x == 0 || mirror_y == 0) begin
-			final_freq = freq >> 1;		//single mirroring half the output frequency
+			final_freq = freq >> 1;			//single mirroring double the output frequency
 		end
 		else begin
-			final_freq = freq >> 2;		//double mirroring quarter the output frequency
+			final_freq = freq;				
 		end
 	end
 	
 	//define the value of fw with every frequency divider scale selected
 	wire [6:0] fw_1000000, fw_100000, fw_10000, fw_1000, fw_100, fw_10, fw_2;
-	wire [63:0] mult_1000000, mult_100000, mult_10000, mult_1000, mult_100, mult_10, mult_2;
+	wire [127:0] mult_1000000, mult_100000, mult_10000, mult_1000, mult_100, mult_10, mult_2;
 	
 	/*
 	assign fw_1000000 = (1024*final_freq)/(CLK_FREQ/1000000) - 1;
@@ -102,7 +102,7 @@ module DDFS_frequency_converter
 		else begin
 			//default condition, max frequency
 			freq_control = 3'd0;
-			fw = 7'd0;
+			fw = 7'd127;
 		end
 		
 	end

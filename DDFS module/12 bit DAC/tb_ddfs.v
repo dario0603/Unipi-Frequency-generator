@@ -53,7 +53,7 @@ module tb_ddfs;
 		//testing every combination of input signals
 		for(i=0; i<4'b1111;i=i+1) begin
 			#(CLOCK_PERIOD*50000)
-			{mirror_y, mirror_x, sin, triang} = i;
+			{sin, triang, mirror_x, mirror_y} = i;
 		end
 
 		//apply sine wave
