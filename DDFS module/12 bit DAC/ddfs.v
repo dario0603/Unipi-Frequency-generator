@@ -64,8 +64,30 @@ module ddfs
 		if(rst_n == 0) begin
 			cont <= 0;
 		end else begin
-			if(cont < 4*MAX_LUT-1)
-				cont <= cont + (fw+1);
+			if(cont < MAX_LUT-1) begin
+				if(cont + (fw+1) >= MAX_LUT-1)
+					cont <= MAX_LUT;
+				else
+					cont <= cont + (fw+1);
+			end
+			else if(cont < 2*MAX_LUT-1) begin
+				if(cont + (fw+1) >= 2*MAX_LUT-1)
+					cont <= 2*MAX_LUT;
+				else
+					cont <= cont + (fw+1);
+			end
+			else if(cont < 3*MAX_LUT-1) begin
+				if(cont + (fw+1) >= 3*MAX_LUT-1)
+					cont <= 3*MAX_LUT;
+				else
+					cont <= cont + (fw+1);
+			end
+			else if(cont < 4*MAX_LUT-1) begin
+				if(cont + (fw+1) >= 4*MAX_LUT-1)
+					cont <= 0;
+				else
+					cont <= cont + (fw+1);
+			end
 			else
 				cont <= 0;	
 		end

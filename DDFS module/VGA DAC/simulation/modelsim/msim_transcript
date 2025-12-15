@@ -10,14 +10,52 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS\ module/1.1\ test\ with\ VGA\ DAC\ and\ PLL {C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1 test with VGA DAC and PLL/ddfs.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ddfs.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ddfs
-# ** Error: C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1 test with VGA DAC and PLL/ddfs.v(33): (vlog-2730) Undefined variable: 'clk_div'.
 # 
-# ** Error: C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/1.1 test with VGA DAC and PLL/ddfs.v(50): 'clk_div' already declared in this scope (ddfs).
-# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./funct_gen_run_msim_rtl_vhdl.do line 8
-# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS\ module/1.1\ test\ with\ VGA\ DAC\ and\ PLL {C:..."
+# Top level modules:
+# 	ddfs
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/freq_divider_DDFS.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module freq_divider_DDFS
+# 
+# Top level modules:
+# 	freq_divider_DDFS
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sin_lut
+# 
+# Top level modules:
+# 	sin_lut
+# vcom -93 -work work {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALTPLa
+# -- Compiling architecture SYN of altpla
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_ddfs
+# 
+# Top level modules:
+# 	tb_ddfs
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_ddfs
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_ddfs 
+# Loading work.tb_ddfs
+# Loading work.ddfs
+# Loading work.freq_divider_DDFS
+# Loading work.sin_lut
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module tb_ddfs at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v line 80
+# Simulation Breakpoint: Break in Module tb_ddfs at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v line 80
+# MACRO ./funct_gen_run_msim_rtl_vhdl.do PAUSED at line 20

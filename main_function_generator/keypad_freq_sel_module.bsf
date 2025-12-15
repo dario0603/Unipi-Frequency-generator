@@ -152,15 +152,15 @@ applicable agreement for further details.
 	(port
 		(pt 288 240)
 		(output)
-		(text "sel_C" (rect 0 0 23 12)(font "Arial" ))
-		(text "sel_C" (rect 244 235 267 247)(font "Arial" ))
+		(text "next_page" (rect 0 0 41 12)(font "Arial" ))
+		(text "next_page" (rect 226 235 267 247)(font "Arial" ))
 		(line (pt 288 240)(pt 272 240)(line_width 1))
 	)
 	(port
 		(pt 288 256)
 		(output)
-		(text "next_page" (rect 0 0 41 12)(font "Arial" ))
-		(text "next_page" (rect 226 251 267 263)(font "Arial" ))
+		(text "prev_page" (rect 0 0 43 12)(font "Arial" ))
+		(text "prev_page" (rect 224 251 267 263)(font "Arial" ))
 		(line (pt 288 256)(pt 272 256)(line_width 1))
 	)
 	(port

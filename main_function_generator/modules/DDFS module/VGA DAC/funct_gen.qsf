@@ -62,7 +62,6 @@ set_global_assignment -name EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT ON -secti
 set_global_assignment -name VERILOG_FILE ddfs.v
 set_global_assignment -name VERILOG_FILE tb_ddfs.v
 set_global_assignment -name VERILOG_FILE tb_freq_divider.v
-set_global_assignment -name VERILOG_FILE freq_divider.v
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_ddfs -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_ddfs
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_ddfs -section_id tb_ddfs
@@ -509,4 +508,5 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VHDL_FILE ALTPLa.vhd
+set_global_assignment -name VERILOG_FILE freq_divider_DDFS.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

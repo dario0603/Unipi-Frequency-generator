@@ -16,6 +16,7 @@ module tb_ddfs;
 	wire blank_n;
 	wire sync_n;
 	wire [9:0] q;
+	wire VGA_clk;
 
 	//instantiate the DUT (Device Under Test)
 	ddfs dut (
@@ -28,6 +29,7 @@ module tb_ddfs;
 		.rst_n(rst_n),
 		.freq_cntrl(freq_cntrl),
 		.q_VGA(q),
+		.VGA_clk(VGA_clk),
 		.blank_n(blank_n),
 		.sync_n(sync_n)
 	);
@@ -50,10 +52,12 @@ module tb_ddfs;
 	
 		//initialize signals
 		rst_n = 0;
-		{sin, triang, mirror_x, mirror_y} = 4'b0000;
-		fw = 7'b0000000;
+		{sin, triang, mirror_x, mirror_y} = 4'b0100;
+		//fw = 7'b0000000;
+		fw = 7'b1000001;
 		freq_cntrl = 3'b001;
 		  
+		/*
 		//testing every combination of input signals
 		for(i=0; i<4'b1111;i=i+1) begin
 			#(CLOCK_PERIOD*50000)
@@ -69,9 +73,10 @@ module tb_ddfs;
 			#(CLOCK_PERIOD*50000)
 			fw = i;
 		end
-
+		*/
+		
 		//finish simulation
-		#(CLOCK_PERIOD*100000)
+		#(CLOCK_PERIOD*1000)
 		$stop;
 		
 	end
