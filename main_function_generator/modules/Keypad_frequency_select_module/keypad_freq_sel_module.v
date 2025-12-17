@@ -39,7 +39,8 @@ module keypad_freq_sel_module
 	
 	// ---- TST OUTPUT ---- //
 	output data_valid,
-	output reg debounced_keypad_pressed
+	output reg debounced_keypad_pressed,
+	output [22:0] freq
 	
 );
 	
@@ -77,8 +78,7 @@ module keypad_freq_sel_module
 	//DDFS frequency converter module instance
 	//and BCD to C2 representation converter
 	reg [3:0] BCD_1, BCD_2, BCD_3, BCD_4, BCD_5, BCD_6, BCD_7;
-	wire [22:0] freq;
-	BCD_to_C2_converter BCD_C2_conv_inst(
+	BCD_to_C1_converter BCD_C1_conv_inst(
 
 		.d_1(BCD_1),
 		.d_2(BCD_2),

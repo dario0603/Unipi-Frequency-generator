@@ -177,6 +177,13 @@ applicable agreement for further details.
 		(text "debounced_keypad_pressed" (rect 152 283 267 295)(font "Arial" ))
 		(line (pt 288 288)(pt 272 288)(line_width 1))
 	)
+	(port
+		(pt 288 304)
+		(output)
+		(text "freq[22..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "freq[22..0]" (rect 226 299 267 311)(font "Arial" ))
+		(line (pt 288 304)(pt 272 304)(line_width 3))
+	)
 	(parameter
 		"N_COLUMN"
 		"4"

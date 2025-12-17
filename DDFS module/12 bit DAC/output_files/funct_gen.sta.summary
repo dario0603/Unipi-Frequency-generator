@@ -2,20 +2,20 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'CLOCK_50'
-Slack : -3.109
-TNS   : -56.507
-
 Type  : Slow Model Setup 'ddfs:inst|freq_divider:f_div_inst|count[19]'
-Slack : -1.444
-TNS   : -49.237
+Slack : -3.643
+TNS   : -83.819
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -3.317
+TNS   : -60.008
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -1.767
-TNS   : -29.434
+Slack : -1.671
+TNS   : -23.897
 
 Type  : Slow Model Hold 'ddfs:inst|freq_divider:f_div_inst|count[19]'
-Slack : 0.818
+Slack : 1.135
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'ddfs:inst|freq_divider:f_div_inst|count[19]'
@@ -26,20 +26,20 @@ Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
 TNS   : -21.380
 
-Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.914
-TNS   : -15.859
-
 Type  : Fast Model Setup 'ddfs:inst|freq_divider:f_div_inst|count[19]'
-Slack : -0.143
-TNS   : -1.997
+Slack : -1.041
+TNS   : -14.579
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -0.999
+TNS   : -17.194
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.279
-TNS   : -22.942
+Slack : -1.214
+TNS   : -20.463
 
 Type  : Fast Model Hold 'ddfs:inst|freq_divider:f_div_inst|count[19]'
-Slack : 0.368
+Slack : 0.544
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'ddfs:inst|freq_divider:f_div_inst|count[19]'

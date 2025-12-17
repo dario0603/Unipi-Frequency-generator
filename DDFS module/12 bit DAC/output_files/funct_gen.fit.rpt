@@ -1,5 +1,5 @@
 Fitter report for funct_gen
-Sun Dec 14 19:42:46 2025
+Wed Dec 17 18:01:00 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -64,15 +64,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Dec 14 19:42:46 2025           ;
+; Fitter Status                      ; Successful - Wed Dec 17 18:00:59 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; funct_gen                                       ;
 ; Top-level Entity Name              ; funct_gen                                       ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 170 / 33,216 ( < 1 % )                          ;
-;     Total combinational functions  ; 169 / 33,216 ( < 1 % )                          ;
+; Total logic elements               ; 189 / 33,216 ( < 1 % )                          ;
+;     Total combinational functions  ; 189 / 33,216 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 34 / 33,216 ( < 1 % )                           ;
 ; Total registers                    ; 34                                              ;
 ; Total pins                         ; 28 / 475 ( 6 % )                                ;
@@ -555,8 +555,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 249 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 249 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 269 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 269 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -579,7 +579,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 246     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 266     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -587,7 +587,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/output_files/funct_gen.pin.
+The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/12 bit DAC/output_files/funct_gen.pin.
 
 
 +------------------------------------------------------------------------+
@@ -595,26 +595,26 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Total logic elements                        ; 170 / 33,216 ( < 1 % )   ;
-;     -- Combinational with no register       ; 136                      ;
-;     -- Register only                        ; 1                        ;
-;     -- Combinational with a register        ; 33                       ;
+; Total logic elements                        ; 189 / 33,216 ( < 1 % )   ;
+;     -- Combinational with no register       ; 155                      ;
+;     -- Register only                        ; 0                        ;
+;     -- Combinational with a register        ; 34                       ;
 ;                                             ;                          ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 34                       ;
+;     -- 4 input functions                    ; 54                       ;
 ;     -- 3 input functions                    ; 72                       ;
 ;     -- <=2 input functions                  ; 63                       ;
-;     -- Register only                        ; 1                        ;
+;     -- Register only                        ; 0                        ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 83                       ;
-;     -- arithmetic mode                      ; 86                       ;
+;     -- normal mode                          ; 102                      ;
+;     -- arithmetic mode                      ; 87                       ;
 ;                                             ;                          ;
 ; Total registers*                            ; 34 / 34,593 ( < 1 % )    ;
 ;     -- Dedicated logic registers            ; 34 / 33,216 ( < 1 % )    ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )        ;
 ;                                             ;                          ;
-; Total LABs:  partially or completely used   ; 12 / 2,076 ( < 1 % )     ;
+; Total LABs:  partially or completely used   ; 14 / 2,076 ( < 1 % )     ;
 ; Virtual pins                                ; 0                        ;
 ; I/O pins                                    ; 28 / 475 ( 6 % )         ;
 ;     -- Clock pins                           ; 8 / 8 ( 100 % )          ;
@@ -630,11 +630,11 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )            ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )            ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%             ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%             ;
-; Maximum fan-out                             ; 24                       ;
-; Highest non-global fan-out                  ; 24                       ;
-; Total fan-out                               ; 609                      ;
-; Average fan-out                             ; 2.53                     ;
+; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%             ;
+; Maximum fan-out                             ; 27                       ;
+; Highest non-global fan-out                  ; 27                       ;
+; Total fan-out                               ; 675                      ;
+; Average fan-out                             ; 2.60                     ;
 +---------------------------------------------+--------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -647,25 +647,25 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 170 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 136                   ; 0                              ;
-;     -- Register only                        ; 1                     ; 0                              ;
-;     -- Combinational with a register        ; 33                    ; 0                              ;
+; Total logic elements                        ; 189 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 155                   ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
+;     -- Combinational with a register        ; 34                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 34                    ; 0                              ;
+;     -- 4 input functions                    ; 54                    ; 0                              ;
 ;     -- 3 input functions                    ; 72                    ; 0                              ;
 ;     -- <=2 input functions                  ; 63                    ; 0                              ;
-;     -- Register only                        ; 1                     ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 83                    ; 0                              ;
-;     -- arithmetic mode                      ; 86                    ; 0                              ;
+;     -- normal mode                          ; 102                   ; 0                              ;
+;     -- arithmetic mode                      ; 87                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 34                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 34 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 12 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 14 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 28                    ; 0                              ;
@@ -682,8 +682,8 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 609                   ; 0                              ;
-;     -- Registered Connections               ; 93                    ; 0                              ;
+;     -- Total Connections                    ; 675                   ; 0                              ;
+;     -- Registered Connections               ; 101                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -718,10 +718,10 @@ The pin-out file can be found in C:/Users/posta/Desktop/Programmi/Verilog/Functi
 ; CLOCK_50 ; N2    ; 2        ; 0            ; 18           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[0]    ; N25   ; 5        ; 65           ; 19           ; 0           ; 14                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[10]   ; N1    ; 2        ; 0            ; 18           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[11]   ; P1    ; 1        ; 0            ; 18           ; 3           ; 21                    ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[12]   ; P2    ; 1        ; 0            ; 18           ; 2           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[11]   ; P1    ; 1        ; 0            ; 18           ; 3           ; 9                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[12]   ; P2    ; 1        ; 0            ; 18           ; 2           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[13]   ; T7    ; 1        ; 0            ; 11           ; 0           ; 24                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[14]   ; U3    ; 1        ; 0            ; 12           ; 0           ; 23                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[14]   ; U3    ; 1        ; 0            ; 12           ; 0           ; 27                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[1]    ; N26   ; 5        ; 65           ; 19           ; 1           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[2]    ; P25   ; 6        ; 65           ; 19           ; 2           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[3]    ; AE14  ; 7        ; 33           ; 0            ; 0           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -1493,9 +1493,9 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                       ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------+--------------+
-; |funct_gen                                   ; 170 (0)     ; 34 (0)                    ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 28   ; 0            ; 136 (0)      ; 1 (0)             ; 33 (0)           ; |funct_gen                                                                                ; work         ;
-;    |ddfs:inst|                               ; 170 (74)    ; 34 (14)                   ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 136 (60)     ; 1 (1)             ; 33 (13)          ; |funct_gen|ddfs:inst                                                                      ; work         ;
-;       |freq_divider:f_div_inst|              ; 96 (96)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 76 (76)      ; 0 (0)             ; 20 (20)          ; |funct_gen|ddfs:inst|freq_divider:f_div_inst                                              ; work         ;
+; |funct_gen                                   ; 189 (0)     ; 34 (0)                    ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 28   ; 0            ; 155 (0)      ; 0 (0)             ; 34 (0)           ; |funct_gen                                                                                ; work         ;
+;    |ddfs:inst|                               ; 189 (99)    ; 34 (14)                   ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 155 (85)     ; 0 (0)             ; 34 (14)          ; |funct_gen|ddfs:inst                                                                      ; work         ;
+;       |freq_divider:f_div_inst|              ; 90 (90)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 70 (70)      ; 0 (0)             ; 20 (20)          ; |funct_gen|ddfs:inst|freq_divider:f_div_inst                                              ; work         ;
 ;       |sin_lut:lut_inst|                     ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |funct_gen|ddfs:inst|sin_lut:lut_inst                                                     ; work         ;
 ;          |altsyncram:rom_rtl_0|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |funct_gen|ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0                                ; work         ;
 ;             |altsyncram_p171:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 11264       ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |funct_gen|ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated ; work         ;
@@ -1572,14 +1572,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - ddfs:inst|freq_divider:f_div_inst|end_cnt~1  ; 0                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|WideOr3~0  ; 0                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|Decoder1~2 ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~2    ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~3    ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~4    ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~5    ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~7    ; 0                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|count~11   ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~12   ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~15   ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~17   ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~19   ; 0                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~20   ; 0                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|count~21   ; 0                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~26   ; 0                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~30   ; 0                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~33   ; 0                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~35   ; 0                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~36   ; 0                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~37   ; 0                 ; 6       ;
 ; SW[13]                                              ;                   ;         ;
 ;      - ddfs:inst|freq_divider:f_div_inst|Add0~36    ; 1                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|Add0~34    ; 1                 ; 6       ;
@@ -1596,30 +1600,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - ddfs:inst|freq_divider:f_div_inst|end_cnt~1  ; 1                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|WideOr3~0  ; 1                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|Decoder1~2 ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~2    ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~3    ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~4    ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~7    ; 1                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|count~11   ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~15   ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~16   ; 1                 ; 6       ;
+;      - ddfs:inst|freq_divider:f_div_inst|count~18   ; 1                 ; 6       ;
 ;      - ddfs:inst|freq_divider:f_div_inst|count~21   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~26   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~28   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~30   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~33   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~35   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~36   ; 1                 ; 6       ;
-;      - ddfs:inst|freq_divider:f_div_inst|count~37   ; 1                 ; 6       ;
 ; SW[12]                                              ;                   ;         ;
 ; CLOCK_50                                            ;                   ;         ;
 +-----------------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                          ;
-+---------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                        ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                                    ; PIN_N2             ; 20      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; SW[11]                                      ; PIN_P1             ; 12      ; Async. clear ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; ddfs:inst|LessThan0~3                       ; LCCOMB_X28_Y19_N30 ; 12      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; ddfs:inst|freq_divider:f_div_inst|count[19] ; LCFF_X1_Y16_N23    ; 17      ; Clock        ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-+---------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                       ;
++---------------------------------------------+-----------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                        ; Location        ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------+-----------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                                    ; PIN_N2          ; 20      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; SW[11]                                      ; PIN_P1          ; 12      ; Async. clear ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; ddfs:inst|freq_divider:f_div_inst|count[19] ; LCFF_X1_Y12_N23 ; 17      ; Clock        ; yes    ; Global Clock         ; GCLK0            ; --                        ;
++---------------------------------------------+-----------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1629,7 +1632,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                    ; PIN_N2          ; 20      ; Global Clock         ; GCLK2            ; --                        ;
 ; SW[11]                                      ; PIN_P1          ; 12      ; Global Clock         ; GCLK3            ; --                        ;
-; ddfs:inst|freq_divider:f_div_inst|count[19] ; LCFF_X1_Y16_N23 ; 17      ; Global Clock         ; GCLK0            ; --                        ;
+; ddfs:inst|freq_divider:f_div_inst|count[19] ; LCFF_X1_Y12_N23 ; 17      ; Global Clock         ; GCLK0            ; --                        ;
 +---------------------------------------------+-----------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1638,18 +1641,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                         ; Fan-Out ;
 +----------------------------------------------------------------------------------------------+---------+
+; SW[14]                                                                                       ; 27      ;
 ; SW[13]                                                                                       ; 24      ;
-; SW[14]                                                                                       ; 23      ;
-; SW[11]                                                                                       ; 20      ;
-; ddfs:inst|freq_divider:f_div_inst|LessThan0~38                                               ; 20      ;
-; ddfs:inst|cont[10]                                                                           ; 15      ;
+; ddfs:inst|cont[10]                                                                           ; 19      ;
 ; SW[0]                                                                                        ; 14      ;
-; SW[12]                                                                                       ; 13      ;
 ; SW[3]                                                                                        ; 13      ;
-; ddfs:inst|LessThan0~3                                                                        ; 12      ;
+; ddfs:inst|freq_divider:f_div_inst|count[10]~1                                                ; 13      ;
+; SW[12]                                                                                       ; 11      ;
 ; SW[1]                                                                                        ; 11      ;
+; ddfs:inst|cont[0]~2                                                                          ; 11      ;
 ; ddfs:inst|q[6]~16                                                                            ; 10      ;
-; ddfs:inst|freq_divider:f_div_inst|count~11                                                   ; 4       ;
+; ddfs:inst|cont[0]~10                                                                         ; 10      ;
+; ddfs:inst|cont[0]~9                                                                          ; 10      ;
+; SW[11]                                                                                       ; 8       ;
+; ddfs:inst|cont[11]                                                                           ; 8       ;
+; ddfs:inst|freq_divider:f_div_inst|LessThan0~38                                               ; 8       ;
+; ddfs:inst|LessThan6~2                                                                        ; 5       ;
 ; ddfs:inst|addr[0]~9                                                                          ; 4       ;
 ; ddfs:inst|addr[1]~8                                                                          ; 4       ;
 ; ddfs:inst|addr[2]~7                                                                          ; 4       ;
@@ -1660,9 +1667,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ddfs:inst|addr[7]~2                                                                          ; 4       ;
 ; ddfs:inst|addr[8]~1                                                                          ; 4       ;
 ; ddfs:inst|addr[9]~0                                                                          ; 4       ;
-; ddfs:inst|cont[11]                                                                           ; 4       ;
+; ddfs:inst|Add1~24                                                                            ; 4       ;
+; ddfs:inst|Add1~22                                                                            ; 4       ;
+; ddfs:inst|Add1~20                                                                            ; 4       ;
 ; SW[2]                                                                                        ; 3       ;
+; ddfs:inst|freq_divider:f_div_inst|WideOr2~0                                                  ; 3       ;
 ; ddfs:inst|freq_divider:f_div_inst|Decoder1~1                                                 ; 3       ;
+; ddfs:inst|freq_divider:f_div_inst|WideOr1~0                                                  ; 3       ;
 ; ddfs:inst|cont[0]                                                                            ; 3       ;
 ; ddfs:inst|cont[1]                                                                            ; 3       ;
 ; ddfs:inst|cont[2]                                                                            ; 3       ;
@@ -1673,8 +1684,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ddfs:inst|cont[7]                                                                            ; 3       ;
 ; ddfs:inst|cont[8]                                                                            ; 3       ;
 ; ddfs:inst|cont[9]                                                                            ; 3       ;
-; ddfs:inst|freq_divider:f_div_inst|count~36                                                   ; 2       ;
-; ddfs:inst|freq_divider:f_div_inst|count~35                                                   ; 2       ;
+; ddfs:inst|Add1~18                                                                            ; 3       ;
+; ddfs:inst|Add1~16                                                                            ; 3       ;
 ; ddfs:inst|freq_divider:f_div_inst|count[0]                                                   ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|count[1]                                                   ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|count[2]                                                   ; 2       ;
@@ -1694,8 +1705,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ddfs:inst|freq_divider:f_div_inst|count[16]                                                  ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|count[17]                                                  ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|count[18]                                                  ; 2       ;
+; ddfs:inst|freq_divider:f_div_inst|end_cnt~1                                                  ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|end_cnt~0                                                  ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|Decoder1~0                                                 ; 2       ;
+; ddfs:inst|cont[0]~6                                                                          ; 2       ;
+; ddfs:inst|LessThan7~2                                                                        ; 2       ;
+; ddfs:inst|LessThan7~1                                                                        ; 2       ;
+; ddfs:inst|LessThan7~0                                                                        ; 2       ;
+; ddfs:inst|cont[0]~4                                                                          ; 2       ;
+; ddfs:inst|cont[0]~3                                                                          ; 2       ;
 ; ddfs:inst|freq_divider:f_div_inst|count[19]                                                  ; 2       ;
 ; ddfs:inst|cont_rt[10]                                                                        ; 2       ;
 ; ddfs:inst|q[11]~2                                                                            ; 2       ;
@@ -1710,6 +1728,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ddfs:inst|q_tmp[9]~2                                                                         ; 2       ;
 ; ddfs:inst|q_tmp[10]~1                                                                        ; 2       ;
 ; ddfs:inst|q_tmp[11]~0                                                                        ; 2       ;
+; ddfs:inst|Add1~14                                                                            ; 2       ;
+; ddfs:inst|Add1~12                                                                            ; 2       ;
+; ddfs:inst|Add1~10                                                                            ; 2       ;
+; ddfs:inst|Add1~8                                                                             ; 2       ;
+; ddfs:inst|Add1~6                                                                             ; 2       ;
+; ddfs:inst|Add1~4                                                                             ; 2       ;
+; ddfs:inst|Add1~2                                                                             ; 2       ;
+; ddfs:inst|Add1~0                                                                             ; 2       ;
 ; SW[4]                                                                                        ; 1       ;
 ; SW[5]                                                                                        ; 1       ;
 ; SW[6]                                                                                        ; 1       ;
@@ -1717,20 +1743,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[8]                                                                                        ; 1       ;
 ; SW[9]                                                                                        ; 1       ;
 ; SW[10]                                                                                       ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~37                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~34                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~33                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~32                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~31                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~30                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~29                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~28                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~27                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~26                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~25                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~24                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~23                                                   ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|count~22                                                   ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|count~21                                                   ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|count~20                                                   ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|count~19                                                   ; 1       ;
@@ -1741,15 +1753,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ddfs:inst|freq_divider:f_div_inst|count~14                                                   ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|count~13                                                   ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|count~12                                                   ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~11                                                   ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|count~10                                                   ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~9                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~8                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~7                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~6                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~5                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~4                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~3                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~2                                                    ; 1       ;
+; ddfs:inst|freq_divider:f_div_inst|count~0                                                    ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|Decoder1~2                                                 ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|WideOr3~0                                                  ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|end_cnt~1                                                  ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|WideOr2~0                                                  ; 1       ;
-; ddfs:inst|freq_divider:f_div_inst|WideOr1~0                                                  ; 1       ;
-; ddfs:inst|LessThan0~2                                                                        ; 1       ;
-; ddfs:inst|LessThan0~1                                                                        ; 1       ;
-; ddfs:inst|LessThan0~0                                                                        ; 1       ;
+; ddfs:inst|cont~22                                                                            ; 1       ;
+; ddfs:inst|cont~21                                                                            ; 1       ;
+; ddfs:inst|cont~20                                                                            ; 1       ;
+; ddfs:inst|cont~19                                                                            ; 1       ;
+; ddfs:inst|cont~18                                                                            ; 1       ;
+; ddfs:inst|cont~17                                                                            ; 1       ;
+; ddfs:inst|cont~16                                                                            ; 1       ;
+; ddfs:inst|cont~15                                                                            ; 1       ;
+; ddfs:inst|cont~14                                                                            ; 1       ;
+; ddfs:inst|cont~13                                                                            ; 1       ;
+; ddfs:inst|cont~12                                                                            ; 1       ;
+; ddfs:inst|cont~11                                                                            ; 1       ;
+; ddfs:inst|cont[0]~8                                                                          ; 1       ;
+; ddfs:inst|cont~7                                                                             ; 1       ;
+; ddfs:inst|cont[0]~5                                                                          ; 1       ;
+; ddfs:inst|cont[0]~1                                                                          ; 1       ;
+; ddfs:inst|cont~0                                                                             ; 1       ;
+; ddfs:inst|LessThan6~1                                                                        ; 1       ;
+; ddfs:inst|LessThan6~0                                                                        ; 1       ;
 ; ddfs:inst|q[1]~15                                                                            ; 1       ;
 ; ddfs:inst|q[2]~14                                                                            ; 1       ;
 ; ddfs:inst|q[3]~13                                                                            ; 1       ;
@@ -1862,29 +1897,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ddfs:inst|freq_divider:f_div_inst|Add0~2                                                     ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|Add0~1                                                     ; 1       ;
 ; ddfs:inst|freq_divider:f_div_inst|Add0~0                                                     ; 1       ;
-; ddfs:inst|cont[11]~34                                                                        ; 1       ;
-; ddfs:inst|cont[10]~33                                                                        ; 1       ;
-; ddfs:inst|cont[10]~32                                                                        ; 1       ;
-; ddfs:inst|cont[9]~31                                                                         ; 1       ;
-; ddfs:inst|cont[9]~30                                                                         ; 1       ;
-; ddfs:inst|cont[8]~29                                                                         ; 1       ;
-; ddfs:inst|cont[8]~28                                                                         ; 1       ;
-; ddfs:inst|cont[7]~27                                                                         ; 1       ;
-; ddfs:inst|cont[7]~26                                                                         ; 1       ;
-; ddfs:inst|cont[6]~25                                                                         ; 1       ;
-; ddfs:inst|cont[6]~24                                                                         ; 1       ;
-; ddfs:inst|cont[5]~23                                                                         ; 1       ;
-; ddfs:inst|cont[5]~22                                                                         ; 1       ;
-; ddfs:inst|cont[4]~21                                                                         ; 1       ;
-; ddfs:inst|cont[4]~20                                                                         ; 1       ;
-; ddfs:inst|cont[3]~19                                                                         ; 1       ;
-; ddfs:inst|cont[3]~18                                                                         ; 1       ;
-; ddfs:inst|cont[2]~17                                                                         ; 1       ;
-; ddfs:inst|cont[2]~16                                                                         ; 1       ;
-; ddfs:inst|cont[1]~15                                                                         ; 1       ;
-; ddfs:inst|cont[1]~14                                                                         ; 1       ;
-; ddfs:inst|cont[0]~13                                                                         ; 1       ;
-; ddfs:inst|cont[0]~12                                                                         ; 1       ;
+; ddfs:inst|Add1~23                                                                            ; 1       ;
+; ddfs:inst|Add1~21                                                                            ; 1       ;
+; ddfs:inst|Add1~19                                                                            ; 1       ;
+; ddfs:inst|Add1~17                                                                            ; 1       ;
+; ddfs:inst|Add1~15                                                                            ; 1       ;
+; ddfs:inst|Add1~13                                                                            ; 1       ;
+; ddfs:inst|Add1~11                                                                            ; 1       ;
+; ddfs:inst|Add1~9                                                                             ; 1       ;
+; ddfs:inst|Add1~7                                                                             ; 1       ;
+; ddfs:inst|Add1~5                                                                             ; 1       ;
+; ddfs:inst|Add1~3                                                                             ; 1       ;
+; ddfs:inst|Add1~1                                                                             ; 1       ;
 ; ddfs:inst|Add0~14                                                                            ; 1       ;
 ; ddfs:inst|Add0~13                                                                            ; 1       ;
 ; ddfs:inst|Add0~12                                                                            ; 1       ;
@@ -1941,7 +1965,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------------------------------------+---------------------------------------+----------------------+-----------------+-----------------+
 ; Name                                                                                      ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF                                        ; Location                              ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------------------------------------+---------------------------------------+----------------------+-----------------+-----------------+
-; ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 12           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 12288 ; 1024                        ; 11                          ; --                          ; --                          ; 11264               ; 3    ; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ; M4K_X26_Y19, M4K_X26_Y20, M4K_X26_Y18 ; Don't care           ; Don't care      ; Don't care      ;
+; ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_p171:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 12           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 12288 ; 1024                        ; 11                          ; --                          ; --                          ; 11264               ; 3    ; db/funct_gen.ram0_sin_lut_4402771f.hdl.mif ; M4K_X52_Y12, M4K_X52_Y13, M4K_X52_Y11 ; Don't care           ; Don't care      ; Don't care      ;
 +-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------------------------------------+---------------------------------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1951,21 +1975,21 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 206 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 17 / 3,315 ( < 1 % )   ;
-; C4 interconnects            ; 97 / 60,840 ( < 1 % )  ;
-; Direct links                ; 87 / 94,460 ( < 1 % )  ;
+; Block interconnects         ; 268 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 11 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 91 / 60,840 ( < 1 % )  ;
+; Direct links                ; 105 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 3 / 16 ( 19 % )        ;
-; Local interconnects         ; 70 / 33,216 ( < 1 % )  ;
-; R24 interconnects           ; 22 / 3,091 ( < 1 % )   ;
-; R4 interconnects            ; 110 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 67 / 33,216 ( < 1 % )  ;
+; R24 interconnects           ; 14 / 3,091 ( < 1 % )   ;
+; R4 interconnects            ; 133 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 14.17) ; Number of LABs  (Total = 12) ;
+; Number of Logic Elements  (Average = 13.50) ; Number of LABs  (Total = 14) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
 ; 2                                           ; 1                            ;
@@ -1976,30 +2000,30 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 7                                           ; 0                            ;
 ; 8                                           ; 1                            ;
 ; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
+; 10                                          ; 1                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
+; 12                                          ; 1                            ;
 ; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 10                           ;
+; 14                                          ; 1                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 8                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.58) ; Number of LABs  (Total = 12) ;
+; LAB-wide Signals  (Average = 0.86) ; Number of LABs  (Total = 14) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 1                            ;
-; 1 Clock                            ; 6                            ;
+; 1 Async. clear                     ; 3                            ;
+; 1 Clock                            ; 9                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.33) ; Number of LABs  (Total = 12) ;
+; Number of Signals Sourced  (Average = 14.50) ; Number of LABs  (Total = 14) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
@@ -2013,30 +2037,26 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 3                            ;
+; 12                                           ; 3                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 3                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 0                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
+; 24                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 10.25) ; Number of LABs  (Total = 12) ;
+; Number of Signals Sourced Out  (Average = 10.00) ; Number of LABs  (Total = 14) ;
 +--------------------------------------------------+------------------------------+
 ; 0                                                ; 0                            ;
 ; 1                                                ; 0                            ;
@@ -2045,52 +2065,51 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 4                                                ; 0                            ;
 ; 5                                                ; 0                            ;
 ; 6                                                ; 1                            ;
-; 7                                                ; 1                            ;
+; 7                                                ; 2                            ;
 ; 8                                                ; 1                            ;
 ; 9                                                ; 0                            ;
-; 10                                               ; 0                            ;
-; 11                                               ; 4                            ;
+; 10                                               ; 3                            ;
+; 11                                               ; 1                            ;
 ; 12                                               ; 1                            ;
-; 13                                               ; 1                            ;
-; 14                                               ; 0                            ;
+; 13                                               ; 0                            ;
+; 14                                               ; 3                            ;
 ; 15                                               ; 1                            ;
-; 16                                               ; 1                            ;
 +--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 13.83) ; Number of LABs  (Total = 12) ;
+; Number of Distinct Inputs  (Average = 15.79) ; Number of LABs  (Total = 14) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 1                            ;
-; 5                                            ; 2                            ;
+; 5                                            ; 1                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
+; 7                                            ; 2                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
+; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 2                            ;
 ; 13                                           ; 1                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
+; 23                                           ; 1                            ;
 ; 24                                           ; 0                            ;
 ; 25                                           ; 0                            ;
 ; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
+; 27                                           ; 1                            ;
 ; 28                                           ; 1                            ;
 ; 29                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
@@ -2155,17 +2174,14 @@ Info (176353): Automatically promoted node ddfs:inst|freq_divider:f_div_inst|cou
 Info (176353): Automatically promoted node SW[11] (placed in PIN P1 (CLK3, LVDSCLK1n, Input))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~0
+        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count[10]~1
+        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~6
+        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~8
+        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~9
         Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~10
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~12
         Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~13
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~14
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~15
         Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~16
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~17
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~18
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~19
-        Info (176357): Destination node ddfs:inst|freq_divider:f_div_inst|count~20
-        Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -2572,14 +2588,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X22_Y12 to location X32_Y23
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X44_Y12 to location X54_Y23
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.36 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.58 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 12 output pins without output pin load capacitance assignment
     Info (306007): Pin "LEDR[11]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2601,17 +2617,17 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/output_files/funct_gen.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/12 bit DAC/output_files/funct_gen.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 404 warnings
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Sun Dec 14 19:42:46 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4881 megabytes
+    Info: Processing ended: Wed Dec 17 18:01:00 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/DDFS module/12 bit DAC/output_files/funct_gen.fit.smsg.
+The suppressed messages can be found in C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/12 bit DAC/output_files/funct_gen.fit.smsg.
 
 

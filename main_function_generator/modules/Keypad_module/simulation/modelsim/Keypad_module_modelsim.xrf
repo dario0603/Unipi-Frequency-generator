@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/tb_keypad_module.v
-source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/keypad_module.v
-source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/keypad.bdf
-source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/freq_divider.v
-source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_module/db/Keypad_module.cbx.xml
+source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_module/tb_keypad_module.v
+source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_module/keypad_module.v
+source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_module/keypad.bdf
+source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_module/freq_divider.v
+source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_module/db/Keypad_module.cbx.xml
 design_name = keypad
 instance = comp, \inst|i_column[24] , inst|i_column[24], keypad, 1
 instance = comp, \inst|i_column[26] , inst|i_column[26], keypad, 1

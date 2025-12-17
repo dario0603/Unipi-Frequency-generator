@@ -1,5 +1,5 @@
 Analysis & Synthesis report for funct_gen
-Mon Dec 15 17:43:16 2025
+Wed Dec 17 17:52:48 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -53,13 +53,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 15 17:43:16 2025           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 17 17:52:48 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; funct_gen                                       ;
 ; Top-level Entity Name              ; funct_gen                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 199                                             ;
-;     Total combinational functions  ; 197                                             ;
+; Total logic elements               ; 190                                             ;
+;     Total combinational functions  ; 188                                             ;
 ;     Dedicated logic registers      ; 34                                              ;
 ; Total registers                    ; 34                                              ;
 ; Total pins                         ; 29                                              ;
@@ -166,67 +166,67 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                             ;
-+--------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                      ; Library ;
-+--------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
-; sin_lut.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut.v                                  ;         ;
-; ddfs.v                                     ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ddfs.v                                     ;         ;
-; funct_gen.bdf                              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/funct_gen.bdf                              ;         ;
-; ALTPLa.vhd                                 ; yes             ; User Wizard-Generated File                            ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd                                 ;         ;
-; freq_divider_DDFS.v                        ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/freq_divider_DDFS.v                        ;         ;
-; sin_lut_init.txt                           ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut_init.txt                           ;         ;
-; altpll.tdf                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                                                                      ;         ;
-; aglobal130.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                  ;         ;
-; stratix_pll.inc                            ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                                                                 ;         ;
-; stratixii_pll.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc                                                               ;         ;
-; cycloneii_pll.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc                                                               ;         ;
-; altsyncram.tdf                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                  ;         ;
-; stratix_ram_block.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                           ;         ;
-; lpm_mux.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                     ;         ;
-; lpm_decode.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                  ;         ;
-; a_rdenreg.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                   ;         ;
-; altrom.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                      ;         ;
-; altram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                      ;         ;
-; altdpram.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                    ;         ;
-; db/altsyncram_3871.tdf                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/db/altsyncram_3871.tdf                     ;         ;
-; db/funct_gen.ram0_sin_lut_da7c88ef.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/db/funct_gen.ram0_sin_lut_da7c88ef.hdl.mif ;         ;
-+--------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                             ;
++--------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                                      ; Library ;
++--------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; sin_lut.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut.v                                  ;         ;
+; ddfs.v                                     ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v                                     ;         ;
+; funct_gen.bdf                              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/funct_gen.bdf                              ;         ;
+; ALTPLa.vhd                                 ; yes             ; User Wizard-Generated File                            ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ALTPLa.vhd                                 ;         ;
+; freq_divider_DDFS.v                        ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/freq_divider_DDFS.v                        ;         ;
+; sin_lut_init.txt                           ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut_init.txt                           ;         ;
+; altpll.tdf                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                                                                                                      ;         ;
+; aglobal130.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                  ;         ;
+; stratix_pll.inc                            ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                                                                                                 ;         ;
+; stratixii_pll.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc                                                                                               ;         ;
+; cycloneii_pll.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc                                                                                               ;         ;
+; altsyncram.tdf                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                  ;         ;
+; stratix_ram_block.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                           ;         ;
+; lpm_mux.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                     ;         ;
+; lpm_decode.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                  ;         ;
+; a_rdenreg.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                   ;         ;
+; altrom.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                      ;         ;
+; altram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                      ;         ;
+; altdpram.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                    ;         ;
+; db/altsyncram_3871.tdf                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/db/altsyncram_3871.tdf                     ;         ;
+; db/funct_gen.ram0_sin_lut_da7c88ef.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/db/funct_gen.ram0_sin_lut_da7c88ef.hdl.mif ;         ;
++--------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 199    ;
-;                                             ;        ;
-; Total combinational functions               ; 197    ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 54     ;
-;     -- 3 input functions                    ; 75     ;
-;     -- <=2 input functions                  ; 68     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 110    ;
-;     -- arithmetic mode                      ; 87     ;
-;                                             ;        ;
-; Total registers                             ; 34     ;
-;     -- Dedicated logic registers            ; 34     ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 29     ;
-; Total memory bits                           ; 11264  ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Total PLLs                                  ; 1      ;
-;     -- PLLs                                 ; 1      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; SW[11] ;
-; Maximum fan-out                             ; 32     ;
-; Total fan-out                               ; 783    ;
-; Average fan-out                             ; 2.88   ;
-+---------------------------------------------+--------+
++------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                    ;
++---------------------------------------------+--------------------------------------------------+
+; Resource                                    ; Usage                                            ;
++---------------------------------------------+--------------------------------------------------+
+; Estimated Total logic elements              ; 190                                              ;
+;                                             ;                                                  ;
+; Total combinational functions               ; 188                                              ;
+; Logic element usage by number of LUT inputs ;                                                  ;
+;     -- 4 input functions                    ; 54                                               ;
+;     -- 3 input functions                    ; 71                                               ;
+;     -- <=2 input functions                  ; 63                                               ;
+;                                             ;                                                  ;
+; Logic elements by mode                      ;                                                  ;
+;     -- normal mode                          ; 101                                              ;
+;     -- arithmetic mode                      ; 87                                               ;
+;                                             ;                                                  ;
+; Total registers                             ; 34                                               ;
+;     -- Dedicated logic registers            ; 34                                               ;
+;     -- I/O registers                        ; 0                                                ;
+;                                             ;                                                  ;
+; I/O pins                                    ; 29                                               ;
+; Total memory bits                           ; 11264                                            ;
+; Embedded Multiplier 9-bit elements          ; 0                                                ;
+; Total PLLs                                  ; 1                                                ;
+;     -- PLLs                                 ; 1                                                ;
+;                                             ;                                                  ;
+; Maximum fan-out node                        ; ddfs:inst|freq_divider_DDFS:f_div_inst|count[19] ;
+; Maximum fan-out                             ; 28                                               ;
+; Total fan-out                               ; 757                                              ;
+; Average fan-out                             ; 2.88                                             ;
++---------------------------------------------+--------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -234,11 +234,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
-; |funct_gen                                   ; 197 (0)           ; 34 (0)       ; 11264       ; 0            ; 0       ; 0         ; 29   ; 0            ; |funct_gen                                                                                ; work         ;
+; |funct_gen                                   ; 188 (0)           ; 34 (0)       ; 11264       ; 0            ; 0       ; 0         ; 29   ; 0            ; |funct_gen                                                                                ; work         ;
 ;    |ALTPLa:inst1|                            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ALTPLa:inst1                                                                   ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ALTPLa:inst1|altpll:altpll_component                                           ; work         ;
-;    |ddfs:inst|                               ; 197 (101)         ; 34 (14)      ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst                                                                      ; work         ;
-;       |freq_divider_DDFS:f_div_inst|         ; 96 (96)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|freq_divider_DDFS:f_div_inst                                         ; work         ;
+;    |ddfs:inst|                               ; 188 (98)          ; 34 (14)      ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst                                                                      ; work         ;
+;       |freq_divider_DDFS:f_div_inst|         ; 90 (90)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|freq_divider_DDFS:f_div_inst                                         ; work         ;
 ;       |sin_lut:lut_inst|                     ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|sin_lut:lut_inst                                                     ; work         ;
 ;          |altsyncram:rom_rtl_0|              ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0                                ; work         ;
 ;             |altsyncram_3871:auto_generated| ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |funct_gen|ddfs:inst|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_3871:auto_generated ; work         ;
@@ -255,13 +255,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+--------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                       ;
-+--------+--------------+---------+--------------+--------------+-------------------------+---------------------------------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance         ; IP Include File                                                                                   ;
-+--------+--------------+---------+--------------+--------------+-------------------------+---------------------------------------------------------------------------------------------------+
-; Altera ; ALTPLL       ; N/A     ; N/A          ; N/A          ; |funct_gen|ALTPLa:inst1 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd ;
-+--------+--------------+---------+--------------+--------------+-------------------------+---------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                       ;
++--------+--------------+---------+--------------+--------------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance         ; IP Include File                                                                                                                   ;
++--------+--------------+---------+--------------+--------------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Altera ; ALTPLL       ; N/A     ; N/A          ; N/A          ; |funct_gen|ALTPLa:inst1 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ALTPLa.vhd ;
++--------+--------------+---------+--------------+--------------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------+
@@ -281,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 34    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 12    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
@@ -305,7 +305,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |funct_gen|ddfs:inst|freq_divider_DDFS:f_div_inst|count[11] ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |funct_gen|ddfs:inst|freq_divider_DDFS:f_div_inst|count[9]  ;
-; 9:1                ; 12 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |funct_gen|ddfs:inst|cont[7]                                ;
+; 9:1                ; 12 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |funct_gen|ddfs:inst|cont[7]                                ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |funct_gen|ddfs:inst|q_tmp[9]                               ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; No         ; |funct_gen|ddfs:inst|addr[0]                                ;
 ; 5:1                ; 9 bits    ; 27 LEs        ; 9 LEs                ; 18 LEs                 ; No         ; |funct_gen|ddfs:inst|q_VGA[8]                               ;
@@ -828,7 +828,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 15 17:43:14 2025
+    Info: Processing started: Wed Dec 17 17:52:45 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off funct_gen -c funct_gen
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file sin_lut.v
@@ -857,7 +857,6 @@ Warning (10230): Verilog HDL assignment warning at ddfs.v(88): truncated value w
 Warning (10230): Verilog HDL assignment warning at ddfs.v(90): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(94): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(96): truncated value with size 32 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at ddfs.v(100): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(102): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(119): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(125): truncated value with size 32 to match size of target (10)
@@ -978,16 +977,16 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 240 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 231 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 199 logic cells
+    Info (21061): Implemented 190 logic cells
     Info (21064): Implemented 11 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 39 warnings
     Info: Peak virtual memory: 4678 megabytes
-    Info: Processing ended: Mon Dec 15 17:43:16 2025
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Dec 17 17:52:48 2025
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

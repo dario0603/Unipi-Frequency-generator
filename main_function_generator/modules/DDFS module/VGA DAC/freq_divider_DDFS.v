@@ -26,8 +26,8 @@ module freq_divider_DDFS
 		
 	end
 
-	always@(*)
-	begin
+	always @(*) begin
+	
 		case (freq_cntrl)
 		0: begin 
 			start_cnt = 20'h80000-1;
@@ -70,5 +70,3 @@ module freq_divider_DDFS
 
 
 endmodule
-
-

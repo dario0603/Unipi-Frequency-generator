@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("C:/Users/posta/Desktop/Programmi/Verilog/Function_generator/Keypad_frequency_select_module/output_files/") File("keypad_freq_sel_module.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/output_files/") File("keypad_freq_sel_module.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -3,16 +3,16 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
-Slack : -5.654
-TNS   : -695.710
+Slack : -5.830
+TNS   : -742.564
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -2.832
-TNS   : -60.556
+Slack : -2.805
+TNS   : -59.649
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.550
-TNS   : -2.550
+Slack : -2.558
+TNS   : -2.558
 
 Type  : Slow Model Hold 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
 Slack : 0.391
@@ -27,16 +27,16 @@ Slack : -0.500
 TNS   : -166.000
 
 Type  : Fast Model Setup 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
-Slack : -2.069
-TNS   : -233.673
+Slack : -2.125
+TNS   : -257.008
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.851
-TNS   : -12.305
+Slack : -0.845
+TNS   : -11.916
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.591
-TNS   : -1.591
+Slack : -1.599
+TNS   : -1.599
 
 Type  : Fast Model Hold 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
 Slack : 0.215

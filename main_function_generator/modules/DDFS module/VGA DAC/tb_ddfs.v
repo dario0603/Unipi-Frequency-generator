@@ -52,12 +52,10 @@ module tb_ddfs;
 	
 		//initialize signals
 		rst_n = 0;
-		{sin, triang, mirror_x, mirror_y} = 4'b0100;
-		//fw = 7'b0000000;
-		fw = 7'b1000001;
+		{sin, triang, mirror_x, mirror_y} = 4'b0000;
+		fw = 7'b0000000;
 		freq_cntrl = 3'b001;
 		  
-		/*
 		//testing every combination of input signals
 		for(i=0; i<4'b1111;i=i+1) begin
 			#(CLOCK_PERIOD*50000)
@@ -73,10 +71,9 @@ module tb_ddfs;
 			#(CLOCK_PERIOD*50000)
 			fw = i;
 		end
-		*/
-		
+
 		//finish simulation
-		#(CLOCK_PERIOD*1000)
+		#(CLOCK_PERIOD*100000)
 		$stop;
 		
 	end

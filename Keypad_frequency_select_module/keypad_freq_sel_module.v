@@ -34,12 +34,13 @@ module keypad_freq_sel_module
 	
 	output reg [2:0] digit_counter,
 	
-	output reg sel_A, sel_B, sel_C,
-	output reg next_page,
+	output reg sel_A, sel_B,
+	output reg next_page, prev_page,
 	
 	// ---- TST OUTPUT ---- //
 	output data_valid,
-	output reg debounced_keypad_pressed
+	output reg debounced_keypad_pressed,
+	output [22:0] freq
 	
 );
 	
@@ -77,8 +78,7 @@ module keypad_freq_sel_module
 	//DDFS frequency converter module instance
 	//and BCD to C2 representation converter
 	reg [3:0] BCD_1, BCD_2, BCD_3, BCD_4, BCD_5, BCD_6, BCD_7;
-	wire [22:0] freq;
-	BCD_to_C2_converter BCD_C2_conv_inst(
+	BCD_to_C1_converter BCD_C1_conv_inst(
 
 		.d_1(BCD_1),
 		.d_2(BCD_2),
@@ -134,31 +134,19 @@ module keypad_freq_sel_module
 	
 		if(rst_n == 0) begin
 			//reset condition
-			freq_1 <= 4'b0;
-			freq_2 <= 4'b0;
-			freq_3 <= 4'b0;
-			freq_4 <= 4'b0;
-			freq_5 <= 4'b0;
-			freq_6 <= 4'b0;
-			freq_7 <= 4'b0;
+			{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <= 28'h0000000;
 			digit_counter <= 3'b0;
 			
-			BCD_1 <= 4'b0;
-			BCD_2 <= 4'b0;
-			BCD_3 <= 4'b0;
-			BCD_4 <= 4'b0;
-			BCD_5 <= 4'b0;
-			BCD_6 <= 4'b0;
-			BCD_7 <= 4'b0;
+			{BCD_7, BCD_6, BCD_5, BCD_4, BCD_3, BCD_2, BCD_1} <= 28'h0000000;
 			
 			sel_A <= 0;
 			sel_B <= 0;
-			sel_C <= 0;
 			
 			button_pressed <= 1'b0;
 			number_not_sel <= 1'b1;
 			
 			next_page <= 1'b0;
+			prev_page <= 1'b0;
 			
 		end else if(data_valid == 1) begin
 			
@@ -167,6 +155,7 @@ module keypad_freq_sel_module
 				button_pressed <= 1'b0;
 				
 				next_page <= 1'b0;
+				prev_page <= 1'b0;
 			end
 				
 			if(debounced_keypad_pressed == 1 && button_pressed == 0) begin
@@ -354,7 +343,7 @@ module keypad_freq_sel_module
 					end
 					
 					(16'd1 << 11): begin
-						sel_C <= !sel_C;
+						prev_page <= 1'b1;
 						//do not increase the number of digit
 						digit_counter <= digit_counter;
 					end

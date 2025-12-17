@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main_function_generator
-Mon Dec 15 17:50:12 2025
+Wed Dec 17 17:37:48 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -102,13 +102,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 15 17:50:12 2025           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 17 17:37:48 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; main_function_generator                         ;
 ; Top-level Entity Name              ; main_function_generator                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 3,042                                           ;
-;     Total combinational functions  ; 3,021                                           ;
+; Total logic elements               ; 2,859                                           ;
+;     Total combinational functions  ; 2,838                                           ;
 ;     Dedicated logic registers      ; 380                                             ;
 ; Total registers                    ; 380                                             ;
 ; Total pins                         ; 109                                             ;
@@ -224,7 +224,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; modules/Keypad_frequency_select_module/keypad_freq_sel_module.v     ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_freq_sel_module.v     ;         ;
 ; modules/Keypad_frequency_select_module/freq_divider_keypad_module.v ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/freq_divider_keypad_module.v ;         ;
 ; modules/Keypad_frequency_select_module/DDFS_frequency_converter.v   ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/DDFS_frequency_converter.v   ;         ;
-; modules/Keypad_frequency_select_module/BCD_to_C2_converter.v        ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C2_converter.v        ;         ;
 ; modules/Keypad_frequency_select_module/BCD_to_7seg.v                ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_7seg.v                ;         ;
 ; modules/LCD_module/text_lut_init.txt                                ; yes             ; User File                                             ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut_init.txt                                ;         ;
 ; modules/LCD_module/text_lut.v                                       ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v                                       ;         ;
@@ -235,6 +234,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; modules/DDFS module/VGA DAC/ddfs.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v                                  ;         ;
 ; modules/DDFS module/VGA DAC/ALTPLa.vhd                              ; yes             ; User Wizard-Generated File                            ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ALTPLa.vhd                              ;         ;
 ; main_function_generator.bdf                                         ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/main_function_generator.bdf                                         ;         ;
+; modules/Keypad_frequency_select_module/BCD_to_C1_converter.v        ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C1_converter.v        ;         ;
 ; altpll.tdf                                                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                                                                                                   ;         ;
 ; aglobal130.inc                                                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                               ;         ;
 ; stratix_pll.inc                                                     ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                                                                                              ;         ;
@@ -307,17 +307,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 3,042    ;
+; Estimated Total logic elements              ; 2,859    ;
 ;                                             ;          ;
-; Total combinational functions               ; 3021     ;
+; Total combinational functions               ; 2838     ;
 ; Logic element usage by number of LUT inputs ;          ;
 ;     -- 4 input functions                    ; 583      ;
-;     -- 3 input functions                    ; 1581     ;
-;     -- <=2 input functions                  ; 857      ;
+;     -- 3 input functions                    ; 1545     ;
+;     -- <=2 input functions                  ; 710      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 947      ;
-;     -- arithmetic mode                      ; 2074     ;
+;     -- normal mode                          ; 933      ;
+;     -- arithmetic mode                      ; 1905     ;
 ;                                             ;          ;
 ; Total registers                             ; 380      ;
 ;     -- Dedicated logic registers            ; 380      ;
@@ -331,8 +331,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;          ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 191      ;
-; Total fan-out                               ; 10800    ;
-; Average fan-out                             ; 3.00     ;
+; Total fan-out                               ; 10412    ;
+; Average fan-out                             ; 3.05     ;
 +---------------------------------------------+----------+
 
 
@@ -341,7 +341,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                     ; Library Name ;
 +---------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main_function_generator                                      ; 3021 (1)          ; 380 (4)      ; 29696       ; 70           ; 0       ; 35        ; 109  ; 0            ; |main_function_generator                                                                                                                                                                                                                                                                ; work         ;
+; |main_function_generator                                      ; 2838 (1)          ; 380 (4)      ; 29696       ; 70           ; 0       ; 35        ; 109  ; 0            ; |main_function_generator                                                                                                                                                                                                                                                                ; work         ;
 ;    |ALTPLa:inst|                                              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|ALTPLa:inst                                                                                                                                                                                                                                                    ; work         ;
 ;       |altpll:altpll_component|                               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|ALTPLa:inst|altpll:altpll_component                                                                                                                                                                                                                            ; work         ;
 ;    |ddfs:inst15|                                              ; 192 (97)          ; 34 (14)      ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|ddfs:inst15                                                                                                                                                                                                                                                    ; work         ;
@@ -349,9 +349,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |sin_lut:lut_inst|                                      ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|ddfs:inst15|sin_lut:lut_inst                                                                                                                                                                                                                                   ; work         ;
 ;          |altsyncram:rom_rtl_0|                               ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0                                                                                                                                                                                                              ; work         ;
 ;             |altsyncram_qm81:auto_generated|                  ; 0 (0)             ; 0 (0)        ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0|altsyncram_qm81:auto_generated                                                                                                                                                                               ; work         ;
-;    |keypad_freq_sel_module:inst1|                             ; 2392 (192)        ; 198 (100)    ; 0           ; 70           ; 0       ; 35        ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1                                                                                                                                                                                                                                   ; work         ;
-;       |BCD_to_C2_converter:BCD_C2_conv_inst|                  ; 374 (374)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst                                                                                                                                                                                              ; work         ;
-;       |DDFS_frequency_converter:DDFS_freq_conv_inst|          ; 1700 (572)        ; 0 (0)        ; 0           ; 70           ; 0       ; 35        ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst                                                                                                                                                                                      ; work         ;
+;    |keypad_freq_sel_module:inst1|                             ; 2210 (192)        ; 198 (100)    ; 0           ; 70           ; 0       ; 35        ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1                                                                                                                                                                                                                                   ; work         ;
+;       |BCD_to_C1_converter:BCD_C1_conv_inst|                  ; 197 (197)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|BCD_to_C1_converter:BCD_C1_conv_inst                                                                                                                                                                                              ; work         ;
+;       |DDFS_frequency_converter:DDFS_freq_conv_inst|          ; 1695 (567)        ; 0 (0)        ; 0           ; 70           ; 0       ; 35        ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst                                                                                                                                                                                      ; work         ;
 ;          |lpm_mult:Mult0|                                     ; 147 (0)           ; 0 (0)        ; 0           ; 14           ; 0       ; 7         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0                                                                                                                                                                       ; work         ;
 ;             |mult_nct:auto_generated|                         ; 147 (136)         ; 0 (0)        ; 0           ; 14           ; 0       ; 7         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated                                                                                                                                               ; work         ;
 ;                |alt_mac_mult:mac_mult11|                      ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult0|mult_nct:auto_generated|alt_mac_mult:mac_mult11                                                                                                                       ; work         ;
@@ -467,7 +467,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                  |add_sub_f8h:auto_generated| ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult6|mult_gct:auto_generated|alt_mac_mult:mac_mult5|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_f8h:auto_generated  ; work         ;
 ;       |freq_divider_keypad_module:freq_div|                   ; 50 (50)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div                                                                                                                                                                                               ; work         ;
 ;       |keypad_module:keypad_mod_inst|                         ; 76 (76)           ; 65 (65)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst                                                                                                                                                                                                     ; work         ;
-;    |lcd_driver:inst8|                                         ; 387 (387)         ; 144 (144)    ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|lcd_driver:inst8                                                                                                                                                                                                                                               ; work         ;
+;    |lcd_driver:inst8|                                         ; 386 (386)         ; 144 (144)    ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|lcd_driver:inst8                                                                                                                                                                                                                                               ; work         ;
 ;       |text_lut:text_lut_inst|                                ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|lcd_driver:inst8|text_lut:text_lut_inst                                                                                                                                                                                                                        ; work         ;
 ;          |altsyncram:rom_rtl_0|                               ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|lcd_driver:inst8|text_lut:text_lut_inst|altsyncram:rom_rtl_0                                                                                                                                                                                                   ; work         ;
 ;             |altsyncram_ap81:auto_generated|                  ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_function_generator|lcd_driver:inst8|text_lut:text_lut_inst|altsyncram:rom_rtl_0|altsyncram_ap81:auto_generated                                                                                                                                                                    ; work         ;
@@ -571,11 +571,9 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------+---+
 ; Logic Cell Name                                                           ;   ;
 +---------------------------------------------------------------------------+---+
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add23~0 ;   ;
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add15~0 ;   ;
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add9~0  ;   ;
-; keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst|Add4~0  ;   ;
-; Number of logic cells representing combinational loops                    ; 4 ;
+; keypad_freq_sel_module:inst1|BCD_to_C1_converter:BCD_C1_conv_inst|Add15~0 ;   ;
+; keypad_freq_sel_module:inst1|BCD_to_C1_converter:BCD_C1_conv_inst|Add4~0  ;   ;
+; Number of logic cells representing combinational loops                    ; 2 ;
 +---------------------------------------------------------------------------+---+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -639,7 +637,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |main_function_generator|keypad_freq_sel_module:inst1|cont[29]                                               ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |main_function_generator|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|tmp_out_keys[0]          ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |main_function_generator|keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst|i_column[19]             ;
-; 5:1                ; 28 bits   ; 84 LEs        ; 28 LEs               ; 56 LEs                 ; Yes        ; |main_function_generator|keypad_freq_sel_module:inst1|BCD_4[1]                                               ;
+; 5:1                ; 28 bits   ; 84 LEs        ; 28 LEs               ; 56 LEs                 ; Yes        ; |main_function_generator|keypad_freq_sel_module:inst1|BCD_4[2]                                               ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |main_function_generator|lcd_driver:inst8|n_index[1]                                                         ;
 ; 7:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |main_function_generator|lcd_driver:inst8|char_index[1]                                                      ;
 ; 5:1                ; 31 bits   ; 93 LEs        ; 31 LEs               ; 62 LEs                 ; Yes        ; |main_function_generator|lcd_driver:inst8|btn_counter[12]                                                    ;
@@ -3596,7 +3594,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -3606,7 +3604,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 15 17:50:00 2025
+    Info: Processing started: Wed Dec 17 17:37:36 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main_function_generator -c main_function_generator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/keypad_module.v
@@ -3617,10 +3615,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file modules
     Info (12023): Found entity 1: freq_divider_keypad_module
 Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/ddfs_frequency_converter.v
     Info (12023): Found entity 1: DDFS_frequency_converter
-Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/c2_to_bcd_converter.v
-    Info (12023): Found entity 1: C2_to_BCD_converter
-Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/bcd_to_c2_converter.v
-    Info (12023): Found entity 1: BCD_to_C2_converter
 Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/bcd_to_7seg.v
     Info (12023): Found entity 1: mux7seg
 Info (12021): Found 1 design units, including 1 entities, in source file modules/lcd_module/text_lut.v
@@ -3638,10 +3632,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file modules
     Info (12023): Found entity 1: ALTPLa
 Info (12021): Found 1 design units, including 1 entities, in source file main_function_generator.bdf
     Info (12023): Found entity 1: main_function_generator
+Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/c1_to_bcd_converter.v
+    Info (12023): Found entity 1: C1_to_BCD_converter
+Info (12021): Found 1 design units, including 1 entities, in source file modules/keypad_frequency_select_module/bcd_to_c1_converter.v
+    Info (12023): Found entity 1: BCD_to_C1_converter
 Info (12127): Elaborating entity "main_function_generator" for the top level hierarchy
 Info (12128): Elaborating entity "lcd_driver" for hierarchy "lcd_driver:inst8"
 Info (12128): Elaborating entity "text_lut" for hierarchy "lcd_driver:inst8|text_lut:text_lut_inst"
-Warning (10850): Verilog HDL warning at text_lut.v(27): number of words (437) in memory file does not match the number of elements in the address range [0:2047]
+Warning (10850): Verilog HDL warning at text_lut.v(16): number of words (437) in memory file does not match the number of elements in the address range [0:2047]
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(1): truncated value with size 12 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(2): truncated value with size 12 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(3): truncated value with size 12 to match size of target (9)
@@ -4079,9 +4077,9 @@ Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(446): trunc
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(447): truncated value with size 12 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(448): truncated value with size 12 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(449): truncated value with size 12 to match size of target (9)
-Warning (10030): Net "rom.data_a" at text_lut.v(15) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "rom.waddr_a" at text_lut.v(15) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "rom.we_a" at text_lut.v(15) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.data_a" at text_lut.v(12) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.waddr_a" at text_lut.v(12) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "rom.we_a" at text_lut.v(12) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "keypad_freq_sel_module" for hierarchy "keypad_freq_sel_module:inst1"
 Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(180): truncated value with size 32 to match size of target (3)
 Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(197): truncated value with size 32 to match size of target (3)
@@ -4098,8 +4096,8 @@ Info (10264): Verilog HDL Case Statement information at keypad_freq_sel_module.v
 Info (12128): Elaborating entity "freq_divider_keypad_module" for hierarchy "keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div"
 Info (12128): Elaborating entity "keypad_module" for hierarchy "keypad_freq_sel_module:inst1|keypad_module:keypad_mod_inst"
 Warning (10230): Verilog HDL assignment warning at keypad_module.v(78): truncated value with size 32 to match size of target (4)
-Info (12128): Elaborating entity "BCD_to_C2_converter" for hierarchy "keypad_freq_sel_module:inst1|BCD_to_C2_converter:BCD_C2_conv_inst"
-Warning (10230): Verilog HDL assignment warning at BCD_to_C2_converter.v(46): truncated value with size 24 to match size of target (23)
+Info (12128): Elaborating entity "BCD_to_C1_converter" for hierarchy "keypad_freq_sel_module:inst1|BCD_to_C1_converter:BCD_C1_conv_inst"
+Warning (10230): Verilog HDL assignment warning at BCD_to_C1_converter.v(52): truncated value with size 24 to match size of target (23)
 Info (12128): Elaborating entity "DDFS_frequency_converter" for hierarchy "keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst"
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(60): truncated value with size 128 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(61): truncated value with size 128 to match size of target (7)
@@ -5156,18 +5154,18 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/output_files/main_function_generator.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3244 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3061 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 103 output pins
-    Info (21061): Implemented 3044 logic cells
+    Info (21061): Implemented 2861 logic cells
     Info (21064): Implemented 20 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 70 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 683 warnings
-    Info: Peak virtual memory: 4707 megabytes
-    Info: Processing ended: Mon Dec 15 17:50:12 2025
+    Info: Peak virtual memory: 4703 megabytes
+    Info: Processing ended: Wed Dec 17 17:37:48 2025
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +------------------------------------------+

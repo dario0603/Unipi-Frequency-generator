@@ -67,33 +67,34 @@ module DDFS_frequency_converter
 	
 	//calculate the optimal combination of fw and freq_control value
 	//to select the desired frequency (final_freq)
+	localparam MIN_LUT_SAMPLE = 8;
 	always @(*) begin
 	
-		if(final_freq <= (CLK_FREQ/(1000000*8))) begin
+		if(final_freq <= (CLK_FREQ/(1000000*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd6;
 			fw = (fw_1000000 >= 0) ? fw_1000000 : 7'd0;
 		end 
-		else if(final_freq <= (CLK_FREQ/(100000*8))) begin
+		else if(final_freq <= (CLK_FREQ/(100000*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd5;
 			fw = (fw_100000 >= 0) ? fw_100000 : 7'd0;
 		end
-		else if(final_freq <= (CLK_FREQ/(10000*8))) begin
+		else if(final_freq <= (CLK_FREQ/(10000*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd4;
 			fw = (fw_10000 >= 0) ? fw_10000 : 7'd0;
 		end
-		else if(final_freq <= (CLK_FREQ/(1000*8))) begin
+		else if(final_freq <= (CLK_FREQ/(1000*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd3;
 			fw = (fw_1000 >= 0) ? fw_1000 : 7'd0;
 		end
-		else if(final_freq <= (CLK_FREQ/(100*8))) begin
+		else if(final_freq <= (CLK_FREQ/(100*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd2;
 			fw = (fw_100 >= 0) ? fw_100 : 7'd0;
 		end
-		else if(final_freq <= (CLK_FREQ/(10*8))) begin
+		else if(final_freq <= (CLK_FREQ/(10*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd1;
 			fw = (fw_10 >= 0) ? fw_10 : 7'd0;
 		end
-		else if(final_freq <= (CLK_FREQ/(2*8))) begin
+		else if(final_freq <= (CLK_FREQ/(2*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd0;
 			fw = (fw_2 >= 0) ? fw_2 : 7'd0;
 		end

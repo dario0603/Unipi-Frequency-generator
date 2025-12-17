@@ -482,7 +482,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1040 216 1216 232)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "LEDG[3]" (rect 5 0 48 12)(font "Arial" ))
+	(text "LEDG[3]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -500,7 +500,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1040 232 1216 248)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "LEDG[4]" (rect 5 0 48 12)(font "Arial" ))
+	(text "LEDG[4]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -518,7 +518,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1040 248 1216 264)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "LEDG[5]" (rect 5 0 48 12)(font "Arial" ))
+	(text "LEDG[5]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -536,7 +536,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1040 264 1216 280)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
-	(text "LEDG[6]" (rect 5 0 48 12)(font "Arial" ))
+	(text "LEDG[6]" (rect 5 0 47 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1238,6 +1238,31 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 1616 408 1803 436))
 )
 (symbol
+	(rect 688 424 736 456)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "int14" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
 	(rect 288 200 576 536)
 	(text "keypad_freq_sel_module" (rect 5 0 128 12)(font "Arial" ))
 	(text "inst1" (rect 8 320 31 332)(font "Arial" ))
@@ -1395,6 +1420,13 @@ applicable agreement for further details.
 		(text "debounced_keypad_pressed" (rect 149 283 289 295)(font "Arial" ))
 		(line (pt 288 288)(pt 272 288))
 	)
+	(port
+		(pt 288 304)
+		(output)
+		(text "freq[22..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "freq[22..0]" (rect 224 299 275 311)(font "Arial" ))
+		(line (pt 288 304)(pt 272 304)(line_width 3))
+	)
 	(parameter
 		"N_COLUMN"
 		"4"
@@ -1419,31 +1451,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 272 320))
 	)
 	(annotation_block (parameter)(rect 576 128 1128 200))
-)
-(symbol
-	(rect 688 424 736 456)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "int14" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
 )
 (connector
 	(text "ENA_DDFS" (rect 744 392 803 404)(font "Arial" ))
