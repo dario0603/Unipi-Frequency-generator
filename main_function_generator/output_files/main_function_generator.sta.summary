@@ -3,43 +3,43 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : -38.484
-TNS   : -540.530
+Slack : -36.242
+TNS   : -480.821
 
 Type  : Slow Model Setup 'inst|altpll_component|pll|clk[0]'
-Slack : -23.516
-TNS   : -457.700
+Slack : -23.480
+TNS   : -459.316
 
 Type  : Slow Model Setup 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
-Slack : -6.297
-TNS   : -754.334
+Slack : -5.946
+TNS   : -704.596
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -2.263
-TNS   : -68.848
+Slack : -2.257
+TNS   : -60.113
 
 Type  : Slow Model Hold 'CLOCK_50'
-Slack : -2.539
-TNS   : -2.539
+Slack : -2.549
+TNS   : -2.549
 
 Type  : Slow Model Hold 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
 Slack : 0.391
 TNS   : 0.000
 
 Type  : Slow Model Hold 'inst|altpll_component|pll|clk[0]'
-Slack : 0.418
+Slack : 0.437
 TNS   : 0.000
 
 Type  : Slow Model Hold 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : 1.145
+Slack : 1.035
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : 0.358
+Slack : 0.273
 TNS   : 0.000
 
 Type  : Slow Model Removal 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : 0.201
+Slack : 0.463
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
@@ -59,43 +59,43 @@ Slack : 8.077
 TNS   : 0.000
 
 Type  : Fast Model Setup 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : -14.946
-TNS   : -199.456
+Slack : -14.081
+TNS   : -173.334
 
 Type  : Fast Model Setup 'inst|altpll_component|pll|clk[0]'
-Slack : -10.035
-TNS   : -194.897
+Slack : -9.994
+TNS   : -195.682
 
 Type  : Fast Model Setup 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
-Slack : -2.335
-TNS   : -257.037
+Slack : -2.179
+TNS   : -234.781
 
 Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.328
-TNS   : -2.349
+Slack : -0.321
+TNS   : -1.337
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.584
-TNS   : -1.584
+Slack : -1.592
+TNS   : -1.592
 
 Type  : Fast Model Hold 'keypad_freq_sel_module:inst1|freq_divider_keypad_module:freq_div|q'
 Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Hold 'inst|altpll_component|pll|clk[0]'
-Slack : 0.231
+Slack : 0.248
 TNS   : 0.000
 
 Type  : Fast Model Hold 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : 0.560
+Slack : 0.483
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : 0.629
+Slack : 0.544
 TNS   : 0.000
 
 Type  : Fast Model Removal 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'
-Slack : 0.158
+Slack : 0.312
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'ddfs:inst15|freq_divider_DDFS:f_div_inst|count[19]'

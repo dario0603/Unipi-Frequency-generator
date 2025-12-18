@@ -38,8 +38,3 @@
 # Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 87
 # Simulation Breakpoint: Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 87
 # MACRO ./DDFS_frequency_converter_run_msim_rtl_verilog.do PAUSED at line 17
-add wave -position 1  sim:/tb_DDFS_frequency_converter/fw
-add wave -position end  sim:/tb_DDFS_frequency_converter/DUT/mult_100000
-restart -f
-run -all
-# Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 87
