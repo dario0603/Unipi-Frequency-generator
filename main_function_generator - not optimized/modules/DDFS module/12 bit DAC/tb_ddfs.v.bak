@@ -1,0 +1,177 @@
+`timescale 1ns/1ps
+
+module tb_ddfs;
+
+    // Testbench signals
+    reg sin;
+    reg triang;
+    reg square;
+	 reg mirror_x;
+    reg mirror_y;
+    reg [2:0] fw;
+	 reg clk;
+	 reg rst_n;
+    wire [11:0] clk_out;
+
+    // Instantiate the DUT (Device Under Test)
+    ddfs dut (
+        .sin(sin),
+        .triang(triang),
+        .square(square),
+        .mirror_x(mirror_x),
+		  .mirror_y(mirror_y),
+		  .fw.(fw),
+		  .clk(clk),
+		  .rst_n(rst_n),
+		  .q(q)
+    );
+	 	 
+    // Generate a clock: 50 MHz (20 ns period)
+    initial begin
+        clk_in = 0;
+        forever #10 clk_in = ~clk_in;  // toggle every 10 ns
+    end
+	 
+	 // Stimulus block
+    initial begin
+        // Initialize signals
+        rst_n = 0;
+        sin = 0;
+		  triang = 0;
+		  square = 0;
+		  mirror_x = 0;
+		  mirror_y = 0;
+		  fw = 3'b000;
+
+        // Apply reset
+        #40;
+        rst_n = 1;
+		  
+		  // Testing sine wave
+		  #200
+		  sin = 1;
+		  triang = 0;
+		  square = 0;
+		  
+		  // Testing triangular wave
+		  #200
+		  sin = 0;
+		  triang = 1;
+		  square = 1; // testing triang priority 
+		  
+		  // Testing square wave
+		  #200
+		  sin = 0;
+		  triang = 0;
+		  square = 1;
+		  
+		  //x mirroring 
+		  #200
+		  mirror_x = 1;
+		  mirror_y = 0;
+		  
+		  // Testing sine wave
+		  #200
+		  sin = 1;
+		  triang = 0;
+		  square = 0;
+		  
+		  // Testing triangular wave
+		  #200
+		  sin = 0;
+		  triang = 1;
+		  square = 1; // testing triang priority 
+		  
+		  //y mirroring 
+		  #200
+		  mirror_x = 0;
+		  mirror_y = 1;
+		  
+		  // Testing sine wave
+		  #200
+		  sin = 1;
+		  triang = 0;
+		  square = 0;
+		  
+		  // Testing triangular wave
+		  #200
+		  sin = 0;
+		  triang = 1;
+		  square = 1; // testing triang priority 
+		  
+		  //x and y mirroring 
+		  #200
+		  mirror_x = 1;
+		  mirror_y = 1;
+		  
+		  // Testing sine wave
+		  #200
+		  sin = 1;
+		  triang = 0;
+		  square = 0;
+		  
+		  // Testing triangular wave
+		  #200
+		  sin = 0;
+		  triang = 1;
+		  square = 1; // testing triang priority 	  
+		  
+		  // No mirroring 
+		  #200
+		  mirror_x = 0;
+		  mirror_y = 0;
+		  
+		  // Changing frequency word
+		  fw = 3'b001;
+		  
+		  // Testing square wave
+		  sin = 0;
+		  triang = 0;
+		  square = 0;
+		  
+		  // Testing sine wave
+		  #1000
+		  sin = 1; // testing sin priority 
+		  triang = 1;
+		  square = 1;
+		  
+		  // Testing triangular wave
+		  #1000
+		  sin = 0;
+		  triang = 1;
+		  square = 1; // testing triang priority 
+		  
+		  // Testing square wave
+		  #1000
+		  sin = 0;
+		  triang = 0;
+		  square = 1;	
+		
+		  // Changing frequency word
+		  #1000
+		  fw = 3'b011;
+		  
+		  // Testing sine wave
+		  #2000
+		  sin = 1; // testing sin priority 
+		  triang = 1;
+		  square = 1;
+		  
+		  // Testing triangular wave
+		  #2000
+		  sin = 0;
+		  triang = 1;
+		  square = 1; // testing triang priority 
+		  
+		  // Testing square wave
+		  #2000
+		  sin = 0;
+		  triang = 0;
+		  square = 1;	 		
+
+        // Finish simulation
+		  #5000
+        $stop;
+    end
+
+endmodule

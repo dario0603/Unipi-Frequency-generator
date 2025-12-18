@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="main_function_generator">
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_kem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_divide:Div5" CBX_FILE_NAME="lpm_divide_0gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|ddfs:inst15|sin_lut:lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_qm81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_hem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_vfm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|keypad_freq_sel_module:inst1|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_divide:Div4" CBX_FILE_NAME="lpm_divide_5gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_function_generator|lcd_driver:inst8|text_lut:text_lut_inst|altsyncram:rom_rtl_0" CBX_FILE_NAME="altsyncram_ap81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

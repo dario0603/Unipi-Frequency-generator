@@ -2,7 +2,8 @@
 
 module tb_DDFS_frequency_converter;
 	
-	localparam [63:0] MAX_FREQ = 5000000;
+	//localparam [63:0] MAX_FREQ = 5000000;
+	localparam [63:0] MAX_FREQ = 250000;
 	localparam [63:0] CLK_FREQ = 200000000;
 	
 	//testbench signals
@@ -79,7 +80,7 @@ module tb_DDFS_frequency_converter;
 	integer i;
 	initial begin
 	
-		for(i=0; i<=MAX_FREQ; i=i+100) begin
+		for(i=0; i<=MAX_FREQ; i=i+1) begin
 			#10 freq = i;
 		end
 		

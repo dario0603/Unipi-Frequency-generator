@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\posta\Desktop\Programmi\Verilog\Unipi-Frequency-generator\main_function_generator\modules\DDFS_frequency_converter\simulation\modelsim
+vDDFS_frequency_converter
+INU9SiU2G6eB2Fi7@zKQ:E2
+VC=Nh[0XojmHmA4WNc1JVg0
+Z1 dC:\Users\posta\Desktop\Programmi\Verilog\Unipi-Frequency-generator\main_function_generator\modules\DDFS_frequency_converter\simulation\modelsim
+w1765904416
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/DDFS_frequency_converter.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/DDFS_frequency_converter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@d@d@f@s_frequency_converter
+!i10b 1
+!s100 1fD0h;TaIPSzHfRV7hQ6X1
+!s85 0
+!s108 1765904555.080000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/DDFS_frequency_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/DDFS_frequency_converter.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter -O0
+vtb_DDFS_frequency_converter
+!i10b 1
+!s100 Wnnhjg3U;QXXk55PUV2=h0
+I[QfjCAG>bnGd@38Z7H18n3
+VnDDLbC0RnU;::^cY1j`1a3
+R1
+w1765904528
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1765904555.167000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v|
+!s101 -O0
+R3
+R4
+ntb_@d@d@f@s_frequency_converter

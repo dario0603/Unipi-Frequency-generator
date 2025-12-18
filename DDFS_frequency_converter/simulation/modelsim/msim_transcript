@@ -10,14 +10,14 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/DDFS_frequency_converter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/DDFS_frequency_converter.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module DDFS_frequency_converter
 # 
 # Top level modules:
 # 	DDFS_frequency_converter
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module tb_DDFS_frequency_converter
 # 
@@ -35,6 +35,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 67
-# Simulation Breakpoint: Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 67
+# Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 87
+# Simulation Breakpoint: Break in Module tb_DDFS_frequency_converter at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS_frequency_converter/tb_DDFS_frequency_converter.v line 87
 # MACRO ./DDFS_frequency_converter_run_msim_rtl_verilog.do PAUSED at line 17

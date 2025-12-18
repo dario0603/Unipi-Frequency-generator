@@ -1,0 +1,29 @@
+
+State Machine - |LCD_module|lcd_driver:inst|state_f
+Name state_f.DIGIT_SELECT state_f.HZ_DISPLAY state_f.SETUP state_f.WAIT_EXEC state_f.CHECK_AND_WAIT state_f.WRITE_DATA 
+state_f.CHECK_AND_WAIT 0 0 0 0 0 0 
+state_f.WAIT_EXEC 0 0 0 1 1 0 
+state_f.SETUP 0 0 1 0 1 0 
+state_f.WRITE_DATA 0 0 0 0 1 1 
+state_f.HZ_DISPLAY 0 1 0 0 1 0 
+state_f.DIGIT_SELECT 1 0 0 0 1 0 
+
+State Machine - |LCD_module|lcd_driver:inst|state
+Name state.WAIT state.WAIT_BUTTON_RELEASE state.WAIT_BUTTON_SHORT state.DONE state.WRITE_DATA state.SETUP state.WAIT_EXEC state.PAGE_SELECT state.POWER_ON 
+state.POWER_ON 0 0 0 0 0 0 0 0 0 
+state.PAGE_SELECT 0 0 0 0 0 0 0 1 1 
+state.WAIT_EXEC 0 0 0 0 0 0 1 0 1 
+state.SETUP 0 0 0 0 0 1 0 0 1 
+state.WRITE_DATA 0 0 0 0 1 0 0 0 1 
+state.DONE 0 0 0 1 0 0 0 0 1 
+state.WAIT_BUTTON_SHORT 0 0 1 0 0 0 0 0 1 
+state.WAIT_BUTTON_RELEASE 0 1 0 0 0 0 0 0 1 
+state.WAIT 1 0 0 0 0 0 0 0 1 
+
+State Machine - |LCD_module|lcd_driver:inst|sub_state
+Name sub_state.PAGE_ERROR sub_state.PAGE_DEFAULT sub_state.PAGE2 sub_state.PAGE1 sub_state.PAGE0 
+sub_state.PAGE0 0 0 0 0 0 
+sub_state.PAGE1 0 0 0 1 1 
+sub_state.PAGE2 0 0 1 0 1 
+sub_state.PAGE_DEFAULT 0 1 0 0 1 
+sub_state.PAGE_ERROR 1 0 0 0 1 

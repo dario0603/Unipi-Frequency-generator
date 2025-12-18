@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DDFS_frequency_converter">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1|mult_jct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult0|mult_lct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult2" CBX_FILE_NAME="mult_kct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5|mult_ict:auto_generated|alt_mac_out:mac_out10" CBX_FILE_NAME="mac_out_gn82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6|mult_dct:auto_generated|alt_mac_mult:mac_mult9" CBX_FILE_NAME="mac_mult_1pg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1|mult_jct:auto_generated|alt_mac_out:mac_out14" CBX_FILE_NAME="mac_out_8n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult2|mult_kct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult3" CBX_FILE_NAME="mult_cct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult4|mult_fct:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6|mult_dct:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1|mult_jct:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult3|mult_cct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_cn82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult4" CBX_FILE_NAME="mult_fct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5|mult_ict:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_7pg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5|mult_ict:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_0n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult0|mult_lct:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1|mult_jct:auto_generated|alt_mac_out:mac_out16" CBX_FILE_NAME="mac_out_8n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult2|mult_kct:auto_generated|alt_mac_out:mac_out14" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5" CBX_FILE_NAME="mult_ict.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6|mult_dct:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_an82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1|mult_jct:auto_generated|alt_mac_mult:mac_mult13" CBX_FILE_NAME="mac_mult_vog1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult2|mult_kct:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5|mult_ict:auto_generated|alt_mac_mult:mac_mult9" CBX_FILE_NAME="mac_mult_7pg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6" CBX_FILE_NAME="mult_dct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6|mult_dct:auto_generated|alt_mac_out:mac_out10" CBX_FILE_NAME="mac_out_an82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult2|mult_kct:auto_generated|alt_mac_out:mac_out16" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult3|mult_cct:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5|mult_ict:auto_generated|alt_mac_out:mac_out6" CBX_FILE_NAME="mac_out_in82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult0" CBX_FILE_NAME="mult_lct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1|mult_jct:auto_generated|alt_mac_mult:mac_mult15" CBX_FILE_NAME="mac_mult_vog1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult4|mult_fct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_6n82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6|mult_dct:auto_generated|alt_mac_mult:mac_mult7" CBX_FILE_NAME="mac_mult_1pg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult6|mult_dct:auto_generated|alt_mac_out:mac_out12" CBX_FILE_NAME="mac_out_ck82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult1" CBX_FILE_NAME="mult_jct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDFS_frequency_converter|lpm_mult:Mult5|mult_ict:auto_generated|alt_mac_out:mac_out8" CBX_FILE_NAME="mac_out_gn82.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

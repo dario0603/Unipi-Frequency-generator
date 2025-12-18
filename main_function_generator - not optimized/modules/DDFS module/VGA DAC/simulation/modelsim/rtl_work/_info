@@ -1,0 +1,121 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\posta\Desktop\Programmi\Verilog\Unipi-Frequency-generator\DDFS module\VGA DAC\simulation\modelsim
+Ealtpla
+Z1 w1764670101
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\posta\Desktop\Programmi\Verilog\Unipi-Frequency-generator\DDFS module\VGA DAC\simulation\modelsim
+Z5 8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd
+Z6 FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd
+l0
+L42
+Vi[M7aPY0<A_@1QAR13GjJ3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1765817230.630000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd|
+Z10 !s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ALTPLa.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 WHzBMj3W:Oib:mbnG1hbz1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 altpla 0 22 i[M7aPY0<A_@1QAR13GjJ3
+l128
+L52
+VIG=aKd@_USP8oKT?]>oU62
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 LCX4k>aPE>AGAaWlfc@A>1
+!i10b 1
+vddfs
+IBYON4E>aASXc7InKzGXcc1
+VA>^A7;M>zGH_Bmf1`SJk23
+R4
+w1765817221
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ddfs.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ddfs.v
+L0 1
+Z13 OV;L;10.1d;51
+r1
+31
+Z14 o-vlog01compat -work work -O0
+Z15 !s92 -vlog01compat -work work {+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC} -O0
+!i10b 1
+!s100 C2HP>WAk3d5JaOY3]`oe02
+!s85 0
+!s108 1765817230.396000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ddfs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/ddfs.v|
+!s101 -O0
+vfreq_divider_DDFS
+I5dd>H2IcoTfIghmWo9:lG2
+VQaJbbRD?OcSGgLB4I<Z5E3
+R4
+w1765815871
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/freq_divider_DDFS.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/freq_divider_DDFS.v
+L0 1
+R13
+r1
+31
+R14
+R15
+nfreq_divider_@d@d@f@s
+!i10b 1
+!s100 [59D2^3WCFiT0SoO0T6CI1
+!s85 0
+!s108 1765817230.486000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/freq_divider_DDFS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/freq_divider_DDFS.v|
+!s101 -O0
+vsin_lut
+I;hzWKZWiJKH`V]MZ>LH@c0
+VXTg8^PLTAio[_DF1KbMNM1
+R4
+w1763116362
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut.v
+L0 2
+R13
+r1
+31
+R14
+R15
+!i10b 1
+!s100 bAX;^VUWa7dPEA4<WFWlI0
+!s85 0
+!s108 1765817230.570000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/sin_lut.v|
+!s101 -O0
+vtb_ddfs
+!i10b 1
+!s100 NNFL^LL6WlTm725O0f^^33
+I5g4o@5oCJlheD42L`2RN`3
+V=HY>MFV7d3W>HhWebU`Hh3
+R4
+w1765816111
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v
+L0 3
+R13
+r1
+!s85 0
+31
+!s108 1765817230.710000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/DDFS module/VGA DAC/tb_ddfs.v|
+!s101 -O0
+R14
+R15

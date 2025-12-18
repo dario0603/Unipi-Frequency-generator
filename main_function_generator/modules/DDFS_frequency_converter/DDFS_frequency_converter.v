@@ -49,10 +49,10 @@ module DDFS_frequency_converter
 	//the parameter K is pre-calculated to reduce the components on the chip
 	localparam [64:0] K = (2**64 / CLK_FREQ);
 	
-	assign mult_1000000 = (final_freq<<19)+(final_freq<<18)+(final_freq<<17)+(final_freq<<16)+(final_freq<<14)+(final_freq<<9)+(final_freq<<6)+(final_freq<<5)+(final_freq<<1);
+	assign mult_1000000 = (final_freq<<19)+(final_freq<<18)+(final_freq<<17)+(final_freq<<16)+(final_freq<<14)+(final_freq<<9)+(final_freq<<6);
 	assign mult_100000 = (final_freq<<16)+(final_freq<<15)+(final_freq<<12)+(final_freq<<7)+(final_freq<<5);
-	assign mult_10000 = (final_freq<<13)+(final_freq<<10)+(final_freq<<8)+(final_freq<<4);
-	assign mult_1000 = (final_freq<<9)+(final_freq<<8)+(final_freq<<7)+(final_freq<<3);
+	assign mult_10000 = (final_freq<<13)+(final_freq<<10)+(final_freq<<9)+(final_freq<<8)+(final_freq<<4);
+	assign mult_1000 = (final_freq<<9)+(final_freq<<8)+(final_freq<<7)+(final_freq<<6)+(final_freq<<5)+(final_freq<<3);
 	assign mult_100 = (final_freq<<6)+(final_freq<<5)+(final_freq<<2);
 	assign mult_10 = (final_freq<<3)+(final_freq<<1);
 	assign mult_2 = (final_freq<<1);
