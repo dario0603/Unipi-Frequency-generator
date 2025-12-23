@@ -507,4 +507,5 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_DDFS_frequency_convert
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_DDFS_frequency_converter.v -section_id tb_DDFS_frequency_converter
 set_global_assignment -name VERILOG_FILE C1_to_BCD_converter.v
 set_global_assignment -name VERILOG_FILE BCD_to_C1_converter.v
+set_global_assignment -name SDC_FILE keypad_freq_sel_module.out.sdc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
