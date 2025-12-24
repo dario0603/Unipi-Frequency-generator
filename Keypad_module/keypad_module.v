@@ -1,12 +1,19 @@
 module keypad_module
 #(
+
 	parameter N_COLUMN = 4, 
-	parameter N_ROW = 4
+	parameter N_ROW = 4,
+	
+	parameter [63:0] CLK_FREQ = 64'd50000000,		//value in hertz (default is 50MHz)
+	parameter [63:0] SCAN_FREQ = 64'd10000			//value in hertz (default is 10kHz)
+	
 )
 (
 	
 	// ---- SYNCHRONIZATION INPUT ---- //
 	input clk, rst_n,
+	// ---- SYNCHRONIZATION OUTPUT ---- //
+	output reg clk_ena,
 	
 	// ---- KEYPAD PINS ---- //
 	output reg [N_COLUMN-1:0] column,
@@ -17,6 +24,43 @@ module keypad_module
 	output reg data_valid
 	
 );
+
+	//parameter definitions
+	localparam FREQ_DIV = (CLK_FREQ/SCAN_FREQ > 3) ? CLK_FREQ/SCAN_FREQ : 3;	//to allow metastability finish
+
+	//clock enable generator
+	integer clock_div_cont;
+	always @(posedge clk) begin
+		if(rst_n == 0) begin
+			//reset condition
+			clock_div_cont <= 0;
+			clk_ena <= 1'b0;
+		end
+		else begin
+			clock_div_cont <= clock_div_cont + 1;
+			clk_ena <= 1'b0;
+			if (clock_div_cont >= FREQ_DIV) begin
+				clock_div_cont <= 0;
+				clk_ena <= 1'b1;
+			end
+		end
+	end
+	
+	//latch chain to reduce metastability problems
+	reg [N_ROW-1:0] row_1, row_2, row_sync;
+	always @(posedge clk) begin
+		if(rst_n == 0) begin
+			//reset condition
+			row_1 <= 0;
+			row_2 <= 0;
+			row_sync <= 0;
+		end
+		else begin
+			row_sync <= row_2;
+			row_2 <= row_1;
+			row_1 <= row;
+		end
+	end
 	
 	integer i_column;
 	reg [N_COLUMN*N_ROW-1:0] tmp_out_keys;
@@ -29,7 +73,8 @@ module keypad_module
 			tmp_out_keys <= 0;
 			data_valid <= 1'b0;
 		
-		end else begin
+		end 
+		else if(clk_ena == 1) begin
 			//event condition
 			if(i_column < 2*N_COLUMN) begin
 				
@@ -67,6 +112,12 @@ module keypad_module
 			end
 		
 		end
+		else begin
+			i_column <= i_column;
+			tmp_out_keys <= tmp_out_keys;
+			data_valid <= data_valid;
+			out_keys <= out_keys;
+		end
 	
 	end
 	
@@ -100,7 +151,7 @@ module keypad_module
 		//read button cycles
 		for(i_col=0; i_col<N_COLUMN; i_col=i_col+1) begin
 			for(i_row=0; i_row<N_ROW; i_row=i_row+1) begin
-				if(row[i_row] == 0 && i_col == (i_column >> 1)) begin
+				if(row_sync[i_row] == 0 && i_col == (i_column >> 1)) begin
 					key_pressed[i_col*N_ROW + i_row] = 1; 
 				end else begin
 					key_pressed[i_col*N_ROW + i_row] = 0; 
