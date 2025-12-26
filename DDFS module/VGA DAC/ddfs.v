@@ -34,6 +34,7 @@ module ddfs
 		.freq_cntrl(freq_cntrl),
 		.clk_out(clk_div)
 	);
+
 	
 	//lut module instance
 	reg [ADDR_WIDTH-1:0] addr;
@@ -73,44 +74,51 @@ module ddfs
 	//address counter definition
 	reg [ADDR_WIDTH+1:0] cont;
 	always @(posedge clk_div or negedge rst_n) begin
-	
 		if(rst_n == 0) begin
+			//reset condition
 			cont <= 0;
-		end else begin
-			if(cont < MAX_LUT-1) begin
-				if(cont + (fw+1) >= MAX_LUT-1)
-					cont <= MAX_LUT;
-				else
-					cont <= cont + (fw+1);
-			end
-			else if(cont < 2*MAX_LUT-1) begin
-				if(cont + (fw+1) >= 2*MAX_LUT-1)
-					cont <= 2*MAX_LUT;
-				else
-					cont <= cont + (fw+1);
-			end
-			else if(cont < 3*MAX_LUT-1) begin
-				if(cont + (fw+1) >= 3*MAX_LUT-1)
-					cont <= 3*MAX_LUT;
-				else
-					cont <= cont + (fw+1);
-			end
-			else if(cont < 4*MAX_LUT-1) begin
-				if(cont + (fw+1) >= 4*MAX_LUT-1)
-					cont <= 0;
-				else
-					cont <= cont + (fw+1);
-			end
-			else
-				cont <= 0;	
 		end
-	
+		else begin
+		
+			if(cont < MAX_LUT-1) begin
+				  if(cont + (fw+1) >= MAX_LUT-1)
+						cont <= MAX_LUT;
+				  else
+						cont <= cont + (fw+1);
+			 end
+			 else if(cont < 2*MAX_LUT-1) begin
+				  if(cont + (fw+1) >= 2*MAX_LUT-1)
+						cont <= 2*MAX_LUT;
+				  else
+						cont <= cont + (fw+1);
+			 end
+			 else if(cont < 3*MAX_LUT-1) begin
+				  if(cont + (fw+1) >= 3*MAX_LUT-1)
+						cont <= 3*MAX_LUT;
+				  else
+						cont <= cont + (fw+1);
+			 end
+			 else if(cont < 4*MAX_LUT-1) begin
+				  if(cont + (fw+1) >= 4*MAX_LUT-1)
+						cont <= 0;
+				  else
+						cont <= cont + (fw+1);
+			 end
+			 else
+				  cont <= 0;
+				  
+		end
 	end
+
 	
 	//retiming register for address counter
 	reg [ADDR_WIDTH+1:0] cont_rt;
-	always @(posedge clk_div)
-		cont_rt <= cont;
+	always @(posedge clk_div or negedge rst_n)
+		if(rst_n == 0)
+			//reset condition
+			cont_rt <= 0;
+		else 
+			cont_rt <= cont;
 	
 	//calculate address
 	always @(*) begin
@@ -119,7 +127,7 @@ module ddfs
 		addr = cont%(MAX_LUT);
 		
 		//y mirrored output
-		if(mirror_y)
+		//if(mirror_y)
 			//second quarter or fouth quarter
 			if( (cont > (MAX_LUT-1)) && (cont <= (2*MAX_LUT-1)) || (cont > (3*MAX_LUT-1)) && (cont <= (4*MAX_LUT-1)) )
 				addr = (MAX_LUT-1) - cont%(MAX_LUT);
@@ -141,17 +149,18 @@ module ddfs
 		else 
 			act_cont = cont;
 		
-		if(mirror_x && mirror_y) begin
+		//if(mirror_x && mirror_y) begin
 			//third quarter or fourth quarter
 			if( ((act_cont > (2*MAX_LUT-1)) && (act_cont <= (3*MAX_LUT-1))) || ((act_cont > (3*MAX_LUT-1)) && (act_cont <= (4*MAX_LUT-1))) )
 				q = HALF_DATA - (q_tmp >> 1) - 1;
 				
-		end else if(mirror_x) begin
+		//end 
+		//else if(mirror_x) begin
 			//second quarter or fourth quarter
 			if( ((act_cont > (MAX_LUT-1)) && (act_cont <= (2*MAX_LUT-1))) || ((act_cont > (3*MAX_LUT-1)) && (act_cont <= (4*MAX_LUT-1))) )
 				q = HALF_DATA - (q_tmp >> 1) - 1;
 		
-		end
+		//end
 			
 	end
 

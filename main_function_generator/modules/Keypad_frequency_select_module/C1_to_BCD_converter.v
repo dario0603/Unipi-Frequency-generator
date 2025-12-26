@@ -2,7 +2,7 @@ module C1_to_BCD_converter
 (
 	
 	// ---- C2 input ---- //
-	input [22:0] input_C2,
+	input [22:0] input_C1,
 
 	// ---- BCD output ---- //
 	output reg [3:0] q_1,
@@ -48,7 +48,7 @@ module C1_to_BCD_converter
 				q_7 = q_7 + 4'd3;
 			
 			//shift left the data with the input
-			{q_7, q_6, q_5, q_4, q_3, q_2, q_1} = {q_7, q_6, q_5, q_4, q_3, q_2, q_1, input_C2[22-i]};
+			{q_7, q_6, q_5, q_4, q_3, q_2, q_1} = {q_7, q_6, q_5, q_4, q_3, q_2, q_1, input_C1[22-i]};
 		
 		end
 	

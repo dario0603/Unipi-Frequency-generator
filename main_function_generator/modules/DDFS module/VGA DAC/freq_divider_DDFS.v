@@ -16,6 +16,7 @@ module freq_divider_DDFS
 	
 	always@(posedge clk_in)
 	begin
+		clk_out <= count[19];
 		if(rst_n == 1'b0) begin
 			count <= start_cnt;
 		end else if(count >= (end_cnt-1'b1))begin
@@ -61,9 +62,7 @@ module freq_divider_DDFS
 			start_cnt = 20'h80000-1000000/2;
 			end_cnt = start_cnt + 1000000;
 			end
-		endcase 
-	
-		clk_out = count[19];
+		endcase
 		
 	end
 

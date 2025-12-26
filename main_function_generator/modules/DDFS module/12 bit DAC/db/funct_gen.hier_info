@@ -64,30 +64,8 @@ triang => q_tmp.OUTPUTSELECT
 triang => q_tmp.OUTPUTSELECT
 triang => q_tmp.OUTPUTSELECT
 triang => q_tmp[1].DATAA
-mirror_x => always4.IN0
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_x => q.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => addr.OUTPUTSELECT
-mirror_y => always4.IN1
+mirror_x => ~NO_FANOUT~
+mirror_y => ~NO_FANOUT~
 fw[0] => Add0.IN14
 fw[1] => Add0.IN13
 fw[2] => Add0.IN12
@@ -114,7 +92,7 @@ q[10] <= q.DB_MAX_OUTPUT_PORT_TYPE
 q[11] <= q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|funct_gen|ddfs:inst|freq_divider:f_div_inst
+|funct_gen|ddfs:inst|freq_divider_DDFS:f_div_inst
 clk_in => count[0].CLK
 clk_in => count[1].CLK
 clk_in => count[2].CLK

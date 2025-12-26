@@ -76,7 +76,10 @@ module keypad_freq_sel_module
 	//and BCD to C2 representation converter
 	reg [3:0] BCD_1, BCD_2, BCD_3, BCD_4, BCD_5, BCD_6, BCD_7;
 	BCD_to_C1_converter BCD_C1_conv_inst(
-
+		
+		.clk(clk),
+		.rst_n(rst_n),
+		
 		.d_1(BCD_1),
 		.d_2(BCD_2),
 		.d_3(BCD_3),
@@ -84,21 +87,15 @@ module keypad_freq_sel_module
 		.d_5(BCD_5),
 		.d_6(BCD_6),
 		.d_7(BCD_7),
-		.output_C2(freq)
+		.output_C1(freq)
 
 	);
 	
-	//pipeline to increase max frequency
-	reg [22:0] freq_sync;
-	reg mirror_x_sync, mirror_y_sync;
-	always @(posedge clk) begin
-		freq_sync <= freq;
-		{mirror_x_sync, mirror_y_sync} <= {mirror_x, mirror_y};
-	end
-	
 	DDFS_frequency_converter #(.CLK_FREQ(CLK_FREQ)) DDFS_freq_conv_inst(
 	
-		.freq(freq_sync),
+		.clk(clk),
+		.rst_n(rst_n),
+		.freq(freq),
 		
 		.mirror_x(mirror_x),
 		.mirror_y(mirror_y),
