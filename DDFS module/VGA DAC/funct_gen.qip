@@ -1,0 +1,8 @@
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "sin_lut.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "ddfs.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "freq_divider_DDFS.v"]
+
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "tb_ddfs.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "tb_freq_divider.v"]
+
+set_global_assignment -name TEXT_FILE [file join $::quartus(qip_path) "sin_lut_init.txt"]

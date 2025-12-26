@@ -1993,15 +1993,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 288 672)
-	(pt 192 672)
-)
-(connector
-	(text "CLK_IN" (rect 215 656 253 668)(font "Arial" ))
-	(pt 192 672)
-	(pt 184 672)
-)
-(connector
 	(pt 96 264)
 	(pt 288 264)
 	(bus)
@@ -2058,6 +2049,11 @@ applicable agreement for further details.
 	(pt 768 408)
 	(pt 688 408)
 )
+(connector
+	(text "CLK_IN" (rect 215 656 253 668)(font "Arial" ))
+	(pt 192 672)
+	(pt 288 672)
+)
 (junction (pt 208 904))
 (junction (pt 448 904))
 (junction (pt 688 904))
@@ -2070,4 +2066,3 @@ applicable agreement for further details.
 (junction (pt 448 1016))
 (junction (pt 688 1016))
 (junction (pt 208 1016))
-(junction (pt 192 672))

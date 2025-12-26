@@ -485,24 +485,11 @@ set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_0[3]
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_0[0]
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name SDC_FILE main_function_generator.out.sdc
-set_global_assignment -name TEXT_FILE modules/LCD_module/text_lut_init.txt
-set_global_assignment -name VERILOG_FILE modules/LCD_module/text_lut.v
-set_global_assignment -name VERILOG_FILE modules/LCD_module/lcd_driver.v
-set_global_assignment -name TEXT_FILE "modules/DDFS module/VGA DAC/sin_lut_init.txt"
-set_global_assignment -name VERILOG_FILE "modules/DDFS module/VGA DAC/sin_lut.v"
-set_global_assignment -name VERILOG_FILE "modules/DDFS module/VGA DAC/freq_divider_DDFS.v"
-set_global_assignment -name VERILOG_FILE "modules/DDFS module/VGA DAC/ddfs.v"
-set_global_assignment -name VERILOG_FILE modules/Keypad_frequency_select_module/C1_to_BCD_converter.v
-set_global_assignment -name VERILOG_FILE modules/Keypad_frequency_select_module/BCD_to_C1_converter.v
-set_global_assignment -name VERILOG_FILE modules/Keypad_frequency_select_module/keypad_module.v
-set_global_assignment -name VERILOG_FILE modules/Keypad_frequency_select_module/keypad_freq_sel_module.v
-set_global_assignment -name VERILOG_FILE modules/Keypad_frequency_select_module/DDFS_frequency_converter.v
-set_global_assignment -name VERILOG_FILE modules/Keypad_frequency_select_module/BCD_to_7seg.v
 set_global_assignment -name BDF_FILE main_function_generator.bdf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name QIP_FILE ALTPLLa.qip
 set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
 set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
 set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL MAXIMUM
+set_global_assignment -name QIP_FILE main_function_generator.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

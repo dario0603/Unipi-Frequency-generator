@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LCD_module
-Wed Dec 17 18:06:59 2025
+Fri Dec 26 17:14:32 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -53,7 +53,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 17 18:06:59 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 26 17:14:32 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LCD_module                                      ;
 ; Top-level Entity Name              ; LCD_module                                      ;
@@ -171,9 +171,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                               ; Library ;
 +----------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; text_lut.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v                                   ;         ;
-; lcd_driver.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v                                 ;         ;
 ; LCD_module.bdf                               ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/LCD_module.bdf                               ;         ;
+; lcd_driver.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v                                 ;         ;
+; text_lut.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v                                   ;         ;
 ; text_lut_init.txt                            ; yes             ; Auto-Found File                                       ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut_init.txt                            ;         ;
 ; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                           ;         ;
 ; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                    ;         ;
@@ -185,7 +185,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altram.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                               ;         ;
 ; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                             ;         ;
 ; db/altsyncram_id71.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/db/altsyncram_id71.tdf                       ;         ;
-; db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif ;         ;
+; db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/db/lcd_module.ram0_text_lut_af7c7a3e.hdl.mif ;         ;
 +----------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -368,13 +368,14 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+-----------------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lcd_driver:inst ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; BCD_DIGITS     ; 4     ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd_driver:inst                                        ;
++----------------+------------------------------------------------------------------+-----------------+
+; Parameter Name ; Value                                                            ; Type            ;
++----------------+------------------------------------------------------------------+-----------------+
+; BCD_DIGITS     ; 4                                                                ; Signed Integer  ;
+; CLK_FREQ       ; 0000000000000000000000000000000000000010111110101111000010000000 ; Unsigned Binary ;
++----------------+------------------------------------------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -476,7 +477,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -486,21 +487,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Dec 17 18:06:55 2025
+    Info: Processing started: Fri Dec 26 17:14:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_module -c LCD_module
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file text_lut.v
-    Info (12023): Found entity 1: text_lut
-Info (12021): Found 1 design units, including 1 entities, in source file tb_text_lut.v
-    Info (12023): Found entity 1: tb_text_lut
-Info (12021): Found 1 design units, including 1 entities, in source file tb_lcd_driver.v
-    Info (12023): Found entity 1: tb_lcd_driver
-Info (12021): Found 1 design units, including 1 entities, in source file lcd_driver.v
-    Info (12023): Found entity 1: lcd_driver
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_module.bdf
     Info (12023): Found entity 1: LCD_module
+Info (12021): Found 1 design units, including 1 entities, in source file lcd_driver.v
+    Info (12023): Found entity 1: lcd_driver
+Info (12021): Found 1 design units, including 1 entities, in source file text_lut.v
+    Info (12023): Found entity 1: text_lut
+Info (12021): Found 1 design units, including 1 entities, in source file tb_lcd_driver.v
+    Info (12023): Found entity 1: tb_lcd_driver
+Info (12021): Found 1 design units, including 1 entities, in source file tb_text_lut.v
+    Info (12023): Found entity 1: tb_text_lut
 Info (12127): Elaborating entity "LCD_module" for the top level hierarchy
 Info (12128): Elaborating entity "lcd_driver" for hierarchy "lcd_driver:inst"
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(73): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(74): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(75): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(76): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(77): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(78): truncated value with size 64 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at lcd_driver.v(79): truncated value with size 64 to match size of target (32)
 Info (12128): Elaborating entity "text_lut" for hierarchy "lcd_driver:inst|text_lut:text_lut_inst"
 Warning (10850): Verilog HDL warning at text_lut.v(16): number of words (437) in memory file does not match the number of elements in the address range [0:2047]
 Warning (10230): Verilog HDL assignment warning at text_lut_init.txt(1): truncated value with size 12 to match size of target (9)
@@ -969,8 +977,6 @@ Info (12133): Instantiated megafunction "lcd_driver:inst|text_lut:text_lut_inst|
     Info (12134): Parameter "INIT_FILE" = "db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_id71.tdf
     Info (12023): Found entity 1: altsyncram_id71
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/db/LCD_module.ram0_text_lut_af7c7a3e.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LCD_RW" is stuck at GND
     Warning (13410): Pin "LCD_ON" is stuck at VCC
@@ -983,10 +989,10 @@ Info (21057): Implemented 429 device resources after synthesis - the final resou
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 383 logic cells
     Info (21064): Implemented 9 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 448 warnings
-    Info: Peak virtual memory: 4628 megabytes
-    Info: Processing ended: Wed Dec 17 18:06:59 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 453 warnings
+    Info: Peak virtual memory: 4627 megabytes
+    Info: Processing ended: Fri Dec 26 17:14:32 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

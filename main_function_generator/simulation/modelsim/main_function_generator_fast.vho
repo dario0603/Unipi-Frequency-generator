@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "12/26/2025 16:39:49"
+-- DATE "12/26/2025 23:36:47"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -7557,10 +7557,10 @@ SIGNAL \inst_ddfs_mod|Add2~4_combout\ : std_logic;
 SIGNAL \inst_ddfs_mod|Add2~33_combout\ : std_logic;
 SIGNAL \GPIO_0~combout\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \SW~combout\ : std_logic_vector(0 DOWNTO 0);
-SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult5|auto_generated|w695w\ : std_logic_vector(65 DOWNTO 0);
-SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult6|auto_generated|w662w\ : std_logic_vector(62 DOWNTO 0);
-SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult3|auto_generated|w761w\ : std_logic_vector(71 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult4|auto_generated|w728w\ : std_logic_vector(68 DOWNTO 0);
+SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult6|auto_generated|w662w\ : std_logic_vector(62 DOWNTO 0);
+SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult5|auto_generated|w695w\ : std_logic_vector(65 DOWNTO 0);
+SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult3|auto_generated|w761w\ : std_logic_vector(71 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult2|auto_generated|w1018w\ : std_logic_vector(75 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult0|auto_generated|w1119w\ : std_logic_vector(82 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult1|auto_generated|w1104w\ : std_logic_vector(81 DOWNTO 0);

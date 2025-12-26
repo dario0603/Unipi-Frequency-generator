@@ -1,0 +1,9 @@
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "keypad_module.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "keypad_freq_sel_module.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "DDFS_frequency_converter.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "C1_to_BCD_converter.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "BCD_to_C1_converter.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "BCD_to_7seg.v"]
+
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "tb_keypad_module.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "tb_DDFS_frequency_converter.v"]

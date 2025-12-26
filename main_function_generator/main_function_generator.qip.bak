@@ -1,0 +1,5 @@
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "PLL/ALTPLLa.qip"]
+
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "modules/LCD_module/LCD_module.qip"]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "modules/Keypad_frequency_select_module/Keypad_frequency_select_module.qip"]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "modules/DDFS module/VGA DAC/funct_gen.qip"]

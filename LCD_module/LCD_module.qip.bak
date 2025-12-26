@@ -1,0 +1,7 @@
+set_global_assignment -name VERILOG_FILE ./lcd_driver.v
+set_global_assignment -name VERILOG_FILE ./text_lut.v
+
+set_global_assignment -name VERILOG_FILE ./tb_lcd_driver.v
+set_global_assignment -name VERILOG_FILE ./tb_text_lut.v
+
+set_global_assignment -name BDF_FILE ./LCD_module.bdf

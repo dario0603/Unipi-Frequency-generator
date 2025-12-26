@@ -2,31 +2,31 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'inst_pll|altpll_component|pll|clk[0]'
+Type  : Slow Model Setup 'CLOCK_PLL'
 Slack : 1.686
 TNS   : 0.000
 
-Type  : Slow Model Setup 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Slow Model Setup 'CLK_FREQ_DIV'
 Slack : 3.820
 TNS   : 0.000
 
-Type  : Slow Model Hold 'inst_pll|altpll_component|pll|clk[0]'
+Type  : Slow Model Hold 'CLOCK_PLL'
 Slack : 0.391
 TNS   : 0.000
 
-Type  : Slow Model Hold 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Slow Model Hold 'CLK_FREQ_DIV'
 Slack : 0.848
 TNS   : 0.000
 
-Type  : Slow Model Recovery 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Slow Model Recovery 'CLK_FREQ_DIV'
 Slack : 11.777
 TNS   : 0.000
 
-Type  : Slow Model Removal 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Slow Model Removal 'CLK_FREQ_DIV'
 Slack : 2.266
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'inst_pll|altpll_component|pll|clk[0]'
+Type  : Slow Model Minimum Pulse Width 'CLOCK_PLL'
 Slack : 5.219
 TNS   : 0.000
 
@@ -34,35 +34,35 @@ Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : 10.000
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Slow Model Minimum Pulse Width 'CLK_FREQ_DIV'
 Slack : 12.362
 TNS   : 0.000
 
-Type  : Fast Model Setup 'inst_pll|altpll_component|pll|clk[0]'
+Type  : Fast Model Setup 'CLOCK_PLL'
 Slack : 7.056
 TNS   : 0.000
 
-Type  : Fast Model Setup 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Fast Model Setup 'CLK_FREQ_DIV'
 Slack : 8.315
 TNS   : 0.000
 
-Type  : Fast Model Hold 'inst_pll|altpll_component|pll|clk[0]'
+Type  : Fast Model Hold 'CLOCK_PLL'
 Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast Model Hold 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Fast Model Hold 'CLK_FREQ_DIV'
 Slack : 0.421
 TNS   : 0.000
 
-Type  : Fast Model Recovery 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Fast Model Recovery 'CLK_FREQ_DIV'
 Slack : 13.249
 TNS   : 0.000
 
-Type  : Fast Model Removal 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Fast Model Removal 'CLK_FREQ_DIV'
 Slack : 0.909
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'inst_pll|altpll_component|pll|clk[0]'
+Type  : Fast Model Minimum Pulse Width 'CLOCK_PLL'
 Slack : 5.123
 TNS   : 0.000
 
@@ -70,7 +70,7 @@ Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : 10.000
 TNS   : 0.000
 
-Type  : Fast Model Minimum Pulse Width 'ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst|clk_out'
+Type  : Fast Model Minimum Pulse Width 'CLK_FREQ_DIV'
 Slack : 12.362
 TNS   : 0.000
 
