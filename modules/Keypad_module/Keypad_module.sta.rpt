@@ -1,0 +1,1239 @@
+TimeQuest Timing Analyzer report for Keypad_module
+Sat Dec 27 17:34:14 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLOCK_50'
+ 12. Slow Model Hold: 'CLOCK_50'
+ 13. Slow Model Minimum Pulse Width: 'CLOCK_50'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'CLOCK_50'
+ 24. Fast Model Hold: 'CLOCK_50'
+ 25. Fast Model Minimum Pulse Width: 'CLOCK_50'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Keypad_module                                                     ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; CLOCK_50   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 215.33 MHz ; 215.33 MHz      ; CLOCK_50   ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------+
+; Slow Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; CLOCK_50 ; -3.644 ; -318.428      ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Slow Model Hold Summary          ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; CLOCK_50 ; 0.391 ; 0.000         ;
++----------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; CLOCK_50 ; -1.380 ; -111.380           ;
++----------+--------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLOCK_50'                                                                                                                         ;
++--------+---------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                       ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.644 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.672      ;
+; -3.644 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.672      ;
+; -3.644 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.672      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.629 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.658      ;
+; -3.583 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.611      ;
+; -3.583 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.611      ;
+; -3.583 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.611      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.568 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.597      ;
+; -3.535 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.563      ;
+; -3.535 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.563      ;
+; -3.535 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.563      ;
+; -3.531 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.559      ;
+; -3.531 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.559      ;
+; -3.531 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.559      ;
+; -3.525 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.572      ;
+; -3.525 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.572      ;
+; -3.525 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.572      ;
+; -3.525 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.572      ;
+; -3.525 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.572      ;
+; -3.525 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.572      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.520 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.549      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.516 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.545      ;
+; -3.515 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.000      ; 4.551      ;
+; -3.515 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.000      ; 4.551      ;
+; -3.515 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.000      ; 4.551      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.500 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 4.537      ;
+; -3.464 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.511      ;
+; -3.464 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.511      ;
+; -3.464 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.511      ;
+; -3.464 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.511      ;
+; -3.464 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.511      ;
+; -3.464 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.511      ;
+; -3.455 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[14]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.484      ;
+; -3.446 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.475      ;
+; -3.446 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.475      ;
+; -3.446 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.475      ;
+; -3.446 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.475      ;
+; -3.446 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.475      ;
+; -3.446 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.475      ;
+; -3.441 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.469      ;
+; -3.441 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.469      ;
+; -3.441 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.469      ;
+; -3.439 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.467      ;
+; -3.439 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.467      ;
+; -3.439 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.008     ; 4.467      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.426 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.455      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.424 ; keypad_module:inst|i_column[10] ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 4.453      ;
+; -3.416 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.463      ;
+; -3.416 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.463      ;
+; -3.416 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.463      ;
+; -3.416 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.463      ;
+; -3.416 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.463      ;
+; -3.416 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.463      ;
+; -3.412 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.459      ;
+; -3.412 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.459      ;
+; -3.412 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.459      ;
+; -3.412 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.459      ;
+; -3.412 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 4.459      ;
++--------+---------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLOCK_50'                                                                                                                                 ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; keypad_module:inst|data_valid         ; keypad_module:inst|data_valid         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[15]   ; keypad_module:inst|tmp_out_keys[15]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[14]   ; keypad_module:inst|tmp_out_keys[14]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[13]   ; keypad_module:inst|tmp_out_keys[13]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[12]   ; keypad_module:inst|tmp_out_keys[12]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[11]   ; keypad_module:inst|tmp_out_keys[11]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[10]   ; keypad_module:inst|tmp_out_keys[10]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[9]    ; keypad_module:inst|tmp_out_keys[9]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[8]    ; keypad_module:inst|tmp_out_keys[8]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[7]    ; keypad_module:inst|tmp_out_keys[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[6]    ; keypad_module:inst|tmp_out_keys[6]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[5]    ; keypad_module:inst|tmp_out_keys[5]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[4]    ; keypad_module:inst|tmp_out_keys[4]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[3]    ; keypad_module:inst|tmp_out_keys[3]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[2]    ; keypad_module:inst|tmp_out_keys[2]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[1]    ; keypad_module:inst|tmp_out_keys[1]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; keypad_module:inst|tmp_out_keys[0]    ; keypad_module:inst|tmp_out_keys[0]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.516 ; keypad_module:inst|tmp_out_keys[15]   ; keypad_module:inst|out_keys[15]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; keypad_module:inst|tmp_out_keys[9]    ; keypad_module:inst|out_keys[9]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.782      ;
+; 0.519 ; keypad_module:inst|tmp_out_keys[8]    ; keypad_module:inst|out_keys[8]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.785      ;
+; 0.521 ; keypad_module:inst|tmp_out_keys[0]    ; keypad_module:inst|out_keys[0]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.787      ;
+; 0.531 ; keypad_module:inst|clock_div_cont[31] ; keypad_module:inst|clock_div_cont[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.797      ;
+; 0.531 ; keypad_module:inst|i_column[31]       ; keypad_module:inst|i_column[31]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.797      ;
+; 0.649 ; keypad_module:inst|row_2[3]           ; keypad_module:inst|row_sync[3]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.915      ;
+; 0.652 ; keypad_module:inst|row_2[1]           ; keypad_module:inst|row_sync[1]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.918      ;
+; 0.657 ; keypad_module:inst|tmp_out_keys[12]   ; keypad_module:inst|out_keys[12]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.923      ;
+; 0.657 ; keypad_module:inst|tmp_out_keys[10]   ; keypad_module:inst|out_keys[10]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.923      ;
+; 0.660 ; keypad_module:inst|tmp_out_keys[1]    ; keypad_module:inst|out_keys[1]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.926      ;
+; 0.661 ; keypad_module:inst|tmp_out_keys[14]   ; keypad_module:inst|out_keys[14]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.927      ;
+; 0.663 ; keypad_module:inst|tmp_out_keys[2]    ; keypad_module:inst|out_keys[2]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.929      ;
+; 0.769 ; keypad_module:inst|row_1[1]           ; keypad_module:inst|row_2[1]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.035      ;
+; 0.769 ; keypad_module:inst|row_1[0]           ; keypad_module:inst|row_2[0]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.035      ;
+; 0.770 ; keypad_module:inst|row_2[0]           ; keypad_module:inst|row_sync[0]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.036      ;
+; 0.771 ; keypad_module:inst|row_1[2]           ; keypad_module:inst|row_2[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.037      ;
+; 0.788 ; keypad_module:inst|clock_div_cont[0]  ; keypad_module:inst|clock_div_cont[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.054      ;
+; 0.795 ; keypad_module:inst|clock_div_cont[16] ; keypad_module:inst|clock_div_cont[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795 ; keypad_module:inst|i_column[0]        ; keypad_module:inst|i_column[0]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795 ; keypad_module:inst|i_column[16]       ; keypad_module:inst|i_column[16]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.061      ;
+; 0.798 ; keypad_module:inst|clock_div_cont[1]  ; keypad_module:inst|clock_div_cont[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.064      ;
+; 0.799 ; keypad_module:inst|clock_div_cont[2]  ; keypad_module:inst|clock_div_cont[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.065      ;
+; 0.802 ; keypad_module:inst|row_2[2]           ; keypad_module:inst|row_sync[2]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.068      ;
+; 0.804 ; keypad_module:inst|row_1[3]           ; keypad_module:inst|row_2[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.070      ;
+; 0.805 ; keypad_module:inst|clock_div_cont[17] ; keypad_module:inst|clock_div_cont[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; keypad_module:inst|i_column[1]        ; keypad_module:inst|i_column[1]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; keypad_module:inst|i_column[17]       ; keypad_module:inst|i_column[17]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.071      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[4]  ; keypad_module:inst|clock_div_cont[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[7]  ; keypad_module:inst|clock_div_cont[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[9]  ; keypad_module:inst|clock_div_cont[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[11] ; keypad_module:inst|clock_div_cont[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[13] ; keypad_module:inst|clock_div_cont[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[14] ; keypad_module:inst|clock_div_cont[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[15] ; keypad_module:inst|clock_div_cont[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[18] ; keypad_module:inst|clock_div_cont[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[20] ; keypad_module:inst|clock_div_cont[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[23] ; keypad_module:inst|clock_div_cont[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[25] ; keypad_module:inst|clock_div_cont[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[27] ; keypad_module:inst|clock_div_cont[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[29] ; keypad_module:inst|clock_div_cont[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|clock_div_cont[30] ; keypad_module:inst|clock_div_cont[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[2]        ; keypad_module:inst|i_column[2]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[4]        ; keypad_module:inst|i_column[4]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[7]        ; keypad_module:inst|i_column[7]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[9]        ; keypad_module:inst|i_column[9]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[11]       ; keypad_module:inst|i_column[11]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[13]       ; keypad_module:inst|i_column[13]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[14]       ; keypad_module:inst|i_column[14]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[15]       ; keypad_module:inst|i_column[15]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[18]       ; keypad_module:inst|i_column[18]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[20]       ; keypad_module:inst|i_column[20]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[23]       ; keypad_module:inst|i_column[23]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[25]       ; keypad_module:inst|i_column[25]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[27]       ; keypad_module:inst|i_column[27]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[29]       ; keypad_module:inst|i_column[29]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; keypad_module:inst|i_column[30]       ; keypad_module:inst|i_column[30]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.836 ; keypad_module:inst|tmp_out_keys[3]    ; keypad_module:inst|out_keys[3]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.102      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[3]  ; keypad_module:inst|clock_div_cont[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[8]  ; keypad_module:inst|clock_div_cont[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[10] ; keypad_module:inst|clock_div_cont[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[12] ; keypad_module:inst|clock_div_cont[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[19] ; keypad_module:inst|clock_div_cont[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[24] ; keypad_module:inst|clock_div_cont[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[26] ; keypad_module:inst|clock_div_cont[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|clock_div_cont[28] ; keypad_module:inst|clock_div_cont[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[8]        ; keypad_module:inst|i_column[8]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[10]       ; keypad_module:inst|i_column[10]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[12]       ; keypad_module:inst|i_column[12]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[19]       ; keypad_module:inst|i_column[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[24]       ; keypad_module:inst|i_column[24]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[26]       ; keypad_module:inst|i_column[26]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[28]       ; keypad_module:inst|i_column[28]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; keypad_module:inst|i_column[3]        ; keypad_module:inst|i_column[3]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.839 ; keypad_module:inst|clock_div_cont[5]  ; keypad_module:inst|clock_div_cont[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|clock_div_cont[6]  ; keypad_module:inst|clock_div_cont[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|clock_div_cont[21] ; keypad_module:inst|clock_div_cont[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|clock_div_cont[22] ; keypad_module:inst|clock_div_cont[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|i_column[5]        ; keypad_module:inst|i_column[5]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|i_column[6]        ; keypad_module:inst|i_column[6]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|i_column[21]       ; keypad_module:inst|i_column[21]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; keypad_module:inst|i_column[22]       ; keypad_module:inst|i_column[22]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.985 ; keypad_module:inst|tmp_out_keys[11]   ; keypad_module:inst|out_keys[11]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.018      ; 1.269      ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLOCK_50'                                                                                ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                                ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK_50 ; Rise       ; CLOCK_50                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clk_ena            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clk_ena            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[12] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[12] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[13] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[13] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[14] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[14] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[15] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[15] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[16] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[16] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[17] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[17] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[18] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[18] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[19] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[19] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[20] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[20] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[21] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[21] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[22] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[22] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[23] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[23] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[24] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[24] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[25] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[25] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[26] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[26] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[27] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[27] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[28] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[28] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[29] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[29] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[30] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[30] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[31] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[31] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|data_valid         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|data_valid         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[16]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[16]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[17]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[17]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[18]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[18]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[19]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[19]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[20]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[20]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[21]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[21]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[22]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[22]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[23]       ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Setup Times                                                            ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]  ; CLOCK_50   ; 5.142 ; 5.142 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[0] ; CLOCK_50   ; 4.449 ; 4.449 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[1] ; CLOCK_50   ; 5.142 ; 5.142 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[2] ; CLOCK_50   ; 4.987 ; 4.987 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[3] ; CLOCK_50   ; 4.794 ; 4.794 ; Rise       ; CLOCK_50        ;
+; SW[*]      ; CLOCK_50   ; 1.897 ; 1.897 ; Rise       ; CLOCK_50        ;
+;  SW[0]     ; CLOCK_50   ; 1.897 ; 1.897 ; Rise       ; CLOCK_50        ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; GPIO_0[*]  ; CLOCK_50   ; -4.219 ; -4.219 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[0] ; CLOCK_50   ; -4.219 ; -4.219 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[1] ; CLOCK_50   ; -4.912 ; -4.912 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[2] ; CLOCK_50   ; -4.757 ; -4.757 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[3] ; CLOCK_50   ; -4.564 ; -4.564 ; Rise       ; CLOCK_50        ;
+; SW[*]      ; CLOCK_50   ; 0.197  ; 0.197  ; Rise       ; CLOCK_50        ;
+;  SW[0]     ; CLOCK_50   ; 0.197  ; 0.197  ; Rise       ; CLOCK_50        ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; GPIO_1[*]   ; CLOCK_50   ; 10.101 ; 10.101 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[32] ; CLOCK_50   ; 9.799  ; 9.799  ; Rise       ; CLOCK_50        ;
+;  GPIO_1[33] ; CLOCK_50   ; 10.083 ; 10.083 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[34] ; CLOCK_50   ; 9.926  ; 9.926  ; Rise       ; CLOCK_50        ;
+;  GPIO_1[35] ; CLOCK_50   ; 10.101 ; 10.101 ; Rise       ; CLOCK_50        ;
+; LEDG[*]     ; CLOCK_50   ; 7.223  ; 7.223  ; Rise       ; CLOCK_50        ;
+;  LEDG[1]    ; CLOCK_50   ; 7.223  ; 7.223  ; Rise       ; CLOCK_50        ;
+; LEDR[*]     ; CLOCK_50   ; 8.995  ; 8.995  ; Rise       ; CLOCK_50        ;
+;  LEDR[0]    ; CLOCK_50   ; 7.023  ; 7.023  ; Rise       ; CLOCK_50        ;
+;  LEDR[1]    ; CLOCK_50   ; 7.016  ; 7.016  ; Rise       ; CLOCK_50        ;
+;  LEDR[2]    ; CLOCK_50   ; 6.993  ; 6.993  ; Rise       ; CLOCK_50        ;
+;  LEDR[3]    ; CLOCK_50   ; 7.063  ; 7.063  ; Rise       ; CLOCK_50        ;
+;  LEDR[4]    ; CLOCK_50   ; 6.715  ; 6.715  ; Rise       ; CLOCK_50        ;
+;  LEDR[5]    ; CLOCK_50   ; 6.726  ; 6.726  ; Rise       ; CLOCK_50        ;
+;  LEDR[6]    ; CLOCK_50   ; 6.712  ; 6.712  ; Rise       ; CLOCK_50        ;
+;  LEDR[7]    ; CLOCK_50   ; 6.709  ; 6.709  ; Rise       ; CLOCK_50        ;
+;  LEDR[8]    ; CLOCK_50   ; 8.599  ; 8.599  ; Rise       ; CLOCK_50        ;
+;  LEDR[9]    ; CLOCK_50   ; 8.498  ; 8.498  ; Rise       ; CLOCK_50        ;
+;  LEDR[10]   ; CLOCK_50   ; 8.418  ; 8.418  ; Rise       ; CLOCK_50        ;
+;  LEDR[11]   ; CLOCK_50   ; 8.290  ; 8.290  ; Rise       ; CLOCK_50        ;
+;  LEDR[12]   ; CLOCK_50   ; 7.721  ; 7.721  ; Rise       ; CLOCK_50        ;
+;  LEDR[13]   ; CLOCK_50   ; 8.305  ; 8.305  ; Rise       ; CLOCK_50        ;
+;  LEDR[14]   ; CLOCK_50   ; 7.690  ; 7.690  ; Rise       ; CLOCK_50        ;
+;  LEDR[15]   ; CLOCK_50   ; 8.995  ; 8.995  ; Rise       ; CLOCK_50        ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_1[*]   ; CLOCK_50   ; 7.197 ; 7.197 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[32] ; CLOCK_50   ; 7.197 ; 7.197 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[33] ; CLOCK_50   ; 7.634 ; 7.634 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[34] ; CLOCK_50   ; 7.324 ; 7.324 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[35] ; CLOCK_50   ; 7.651 ; 7.651 ; Rise       ; CLOCK_50        ;
+; LEDG[*]     ; CLOCK_50   ; 7.223 ; 7.223 ; Rise       ; CLOCK_50        ;
+;  LEDG[1]    ; CLOCK_50   ; 7.223 ; 7.223 ; Rise       ; CLOCK_50        ;
+; LEDR[*]     ; CLOCK_50   ; 6.709 ; 6.709 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]    ; CLOCK_50   ; 7.023 ; 7.023 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]    ; CLOCK_50   ; 7.016 ; 7.016 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]    ; CLOCK_50   ; 6.993 ; 6.993 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]    ; CLOCK_50   ; 7.063 ; 7.063 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]    ; CLOCK_50   ; 6.715 ; 6.715 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]    ; CLOCK_50   ; 6.726 ; 6.726 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]    ; CLOCK_50   ; 6.712 ; 6.712 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]    ; CLOCK_50   ; 6.709 ; 6.709 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]    ; CLOCK_50   ; 8.599 ; 8.599 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]    ; CLOCK_50   ; 8.498 ; 8.498 ; Rise       ; CLOCK_50        ;
+;  LEDR[10]   ; CLOCK_50   ; 8.418 ; 8.418 ; Rise       ; CLOCK_50        ;
+;  LEDR[11]   ; CLOCK_50   ; 8.290 ; 8.290 ; Rise       ; CLOCK_50        ;
+;  LEDR[12]   ; CLOCK_50   ; 7.721 ; 7.721 ; Rise       ; CLOCK_50        ;
+;  LEDR[13]   ; CLOCK_50   ; 8.305 ; 8.305 ; Rise       ; CLOCK_50        ;
+;  LEDR[14]   ; CLOCK_50   ; 7.690 ; 7.690 ; Rise       ; CLOCK_50        ;
+;  LEDR[15]   ; CLOCK_50   ; 8.995 ; 8.995 ; Rise       ; CLOCK_50        ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------+
+; Fast Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; CLOCK_50 ; -1.167 ; -95.871       ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Fast Model Hold Summary          ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; CLOCK_50 ; 0.215 ; 0.000         ;
++----------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; CLOCK_50 ; -1.380 ; -111.380           ;
++----------+--------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLOCK_50'                                                                                                                         ;
++--------+---------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                       ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.167 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.192      ;
+; -1.167 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.192      ;
+; -1.167 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.192      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.159 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.184      ;
+; -1.134 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.159      ;
+; -1.134 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.159      ;
+; -1.134 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.159      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.126 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.151      ;
+; -1.123 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.166      ;
+; -1.123 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.166      ;
+; -1.123 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.166      ;
+; -1.123 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.166      ;
+; -1.123 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.166      ;
+; -1.123 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.166      ;
+; -1.113 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.138      ;
+; -1.113 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.138      ;
+; -1.113 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.138      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.105 ; keypad_module:inst|i_column[11] ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.130      ;
+; -1.100 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.133      ;
+; -1.100 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.133      ;
+; -1.100 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.133      ;
+; -1.093 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.118      ;
+; -1.093 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.118      ;
+; -1.093 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.118      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.092 ; keypad_module:inst|i_column[19] ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.125      ;
+; -1.091 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|out_keys[14]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.006     ; 2.117      ;
+; -1.090 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.133      ;
+; -1.090 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.133      ;
+; -1.090 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.133      ;
+; -1.090 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.133      ;
+; -1.090 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.133      ;
+; -1.090 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.133      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.085 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.110      ;
+; -1.083 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.108      ;
+; -1.083 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.108      ;
+; -1.083 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.108      ;
+; -1.078 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.103      ;
+; -1.078 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.103      ;
+; -1.078 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.103      ;
+; -1.078 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.103      ;
+; -1.078 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.103      ;
+; -1.078 ; keypad_module:inst|i_column[5]  ; keypad_module:inst|tmp_out_keys[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.103      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.075 ; keypad_module:inst|i_column[4]  ; keypad_module:inst|tmp_out_keys[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.007     ; 2.100      ;
+; -1.069 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.112      ;
+; -1.069 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.112      ;
+; -1.069 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.112      ;
+; -1.069 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.112      ;
+; -1.069 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.112      ;
+; -1.069 ; keypad_module:inst|i_column[11] ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.112      ;
+; -1.058 ; keypad_module:inst|i_column[8]  ; keypad_module:inst|out_keys[14]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.006     ; 2.084      ;
+; -1.056 ; keypad_module:inst|i_column[19] ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.019      ; 2.107      ;
+; -1.056 ; keypad_module:inst|i_column[19] ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.019      ; 2.107      ;
+; -1.056 ; keypad_module:inst|i_column[19] ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.019      ; 2.107      ;
+; -1.056 ; keypad_module:inst|i_column[19] ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.019      ; 2.107      ;
+; -1.056 ; keypad_module:inst|i_column[19] ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.019      ; 2.107      ;
+; -1.056 ; keypad_module:inst|i_column[19] ; keypad_module:inst|out_keys[4]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.019      ; 2.107      ;
+; -1.051 ; keypad_module:inst|i_column[26] ; keypad_module:inst|tmp_out_keys[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.084      ;
+; -1.051 ; keypad_module:inst|i_column[26] ; keypad_module:inst|tmp_out_keys[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.084      ;
+; -1.051 ; keypad_module:inst|i_column[26] ; keypad_module:inst|tmp_out_keys[8]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.001      ; 2.084      ;
+; -1.049 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[13]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.092      ;
+; -1.049 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[11]     ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.092      ;
+; -1.049 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[7]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.092      ;
+; -1.049 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[6]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.092      ;
+; -1.049 ; keypad_module:inst|i_column[9]  ; keypad_module:inst|out_keys[5]      ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.011      ; 2.092      ;
++--------+---------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLOCK_50'                                                                                                                                 ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; keypad_module:inst|data_valid         ; keypad_module:inst|data_valid         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[15]   ; keypad_module:inst|tmp_out_keys[15]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[14]   ; keypad_module:inst|tmp_out_keys[14]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[13]   ; keypad_module:inst|tmp_out_keys[13]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[12]   ; keypad_module:inst|tmp_out_keys[12]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[11]   ; keypad_module:inst|tmp_out_keys[11]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[10]   ; keypad_module:inst|tmp_out_keys[10]   ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[9]    ; keypad_module:inst|tmp_out_keys[9]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[8]    ; keypad_module:inst|tmp_out_keys[8]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[7]    ; keypad_module:inst|tmp_out_keys[7]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[6]    ; keypad_module:inst|tmp_out_keys[6]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[5]    ; keypad_module:inst|tmp_out_keys[5]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[4]    ; keypad_module:inst|tmp_out_keys[4]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[3]    ; keypad_module:inst|tmp_out_keys[3]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[2]    ; keypad_module:inst|tmp_out_keys[2]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[1]    ; keypad_module:inst|tmp_out_keys[1]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; keypad_module:inst|tmp_out_keys[0]    ; keypad_module:inst|tmp_out_keys[0]    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.237 ; keypad_module:inst|tmp_out_keys[15]   ; keypad_module:inst|out_keys[15]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.389      ;
+; 0.238 ; keypad_module:inst|tmp_out_keys[9]    ; keypad_module:inst|out_keys[9]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.390      ;
+; 0.239 ; keypad_module:inst|tmp_out_keys[8]    ; keypad_module:inst|out_keys[8]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.391      ;
+; 0.241 ; keypad_module:inst|tmp_out_keys[0]    ; keypad_module:inst|out_keys[0]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.393      ;
+; 0.243 ; keypad_module:inst|clock_div_cont[31] ; keypad_module:inst|clock_div_cont[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; keypad_module:inst|i_column[31]       ; keypad_module:inst|i_column[31]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.395      ;
+; 0.309 ; keypad_module:inst|tmp_out_keys[14]   ; keypad_module:inst|out_keys[14]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.001      ; 0.462      ;
+; 0.315 ; keypad_module:inst|row_2[3]           ; keypad_module:inst|row_sync[3]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.467      ;
+; 0.318 ; keypad_module:inst|row_2[1]           ; keypad_module:inst|row_sync[1]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.470      ;
+; 0.323 ; keypad_module:inst|tmp_out_keys[12]   ; keypad_module:inst|out_keys[12]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.475      ;
+; 0.323 ; keypad_module:inst|tmp_out_keys[10]   ; keypad_module:inst|out_keys[10]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.475      ;
+; 0.324 ; keypad_module:inst|tmp_out_keys[1]    ; keypad_module:inst|out_keys[1]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.476      ;
+; 0.327 ; keypad_module:inst|tmp_out_keys[2]    ; keypad_module:inst|out_keys[2]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.479      ;
+; 0.353 ; keypad_module:inst|clock_div_cont[0]  ; keypad_module:inst|clock_div_cont[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.505      ;
+; 0.355 ; keypad_module:inst|clock_div_cont[16] ; keypad_module:inst|clock_div_cont[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; keypad_module:inst|i_column[0]        ; keypad_module:inst|i_column[0]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; keypad_module:inst|i_column[16]       ; keypad_module:inst|i_column[16]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.507      ;
+; 0.357 ; keypad_module:inst|clock_div_cont[1]  ; keypad_module:inst|clock_div_cont[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.509      ;
+; 0.358 ; keypad_module:inst|clock_div_cont[2]  ; keypad_module:inst|clock_div_cont[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.510      ;
+; 0.359 ; keypad_module:inst|clock_div_cont[17] ; keypad_module:inst|clock_div_cont[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; keypad_module:inst|i_column[1]        ; keypad_module:inst|i_column[1]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; keypad_module:inst|i_column[17]       ; keypad_module:inst|i_column[17]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.511      ;
+; 0.360 ; keypad_module:inst|clock_div_cont[9]  ; keypad_module:inst|clock_div_cont[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|clock_div_cont[11] ; keypad_module:inst|clock_div_cont[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|clock_div_cont[18] ; keypad_module:inst|clock_div_cont[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|clock_div_cont[25] ; keypad_module:inst|clock_div_cont[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|clock_div_cont[27] ; keypad_module:inst|clock_div_cont[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|i_column[2]        ; keypad_module:inst|i_column[2]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|i_column[9]        ; keypad_module:inst|i_column[9]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|i_column[11]       ; keypad_module:inst|i_column[11]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|i_column[18]       ; keypad_module:inst|i_column[18]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|i_column[25]       ; keypad_module:inst|i_column[25]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; keypad_module:inst|i_column[27]       ; keypad_module:inst|i_column[27]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[4]  ; keypad_module:inst|clock_div_cont[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[7]  ; keypad_module:inst|clock_div_cont[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[13] ; keypad_module:inst|clock_div_cont[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[14] ; keypad_module:inst|clock_div_cont[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[15] ; keypad_module:inst|clock_div_cont[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[20] ; keypad_module:inst|clock_div_cont[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[23] ; keypad_module:inst|clock_div_cont[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[29] ; keypad_module:inst|clock_div_cont[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|clock_div_cont[30] ; keypad_module:inst|clock_div_cont[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[4]        ; keypad_module:inst|i_column[4]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[7]        ; keypad_module:inst|i_column[7]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[13]       ; keypad_module:inst|i_column[13]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[14]       ; keypad_module:inst|i_column[14]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[15]       ; keypad_module:inst|i_column[15]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[20]       ; keypad_module:inst|i_column[20]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[23]       ; keypad_module:inst|i_column[23]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[29]       ; keypad_module:inst|i_column[29]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; keypad_module:inst|i_column[30]       ; keypad_module:inst|i_column[30]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.362 ; keypad_module:inst|row_1[1]           ; keypad_module:inst|row_2[1]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; keypad_module:inst|row_1[0]           ; keypad_module:inst|row_2[0]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363 ; keypad_module:inst|row_2[0]           ; keypad_module:inst|row_sync[0]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; keypad_module:inst|row_1[2]           ; keypad_module:inst|row_2[2]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.516      ;
+; 0.371 ; keypad_module:inst|clock_div_cont[3]  ; keypad_module:inst|clock_div_cont[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|clock_div_cont[8]  ; keypad_module:inst|clock_div_cont[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|clock_div_cont[10] ; keypad_module:inst|clock_div_cont[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|clock_div_cont[19] ; keypad_module:inst|clock_div_cont[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|clock_div_cont[24] ; keypad_module:inst|clock_div_cont[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|clock_div_cont[26] ; keypad_module:inst|clock_div_cont[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|i_column[8]        ; keypad_module:inst|i_column[8]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|i_column[10]       ; keypad_module:inst|i_column[10]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|i_column[19]       ; keypad_module:inst|i_column[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|i_column[24]       ; keypad_module:inst|i_column[24]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|i_column[26]       ; keypad_module:inst|i_column[26]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; keypad_module:inst|i_column[3]        ; keypad_module:inst|i_column[3]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372 ; keypad_module:inst|clock_div_cont[5]  ; keypad_module:inst|clock_div_cont[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|clock_div_cont[6]  ; keypad_module:inst|clock_div_cont[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|clock_div_cont[12] ; keypad_module:inst|clock_div_cont[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|clock_div_cont[21] ; keypad_module:inst|clock_div_cont[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|clock_div_cont[22] ; keypad_module:inst|clock_div_cont[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|clock_div_cont[28] ; keypad_module:inst|clock_div_cont[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|i_column[5]        ; keypad_module:inst|i_column[5]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|i_column[6]        ; keypad_module:inst|i_column[6]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|i_column[12]       ; keypad_module:inst|i_column[12]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|i_column[21]       ; keypad_module:inst|i_column[21]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|i_column[22]       ; keypad_module:inst|i_column[22]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; keypad_module:inst|i_column[28]       ; keypad_module:inst|i_column[28]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.374 ; keypad_module:inst|row_2[2]           ; keypad_module:inst|row_sync[2]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.526      ;
+; 0.376 ; keypad_module:inst|row_1[3]           ; keypad_module:inst|row_2[3]           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.528      ;
+; 0.403 ; keypad_module:inst|tmp_out_keys[3]    ; keypad_module:inst|out_keys[3]        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.000      ; 0.555      ;
+; 0.446 ; keypad_module:inst|tmp_out_keys[11]   ; keypad_module:inst|out_keys[11]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.018      ; 0.616      ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLOCK_50'                                                                                ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                                ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK_50 ; Rise       ; CLOCK_50                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clk_ena            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clk_ena            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[12] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[12] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[13] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[13] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[14] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[14] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[15] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[15] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[16] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[16] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[17] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[17] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[18] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[18] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[19] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[19] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[20] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[20] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[21] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[21] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[22] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[22] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[23] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[23] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[24] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[24] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[25] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[25] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[26] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[26] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[27] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[27] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[28] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[28] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[29] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[29] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[30] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[30] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[31] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[31] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|clock_div_cont[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|data_valid         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|data_valid         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[16]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[16]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[17]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[17]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[18]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[18]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[19]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[19]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[20]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[20]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[21]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[21]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[22]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[22]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_50 ; Rise       ; keypad_module:inst|i_column[23]       ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Setup Times                                                            ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]  ; CLOCK_50   ; 2.714 ; 2.714 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[0] ; CLOCK_50   ; 2.471 ; 2.471 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[1] ; CLOCK_50   ; 2.714 ; 2.714 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[2] ; CLOCK_50   ; 2.644 ; 2.644 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[3] ; CLOCK_50   ; 2.569 ; 2.569 ; Rise       ; CLOCK_50        ;
+; SW[*]      ; CLOCK_50   ; 0.706 ; 0.706 ; Rise       ; CLOCK_50        ;
+;  SW[0]     ; CLOCK_50   ; 0.706 ; 0.706 ; Rise       ; CLOCK_50        ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; GPIO_0[*]  ; CLOCK_50   ; -2.351 ; -2.351 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[0] ; CLOCK_50   ; -2.351 ; -2.351 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[1] ; CLOCK_50   ; -2.594 ; -2.594 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[2] ; CLOCK_50   ; -2.524 ; -2.524 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[3] ; CLOCK_50   ; -2.449 ; -2.449 ; Rise       ; CLOCK_50        ;
+; SW[*]      ; CLOCK_50   ; 0.350  ; 0.350  ; Rise       ; CLOCK_50        ;
+;  SW[0]     ; CLOCK_50   ; 0.350  ; 0.350  ; Rise       ; CLOCK_50        ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_1[*]   ; CLOCK_50   ; 5.249 ; 5.249 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[32] ; CLOCK_50   ; 5.096 ; 5.096 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[33] ; CLOCK_50   ; 5.233 ; 5.233 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[34] ; CLOCK_50   ; 5.165 ; 5.165 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[35] ; CLOCK_50   ; 5.249 ; 5.249 ; Rise       ; CLOCK_50        ;
+; LEDG[*]     ; CLOCK_50   ; 4.056 ; 4.056 ; Rise       ; CLOCK_50        ;
+;  LEDG[1]    ; CLOCK_50   ; 4.056 ; 4.056 ; Rise       ; CLOCK_50        ;
+; LEDR[*]     ; CLOCK_50   ; 4.883 ; 4.883 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]    ; CLOCK_50   ; 3.974 ; 3.974 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]    ; CLOCK_50   ; 3.969 ; 3.969 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]    ; CLOCK_50   ; 3.942 ; 3.942 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]    ; CLOCK_50   ; 3.976 ; 3.976 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]    ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]    ; CLOCK_50   ; 3.835 ; 3.835 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]    ; CLOCK_50   ; 3.821 ; 3.821 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]    ; CLOCK_50   ; 3.820 ; 3.820 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]    ; CLOCK_50   ; 4.737 ; 4.737 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]    ; CLOCK_50   ; 4.641 ; 4.641 ; Rise       ; CLOCK_50        ;
+;  LEDR[10]   ; CLOCK_50   ; 4.593 ; 4.593 ; Rise       ; CLOCK_50        ;
+;  LEDR[11]   ; CLOCK_50   ; 4.524 ; 4.524 ; Rise       ; CLOCK_50        ;
+;  LEDR[12]   ; CLOCK_50   ; 4.344 ; 4.344 ; Rise       ; CLOCK_50        ;
+;  LEDR[13]   ; CLOCK_50   ; 4.535 ; 4.535 ; Rise       ; CLOCK_50        ;
+;  LEDR[14]   ; CLOCK_50   ; 4.345 ; 4.345 ; Rise       ; CLOCK_50        ;
+;  LEDR[15]   ; CLOCK_50   ; 4.883 ; 4.883 ; Rise       ; CLOCK_50        ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_1[*]   ; CLOCK_50   ; 3.972 ; 3.972 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[32] ; CLOCK_50   ; 3.972 ; 3.972 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[33] ; CLOCK_50   ; 4.155 ; 4.155 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[34] ; CLOCK_50   ; 4.040 ; 4.040 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[35] ; CLOCK_50   ; 4.171 ; 4.171 ; Rise       ; CLOCK_50        ;
+; LEDG[*]     ; CLOCK_50   ; 4.056 ; 4.056 ; Rise       ; CLOCK_50        ;
+;  LEDG[1]    ; CLOCK_50   ; 4.056 ; 4.056 ; Rise       ; CLOCK_50        ;
+; LEDR[*]     ; CLOCK_50   ; 3.820 ; 3.820 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]    ; CLOCK_50   ; 3.974 ; 3.974 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]    ; CLOCK_50   ; 3.969 ; 3.969 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]    ; CLOCK_50   ; 3.942 ; 3.942 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]    ; CLOCK_50   ; 3.976 ; 3.976 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]    ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]    ; CLOCK_50   ; 3.835 ; 3.835 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]    ; CLOCK_50   ; 3.821 ; 3.821 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]    ; CLOCK_50   ; 3.820 ; 3.820 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]    ; CLOCK_50   ; 4.737 ; 4.737 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]    ; CLOCK_50   ; 4.641 ; 4.641 ; Rise       ; CLOCK_50        ;
+;  LEDR[10]   ; CLOCK_50   ; 4.593 ; 4.593 ; Rise       ; CLOCK_50        ;
+;  LEDR[11]   ; CLOCK_50   ; 4.524 ; 4.524 ; Rise       ; CLOCK_50        ;
+;  LEDR[12]   ; CLOCK_50   ; 4.344 ; 4.344 ; Rise       ; CLOCK_50        ;
+;  LEDR[13]   ; CLOCK_50   ; 4.535 ; 4.535 ; Rise       ; CLOCK_50        ;
+;  LEDR[14]   ; CLOCK_50   ; 4.345 ; 4.345 ; Rise       ; CLOCK_50        ;
+;  LEDR[15]   ; CLOCK_50   ; 4.883 ; 4.883 ; Rise       ; CLOCK_50        ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.644   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  CLOCK_50        ; -3.644   ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -318.428 ; 0.0   ; 0.0      ; 0.0     ; -111.38             ;
+;  CLOCK_50        ; -318.428 ; 0.000 ; N/A      ; N/A     ; -111.380            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------+
+; Setup Times                                                            ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; GPIO_0[*]  ; CLOCK_50   ; 5.142 ; 5.142 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[0] ; CLOCK_50   ; 4.449 ; 4.449 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[1] ; CLOCK_50   ; 5.142 ; 5.142 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[2] ; CLOCK_50   ; 4.987 ; 4.987 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[3] ; CLOCK_50   ; 4.794 ; 4.794 ; Rise       ; CLOCK_50        ;
+; SW[*]      ; CLOCK_50   ; 1.897 ; 1.897 ; Rise       ; CLOCK_50        ;
+;  SW[0]     ; CLOCK_50   ; 1.897 ; 1.897 ; Rise       ; CLOCK_50        ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; GPIO_0[*]  ; CLOCK_50   ; -2.351 ; -2.351 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[0] ; CLOCK_50   ; -2.351 ; -2.351 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[1] ; CLOCK_50   ; -2.594 ; -2.594 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[2] ; CLOCK_50   ; -2.524 ; -2.524 ; Rise       ; CLOCK_50        ;
+;  GPIO_0[3] ; CLOCK_50   ; -2.449 ; -2.449 ; Rise       ; CLOCK_50        ;
+; SW[*]      ; CLOCK_50   ; 0.350  ; 0.350  ; Rise       ; CLOCK_50        ;
+;  SW[0]     ; CLOCK_50   ; 0.350  ; 0.350  ; Rise       ; CLOCK_50        ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; GPIO_1[*]   ; CLOCK_50   ; 10.101 ; 10.101 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[32] ; CLOCK_50   ; 9.799  ; 9.799  ; Rise       ; CLOCK_50        ;
+;  GPIO_1[33] ; CLOCK_50   ; 10.083 ; 10.083 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[34] ; CLOCK_50   ; 9.926  ; 9.926  ; Rise       ; CLOCK_50        ;
+;  GPIO_1[35] ; CLOCK_50   ; 10.101 ; 10.101 ; Rise       ; CLOCK_50        ;
+; LEDG[*]     ; CLOCK_50   ; 7.223  ; 7.223  ; Rise       ; CLOCK_50        ;
+;  LEDG[1]    ; CLOCK_50   ; 7.223  ; 7.223  ; Rise       ; CLOCK_50        ;
+; LEDR[*]     ; CLOCK_50   ; 8.995  ; 8.995  ; Rise       ; CLOCK_50        ;
+;  LEDR[0]    ; CLOCK_50   ; 7.023  ; 7.023  ; Rise       ; CLOCK_50        ;
+;  LEDR[1]    ; CLOCK_50   ; 7.016  ; 7.016  ; Rise       ; CLOCK_50        ;
+;  LEDR[2]    ; CLOCK_50   ; 6.993  ; 6.993  ; Rise       ; CLOCK_50        ;
+;  LEDR[3]    ; CLOCK_50   ; 7.063  ; 7.063  ; Rise       ; CLOCK_50        ;
+;  LEDR[4]    ; CLOCK_50   ; 6.715  ; 6.715  ; Rise       ; CLOCK_50        ;
+;  LEDR[5]    ; CLOCK_50   ; 6.726  ; 6.726  ; Rise       ; CLOCK_50        ;
+;  LEDR[6]    ; CLOCK_50   ; 6.712  ; 6.712  ; Rise       ; CLOCK_50        ;
+;  LEDR[7]    ; CLOCK_50   ; 6.709  ; 6.709  ; Rise       ; CLOCK_50        ;
+;  LEDR[8]    ; CLOCK_50   ; 8.599  ; 8.599  ; Rise       ; CLOCK_50        ;
+;  LEDR[9]    ; CLOCK_50   ; 8.498  ; 8.498  ; Rise       ; CLOCK_50        ;
+;  LEDR[10]   ; CLOCK_50   ; 8.418  ; 8.418  ; Rise       ; CLOCK_50        ;
+;  LEDR[11]   ; CLOCK_50   ; 8.290  ; 8.290  ; Rise       ; CLOCK_50        ;
+;  LEDR[12]   ; CLOCK_50   ; 7.721  ; 7.721  ; Rise       ; CLOCK_50        ;
+;  LEDR[13]   ; CLOCK_50   ; 8.305  ; 8.305  ; Rise       ; CLOCK_50        ;
+;  LEDR[14]   ; CLOCK_50   ; 7.690  ; 7.690  ; Rise       ; CLOCK_50        ;
+;  LEDR[15]   ; CLOCK_50   ; 8.995  ; 8.995  ; Rise       ; CLOCK_50        ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; GPIO_1[*]   ; CLOCK_50   ; 3.972 ; 3.972 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[32] ; CLOCK_50   ; 3.972 ; 3.972 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[33] ; CLOCK_50   ; 4.155 ; 4.155 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[34] ; CLOCK_50   ; 4.040 ; 4.040 ; Rise       ; CLOCK_50        ;
+;  GPIO_1[35] ; CLOCK_50   ; 4.171 ; 4.171 ; Rise       ; CLOCK_50        ;
+; LEDG[*]     ; CLOCK_50   ; 4.056 ; 4.056 ; Rise       ; CLOCK_50        ;
+;  LEDG[1]    ; CLOCK_50   ; 4.056 ; 4.056 ; Rise       ; CLOCK_50        ;
+; LEDR[*]     ; CLOCK_50   ; 3.820 ; 3.820 ; Rise       ; CLOCK_50        ;
+;  LEDR[0]    ; CLOCK_50   ; 3.974 ; 3.974 ; Rise       ; CLOCK_50        ;
+;  LEDR[1]    ; CLOCK_50   ; 3.969 ; 3.969 ; Rise       ; CLOCK_50        ;
+;  LEDR[2]    ; CLOCK_50   ; 3.942 ; 3.942 ; Rise       ; CLOCK_50        ;
+;  LEDR[3]    ; CLOCK_50   ; 3.976 ; 3.976 ; Rise       ; CLOCK_50        ;
+;  LEDR[4]    ; CLOCK_50   ; 3.831 ; 3.831 ; Rise       ; CLOCK_50        ;
+;  LEDR[5]    ; CLOCK_50   ; 3.835 ; 3.835 ; Rise       ; CLOCK_50        ;
+;  LEDR[6]    ; CLOCK_50   ; 3.821 ; 3.821 ; Rise       ; CLOCK_50        ;
+;  LEDR[7]    ; CLOCK_50   ; 3.820 ; 3.820 ; Rise       ; CLOCK_50        ;
+;  LEDR[8]    ; CLOCK_50   ; 4.737 ; 4.737 ; Rise       ; CLOCK_50        ;
+;  LEDR[9]    ; CLOCK_50   ; 4.641 ; 4.641 ; Rise       ; CLOCK_50        ;
+;  LEDR[10]   ; CLOCK_50   ; 4.593 ; 4.593 ; Rise       ; CLOCK_50        ;
+;  LEDR[11]   ; CLOCK_50   ; 4.524 ; 4.524 ; Rise       ; CLOCK_50        ;
+;  LEDR[12]   ; CLOCK_50   ; 4.344 ; 4.344 ; Rise       ; CLOCK_50        ;
+;  LEDR[13]   ; CLOCK_50   ; 4.535 ; 4.535 ; Rise       ; CLOCK_50        ;
+;  LEDR[14]   ; CLOCK_50   ; 4.345 ; 4.345 ; Rise       ; CLOCK_50        ;
+;  LEDR[15]   ; CLOCK_50   ; 4.883 ; 4.883 ; Rise       ; CLOCK_50        ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 5045     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 5045     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 114   ; 114  ;
+; Unconstrained Output Ports      ; 21    ; 21   ;
+; Unconstrained Output Port Paths ; 145   ; 145  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Dec 27 17:34:12 2025
+Info: Command: quartus_sta Keypad_module -c Keypad_module
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Keypad_module.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.644
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.644      -318.428 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -111.380 CLOCK_50 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.167
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.167       -95.871 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -111.380 CLOCK_50 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4557 megabytes
+    Info: Processing ended: Sat Dec 27 17:34:14 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

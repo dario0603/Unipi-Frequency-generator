@@ -1,0 +1,227 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do main_function_generator_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL/ALTPLLa.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALTPLLa
+# 
+# Top level modules:
+# 	ALTPLLa
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lcd_driver
+# 
+# Top level modules:
+# 	lcd_driver
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keypad_module
+# 
+# Top level modules:
+# 	keypad_module
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_freq_sel_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keypad_freq_sel_module
+# 
+# Top level modules:
+# 	keypad_freq_sel_module
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/DDFS_frequency_converter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DDFS_frequency_converter
+# 
+# Top level modules:
+# 	DDFS_frequency_converter
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C1_converter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module BCD_to_C1_converter
+# 
+# Top level modules:
+# 	BCD_to_C1_converter
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_7seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux7seg
+# 
+# Top level modules:
+# 	mux7seg
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ddfs
+# 
+# Top level modules:
+# 	ddfs
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/freq_divider_DDFS.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module freq_divider_DDFS
+# 
+# Top level modules:
+# 	freq_divider_DDFS
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module text_lut
+# 
+# Top level modules:
+# 	text_lut
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS\ module/VGA\ DAC {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sin_lut
+# 
+# Top level modules:
+# 	sin_lut
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module {C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keypad_4x4
+# -- Compiling module tb_keypad_module
+# 
+# Top level modules:
+# 	tb_keypad_module
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb_keypad_module
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_keypad_module 
+# Loading work.tb_keypad_module
+# Loading work.keypad_module
+# Loading work.keypad_4x4
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module tb_keypad_module at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v line 114
+# Simulation Breakpoint: Break in Module tb_keypad_module at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v line 114
+# MACRO ./main_function_generator_run_msim_rtl_verilog.do PAUSED at line 27
+add wave -position 4  sim:/tb_keypad_module/dut/row_sync
+add wave -position 4  sim:/tb_keypad_module/dut/row_1
+add wave -position 5  sim:/tb_keypad_module/dut/row_2
+run -all
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./main_function_generator_run_msim_rtl_verilog.do PAUSED at line 27
+restart -f
+restart -f
+run -all
+# Break in Module tb_keypad_module at C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v line 114
+# WARNING: No extended dataflow license exists
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "

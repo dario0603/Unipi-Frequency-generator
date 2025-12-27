@@ -1,0 +1,269 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\posta\Desktop\Programmi\Verilog\Unipi-Frequency-generator\main_function_generator\simulation\modelsim
+vALTPLLa
+I4X8aF>EU07aL9SjDkankL2
+VbJPjIML4z:ONEJLKRiV1=3
+Z1 dC:\Users\posta\Desktop\Programmi\Verilog\Unipi-Frequency-generator\main_function_generator\simulation\modelsim
+w1766665622
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL/ALTPLLa.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL/ALTPLLa.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@l@t@p@l@la
+!i10b 1
+!s100 2@C9j_DlbNM9SCnb0BzA`1
+!s85 0
+!s108 1766855151.136000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL/ALTPLLa.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL/ALTPLLa.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL -O0
+vBCD_to_C1_converter
+ILio@MHdSWXm[@;SaGf`cz2
+VU7S^z=Id_6C2>m?J?TK1z1
+R1
+w1766753325
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C1_converter.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C1_converter.v
+L0 1
+R2
+r1
+31
+R3
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module -O0
+n@b@c@d_to_@c1_converter
+!i10b 1
+!s100 <8lg<AQUzzDf7QKkQoP2l1
+!s85 0
+!s108 1766855151.443000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C1_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_C1_converter.v|
+!s101 -O0
+vddfs
+IgdAlbdggNojDmCJ5MQfjc1
+VA>^A7;M>zGH_Bmf1`SJk23
+R1
+w1766847327
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v
+L0 1
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC} -O0
+!i10b 1
+!s100 =j3:I<59^9:UhEeQm:7lD0
+!s85 0
+!s108 1766855151.549000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/ddfs.v|
+!s101 -O0
+vDDFS_frequency_converter
+IAPRF;>2zM0KfGN6RiE^7R3
+VJ<hf4Z5cPJWE@lgN0CD1i0
+R1
+w1766854457
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/DDFS_frequency_converter.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/DDFS_frequency_converter.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@d@d@f@s_frequency_converter
+!i10b 1
+!s100 XJlI`7EV7IYn0eRlzCAGo3
+!s85 0
+!s108 1766855151.391000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/DDFS_frequency_converter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/DDFS_frequency_converter.v|
+!s101 -O0
+vfreq_divider_DDFS
+IkfPRiIcLIF12^<W6hVbMc0
+VQaJbbRD?OcSGgLB4I<Z5E3
+R1
+w1766746032
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/freq_divider_DDFS.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/freq_divider_DDFS.v
+L0 1
+R2
+r1
+31
+R3
+R5
+nfreq_divider_@d@d@f@s
+!i10b 1
+!s100 Z;Dk_QS]K7S0gj8O?[1TC0
+!s85 0
+!s108 1766855151.607000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/freq_divider_DDFS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/freq_divider_DDFS.v|
+!s101 -O0
+vkeypad_4x4
+!i10b 1
+!s100 13k<MbBnJzmdcAmcT8XPS1
+IHm]UIgYY5F`OZLN6AfTD@3
+V8bjXcfz_knN^A59JEioFP3
+R1
+Z6 w1766853740
+Z7 8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v
+Z8 FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v
+L0 3
+R2
+r1
+!s85 0
+31
+Z9 !s108 1766855151.773000
+Z10 !s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/tb_keypad_module.v|
+!s101 -O0
+R3
+R4
+vkeypad_freq_sel_module
+IkcTDekOeZgQESj_YjKBNc3
+VVk_<]f@IKJGj4IU=Po?8P1
+R1
+w1766847804
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_freq_sel_module.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_freq_sel_module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 G8<LEZ2SNAZ3=JhT0B0Po2
+!s85 0
+!s108 1766855151.335000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_freq_sel_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_freq_sel_module.v|
+!s101 -O0
+vkeypad_module
+I2GWJUd@KOdNaneQ[^R`nj1
+VKcU:>0j^U_b:AT=:D>h1J1
+R1
+Z12 w1766665624
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_module.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 HD@gjdUE9A8O`lYd?mjNL2
+!s85 0
+!s108 1766855151.278000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/keypad_module.v|
+!s101 -O0
+vlcd_driver
+IXn?WL0Q1>5B=QE2C2?Ylk2
+VmIUSGRTM4EVUHZ3D0F^4K0
+R1
+R12
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v
+L0 1
+R2
+r1
+31
+R3
+Z13 !s92 -vlog01compat -work work +incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module -O0
+!i10b 1
+!s100 CboD^SMTi:kRl5IGZmGAo1
+!s85 0
+!s108 1766855151.210000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v|
+!s101 -O0
+vmux7seg
+I<2VOUL[7XX:LR[o`K9Chl3
+VE39Bzi=]LLaMEObo=N8XX2
+R1
+Z14 w1766665623
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_7seg.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_7seg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 NKTga@KBTSC64iFU29zK91
+!s85 0
+!s108 1766855151.493000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/Keypad_frequency_select_module/BCD_to_7seg.v|
+!s101 -O0
+vsin_lut
+IGh1L_1BZOb6Z<i8^KDNIm0
+VXTg8^PLTAio[_DF1KbMNM1
+R1
+R14
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut.v
+L0 2
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 5eXCK8mTU9@XBDj17V7cY3
+!s85 0
+!s108 1766855151.718000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/DDFS module/VGA DAC/sin_lut.v|
+!s101 -O0
+vtb_keypad_module
+!i10b 1
+!s100 8CBf5e]T^PX`i4BIGVKai3
+IB;2][m7]^lR>ZCVmSZJA42
+Vn4G5i1zecYcDJH]LbfU4j0
+R1
+R6
+R7
+R8
+L0 33
+R2
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R3
+R4
+vtext_lut
+IBGV5hzeD]gXIVBSM9c^N`3
+VakRSjDYd4DUhOLOAbV7M43
+R1
+R12
+8C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v
+FC:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v
+L0 1
+R2
+r1
+31
+R3
+R13
+!i10b 1
+!s100 [kD]ML8D5:L<CXoS;LBlO0
+!s85 0
+!s108 1766855151.660000
+!s107 C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module|C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v|
+!s101 -O0
