@@ -17,12 +17,12 @@ module BCD_to_C1_converter
 	output reg [22:0] output_C1
 
 );
-	reg [23:0] w_1, w_2, w_3, w_4, w_5, w_6, w_7;
+	reg [22:0] w_1, w_2, w_3, w_4, w_5, w_6, w_7;
 	always @(posedge clk) begin
 	
 		if(rst_n == 0) begin
 			//reset condition
-			{w_1, w_2, w_3, w_4, w_5, w_6, w_7} <= 0;
+			{w_1, w_2, w_3, w_4, w_5, w_6, w_7} <= {23*7{1'b0}};
 		end
 		else begin
 			

@@ -17,12 +17,12 @@ module freq_divider_DDFS
 	always@(posedge clk_in)
 	begin
 		clk_out <= count[19];
-		if(rst_n == 1'b0) begin
+		if(rst_n == 0) begin
 			count <= start_cnt;
-		end else if(count >= (end_cnt-1'b1))begin
+		end else if(count >= (end_cnt-20'b1))begin
 			count <= start_cnt;
 		end else begin
-			count <= count + 1'b1; 	
+			count <= count + 20'b1; 	
 		end
 		
 	end
@@ -31,41 +31,35 @@ module freq_divider_DDFS
 	
 		case (freq_cntrl)
 		0: begin 
-			start_cnt = 20'h80000-1;
-			end_cnt = start_cnt+2; 
+			start_cnt = 20'h80000 - 20'h1;
+			end_cnt = start_cnt + 20'd2; 
 			end
 		1: begin
-			start_cnt = 20'h80000-10/2;
-			end_cnt = start_cnt + 10;
+			start_cnt = 20'h80000 - 20'd5;
+			end_cnt = start_cnt + 20'd10;
 			end
 		2: begin
-			start_cnt = 20'h80000-100/2;
-			end_cnt = start_cnt + 100;
+			start_cnt = 20'h80000 - 20'd50;
+			end_cnt = start_cnt + 20'd100;
 			end
 		3: begin
-			start_cnt = 20'h80000-1000/2;
-			end_cnt = start_cnt + 1000;
+			start_cnt = 20'h80000 - 20'd500;
+			end_cnt = start_cnt + 20'd1000;
 			end
 		4: begin
-			start_cnt = 20'h80000-10000/2;
-			end_cnt = start_cnt + 10000;
+			start_cnt = 20'h80000 - 20'd5000;
+			end_cnt = start_cnt + 20'd10000;
 			end
 		5: begin
-			start_cnt = 20'h80000-100000/2;
-			end_cnt = start_cnt + 100000;
-			end
-		6: begin
-			start_cnt = 20'h80000-1000000/2;
-			end_cnt = start_cnt + 1000000;
+			start_cnt = 20'h80000 - 20'd50000;
+			end_cnt = start_cnt + 20'd100000;
 			end
 		default: begin
-			start_cnt = 20'h80000-1000000/2;
-			end_cnt = start_cnt + 1000000;
+			start_cnt = 20'h80000 - 20'd500000;
+			end_cnt = start_cnt + 20'd1000000;
 			end
 		endcase
 		
 	end
-
-
 
 endmodule

@@ -126,7 +126,7 @@ module keypad_module
 	always @(*) begin
 		//default values
 		i = 0;
-		column = ~0;
+		column = {N_COLUMN{1'b1}};
 		
 		//check if i_column is in range
 		if(i_column <= 2*N_COLUMN) begin

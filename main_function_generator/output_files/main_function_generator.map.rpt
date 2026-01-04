@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main_function_generator
-Sat Dec 27 18:17:10 2025
+Sun Jan 04 14:08:31 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -99,7 +99,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 27 18:17:10 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 04 14:08:31 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; main_function_generator                         ;
 ; Top-level Entity Name              ; main_function_generator                         ;
@@ -548,13 +548,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst|mult_100000[0..4,44..63]  ; Stuck at GND due to stuck port data_in                                                                           ;
 ; keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst|mult_1000000[0..5,48..63] ; Stuck at GND due to stuck port data_in                                                                           ;
 ; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_7[0..5]                         ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_6[0..4,23]                      ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_5[0..3,20..23]                  ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_4[0..2,18..23]                  ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_3[0,1,12..23]                   ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_2[0,8..23]                      ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_1[4..23]                        ; Stuck at GND due to stuck port data_in                                                                           ;
-; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_7[23]                           ; Lost fanout                                                                                                      ;
+; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_6[0..4]                         ; Stuck at GND due to stuck port data_in                                                                           ;
+; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_5[0..3,20..22]                  ; Stuck at GND due to stuck port data_in                                                                           ;
+; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_4[0..2,18..22]                  ; Stuck at GND due to stuck port data_in                                                                           ;
+; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_3[0,1,12..22]                   ; Stuck at GND due to stuck port data_in                                                                           ;
+; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_2[0,8..22]                      ; Stuck at GND due to stuck port data_in                                                                           ;
+; keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst|w_1[4..22]                        ; Stuck at GND due to stuck port data_in                                                                           ;
 ; keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst|mult_100[30]              ; Stuck at GND due to stuck port data_in                                                                           ;
 ; keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst|mult_1000[34..36]         ; Stuck at GND due to stuck port data_in                                                                           ;
 ; keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst|mult_10000[38,39]         ; Stuck at GND due to stuck port data_in                                                                           ;
@@ -601,7 +600,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; lcd_driver:inst|sub_state~10                                                                                  ; Lost fanout                                                                                                      ;
 ; lcd_driver:inst|sub_state~11                                                                                  ; Lost fanout                                                                                                      ;
 ; lcd_driver:inst|sub_state.PAGE_DEFAULT                                                                        ; Stuck at GND due to stuck port data_in                                                                           ;
-; Total Number of Removed Registers = 365                                                                       ;                                                                                                                  ;
+; Total Number of Removed Registers = 358                                                                       ;                                                                                                                  ;
 +---------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 
@@ -3581,7 +3580,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -3591,7 +3590,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Dec 27 18:17:01 2025
+    Info: Processing started: Sun Jan 04 14:08:09 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main_function_generator -c main_function_generator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file main_function_generator.bdf
@@ -4140,23 +4139,10 @@ Info (12133): Instantiated megafunction "ALTPLLa:inst_pll|altpll:altpll_componen
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12128): Elaborating entity "keypad_freq_sel_module" for hierarchy "keypad_freq_sel_module:inst_keypad_mod"
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(126): truncated value with size 64 to match size of target (32)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(202): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(219): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(236): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(253): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(270): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(287): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(304): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(321): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(338): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(349): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(387): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at keypad_freq_sel_module.v(49): truncated value with size 64 to match size of target (32)
 Info (10264): Verilog HDL Case Statement information at keypad_freq_sel_module.v(185): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "keypad_module" for hierarchy "keypad_freq_sel_module:inst_keypad_mod|keypad_module:keypad_mod_inst"
-Warning (10230): Verilog HDL assignment warning at keypad_module.v(129): truncated value with size 32 to match size of target (4)
 Info (12128): Elaborating entity "BCD_to_C1_converter" for hierarchy "keypad_freq_sel_module:inst_keypad_mod|BCD_to_C1_converter:BCD_C1_conv_inst"
-Warning (10230): Verilog HDL assignment warning at BCD_to_C1_converter.v(56): truncated value with size 24 to match size of target (23)
 Info (12128): Elaborating entity "DDFS_frequency_converter" for hierarchy "keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst"
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(74): truncated value with size 65 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at DDFS_frequency_converter.v(75): truncated value with size 65 to match size of target (7)
@@ -4180,22 +4166,6 @@ Warning (10230): Verilog HDL assignment warning at ddfs.v(144): truncated value 
 Warning (10230): Verilog HDL assignment warning at ddfs.v(155): truncated value with size 32 to match size of target (12)
 Warning (10230): Verilog HDL assignment warning at ddfs.v(161): truncated value with size 32 to match size of target (12)
 Info (12128): Elaborating entity "freq_divider_DDFS" for hierarchy "ddfs:inst_ddfs_mod|freq_divider_DDFS:f_div_inst"
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(34): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(35): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(38): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(39): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(42): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(43): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(46): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(47): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(50): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(51): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(54): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(55): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(58): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(59): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(62): truncated value with size 32 to match size of target (20)
-Warning (10230): Verilog HDL assignment warning at freq_divider_DDFS.v(63): truncated value with size 32 to match size of target (20)
 Info (12128): Elaborating entity "sin_lut" for hierarchy "ddfs:inst_ddfs_mod|sin_lut:lut_inst"
 Warning (10030): Net "rom.data_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "rom.waddr_a" at sin_lut.v(17) has no driver or initial value, using a default initial value '0'
@@ -5069,7 +5039,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX7[2]" is stuck at VCC
     Warning (13410): Pin "HEX7[1]" is stuck at VCC
     Warning (13410): Pin "HEX7[0]" is stuck at VCC
-Info (17049): 23 registers lost all their fanouts during netlist optimizations.
+Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "keypad_freq_sel_module:inst_keypad_mod|DDFS_frequency_converter:DDFS_freq_conv_inst|lpm_mult:Mult2|mult_rct:auto_generated|add27_result[0]~40"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -5081,10 +5051,10 @@ Info (21057): Implemented 3036 device resources after synthesis - the final reso
     Info (21064): Implemented 20 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 70 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 630 warnings
-    Info: Peak virtual memory: 4673 megabytes
-    Info: Processing ended: Sat Dec 27 18:17:10 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 601 warnings
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Sun Jan 04 14:08:31 2026
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:12
 
 

@@ -69,7 +69,7 @@ module lcd_driver
 	localparam PAGE_SINE3 = 5'd9;
 	 
 	 
-	// delays are based on 50MHz clock frequency 
+	// delays are based on CLK_FREQ clock frequency 
 	localparam [31:0] wait40us = (CLK_FREQ/1000000)*40; 
 	localparam [31:0] wait1ms = (CLK_FREQ/1000)*1; 
 	localparam [31:0] wait2ms = (CLK_FREQ/1000)*2; 

@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "12/27/2025 18:17:44"
+-- DATE "01/04/2026 14:09:25"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -7555,6 +7555,8 @@ SIGNAL \inst_ddfs_mod|q_VGA[1]~13_combout\ : std_logic;
 SIGNAL \inst_ddfs_mod|Add2~4_combout\ : std_logic;
 SIGNAL \inst_ddfs_mod|q_tmp[3]~8_combout\ : std_logic;
 SIGNAL \inst_ddfs_mod|q_VGA[0]~14_combout\ : std_logic;
+SIGNAL \GPIO_0~combout\ : std_logic_vector(3 DOWNTO 0);
+SIGNAL \SW~combout\ : std_logic_vector(0 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult4|auto_generated|w728w\ : std_logic_vector(68 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult6|auto_generated|w662w\ : std_logic_vector(62 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|Mult5|auto_generated|w695w\ : std_logic_vector(65 DOWNTO 0);
@@ -7595,13 +7597,13 @@ SIGNAL \inst_keypad_mod|keypad_mod_inst|row_1\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \inst_keypad_mod|keypad_mod_inst|out_keys\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \inst_keypad_mod|keypad_mod_inst|i_column\ : std_logic_vector(31 DOWNTO 0);
 SIGNAL \inst_keypad_mod|keypad_mod_inst|clock_div_cont\ : std_logic_vector(31 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_7\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_6\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_5\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_4\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_3\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_2\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_1\ : std_logic_vector(23 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_7\ : std_logic_vector(22 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_6\ : std_logic_vector(22 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_5\ : std_logic_vector(22 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_4\ : std_logic_vector(22 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_3\ : std_logic_vector(22 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_2\ : std_logic_vector(22 DOWNTO 0);
+SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|w_1\ : std_logic_vector(22 DOWNTO 0);
 SIGNAL \inst_keypad_mod|BCD_C1_conv_inst|output_C1\ : std_logic_vector(22 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|mult_10000\ : std_logic_vector(63 DOWNTO 0);
 SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|fw_2\ : std_logic_vector(6 DOWNTO 0);
@@ -7615,8 +7617,6 @@ SIGNAL \inst_keypad_mod|DDFS_freq_conv_inst|final_freq\ : std_logic_vector(22 DO
 SIGNAL \inst_ddfs_mod|cont_rt\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \inst_ddfs_mod|cont\ : std_logic_vector(11 DOWNTO 0);
 SIGNAL \inst_ddfs_mod|f_div_inst|count\ : std_logic_vector(19 DOWNTO 0);
-SIGNAL \GPIO_0~combout\ : std_logic_vector(3 DOWNTO 0);
-SIGNAL \SW~combout\ : std_logic_vector(0 DOWNTO 0);
 SIGNAL \inst_keypad_mod|ALT_INV_sel_A~regout\ : std_logic;
 SIGNAL \inst_keypad_mod|ALT_INV_next_page~regout\ : std_logic;
 SIGNAL \inst_keypad_mod|ALT_INV_prev_page~regout\ : std_logic;

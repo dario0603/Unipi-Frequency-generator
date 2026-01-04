@@ -88,7 +88,7 @@ module DDFS_frequency_converter
 	//to select the desired frequency (final_freq)
 	localparam MIN_LUT_SAMPLE = 8;
 	always @(*) begin
-	
+		
 		if(final_freq <= (CLK_FREQ/(1000000*MIN_LUT_SAMPLE))) begin
 			freq_control = 3'd6;
 			fw = (fw_1000000 >= 0) ? fw_1000000 : 7'd0;

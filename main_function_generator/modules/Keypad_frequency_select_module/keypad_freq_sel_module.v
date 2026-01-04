@@ -45,8 +45,8 @@ module keypad_freq_sel_module
 );
 	
 	//parameter definitions
-	localparam WAIT_DEBOUNCE = 100;		//debounce time in ms
-	localparam DEBOUNCE_CYCLE = (WAIT_DEBOUNCE*SCAN_FREQ)/1000;
+	localparam [31:0] WAIT_DEBOUNCE = 100;		//debounce time in ms
+	localparam [31:0] DEBOUNCE_CYCLE = (WAIT_DEBOUNCE*SCAN_FREQ)/1000;
 	
 	//keypad module instance
 	wire clk_ena;
@@ -199,7 +199,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd1};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -216,7 +216,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd2};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -233,7 +233,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd3};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -250,7 +250,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd4};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -267,7 +267,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd5};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -284,7 +284,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd6};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -301,7 +301,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd7};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -318,7 +318,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd8};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 
@@ -335,7 +335,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd9};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 						
@@ -346,7 +346,7 @@ module keypad_freq_sel_module
 								{freq_6, freq_5, freq_4, freq_3, freq_2, freq_1, 4'd0};
 								
 								//increase the number of digit
-								digit_counter <= digit_counter + 1;
+								digit_counter <= digit_counter + 3'd1;
 							end
 						end
 						
@@ -384,7 +384,7 @@ module keypad_freq_sel_module
 								{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <=
 								{4'd0, freq_7, freq_6, freq_5, freq_4, freq_3, freq_2};							
 								//decrease the number of digit
-								digit_counter <= digit_counter - 1;
+								digit_counter <= digit_counter - 3'd1;
 							end
 							else begin
 								{freq_7, freq_6, freq_5, freq_4, freq_3, freq_2, freq_1} <=
