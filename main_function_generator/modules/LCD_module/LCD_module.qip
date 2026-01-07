@@ -1,4 +1,5 @@
 set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "lcd_driver.v"]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "lcd_driver_test.v"]
 set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "text_lut.v"]
 
 set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "tb_lcd_driver.v"]
