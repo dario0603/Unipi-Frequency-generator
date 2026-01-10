@@ -6,6 +6,7 @@ source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-genera
 source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/PLL/ALTPLLa.v
 source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/LCD_module.qip
 source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver.v
+source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/lcd_driver_test.v
 source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/text_lut.v
 source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/tb_lcd_driver.v
 source_file = 1, C:/Users/posta/Desktop/Programmi/Verilog/Unipi-Frequency-generator/main_function_generator/modules/LCD_module/tb_text_lut.v

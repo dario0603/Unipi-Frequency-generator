@@ -25,16 +25,16 @@ module lcd_driver
 
 );
 
-   assign lcd_on   = 1'b1; // LCD always on 
-   assign lcd_blon = 1'b1; // Backlight on
-   assign lcd_rw   = 1'b0; // Always writing (Busy Flag unused)
+   	assign lcd_on   = 1'b1; // LCD always on 
+   	assign lcd_blon = 1'b1; // Backlight on
+   	assign lcd_rw   = 1'b0; // Always writing (Busy Flag unused)
 
-   localparam SETUP  = 4'd0;
+   	localparam SETUP  = 4'd0;
 	localparam PAGE_SELECT = 4'd1;
 	localparam WAIT_EXEC = 4'd2;
 	localparam POWER_ON = 4'd3;
 	localparam CHECK_AND_WAIT = 4'd4;
-   localparam WRITE_DATA = 4'd5;
+   	localparam WRITE_DATA = 4'd5;
 	localparam DONE = 4'd6; 
 	localparam RESET = 4'd7;
 	localparam WAIT_BUTTON_SHORT = 4'd8; 
@@ -47,7 +47,7 @@ module lcd_driver
 	localparam BUTTON_RELEASED = 4'd15;
 
 	 
-   localparam PAGE0 = 5'd0;
+   	localparam PAGE0 = 5'd0;
 	localparam PAGE1 = 5'd1; 
 	localparam PAGE2 = 5'd2; 
 	localparam PAGE3 = 5'd3; 
@@ -82,11 +82,11 @@ module lcd_driver
 	localparam BTN_PREV = 1'b1;
 	reg btn_pressed;
 	 
-   reg [3:0] state;
+  	reg [3:0] state;
 	reg [3:0] state_f;
-   reg [4:0] sub_state;
+   	reg [4:0] sub_state;
 	reg [2:0] sub_state_f;
-   reg [7:0] lcd_data_reg;		// Internal data register
+   	reg [7:0] lcd_data_reg;		// Internal data register
 	reg lcd_rs_reg;				// Internal RS register
 	reg lcd_en_reg;				// Internal Enable register
 	reg [7:0] lcd_data_freq;	// Internal data register
@@ -99,8 +99,8 @@ module lcd_driver
 	assign lcd_rs = lcd_rs_reg;
 	assign lcd_en = lcd_en_reg;
 
-   // delay counters
-   reg [31:0] counter;
+   	// delay counters
+   	reg [31:0] counter;
 	reg [31:0] counter_f;
 	reg [31:0] btn_counter;
 	 
@@ -144,7 +144,7 @@ module lcd_driver
 	end 
 	 
 	// output waves selector 
-   always @(*) begin
+   	always @(*) begin
 		case(page_index)
 		
 			PAGE_SQUARED: begin
@@ -213,7 +213,7 @@ module lcd_driver
 		endcase 
 	end
 	
-   // State machine to handle timing
+   	// State machine to handle timing
 	// The HD44780 controller is SLOW.
 	// Clear Display requires ~1.64 ms. Other commands ~40 µs.
 	// We use a conservative delay of ~2 ms for each operation for simplicity.
