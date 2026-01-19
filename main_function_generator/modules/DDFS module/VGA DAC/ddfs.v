@@ -79,7 +79,7 @@ module ddfs
 			cont <= 0;
 		end
 		else begin
-		
+			
 			if(cont < MAX_LUT-1) begin
 				  if(cont + (fw+1) >= MAX_LUT-1)
 						cont <= MAX_LUT;

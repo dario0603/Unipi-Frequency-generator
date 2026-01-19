@@ -31,10 +31,10 @@ module DDFS_frequency_converter
 				final_freq <= freq;
 			end
 			else if(mirror_x == 0 || mirror_y == 0) begin
-				final_freq <= freq >> 1;		//single mirroring half the output frequency
+				final_freq <= freq << 1;		//single mirroring half the output frequency
 			end
 			else begin
-				final_freq <= freq >> 2;		//double mirroring quarter the output frequency
+				final_freq <= freq << 2;		//double mirroring quarter the output frequency
 			end
 		end
 	end
