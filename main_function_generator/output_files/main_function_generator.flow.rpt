@@ -1,6 +1,6 @@
 Flow report for main_function_generator
-Mon Jan 19 11:14:22 2026
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Tue May 12 16:45:38 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -21,42 +21,44 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Jan 19 11:14:22 2026           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; main_function_generator                         ;
-; Top-level Entity Name              ; main_function_generator                         ;
-; Family                             ; Cyclone II                                      ;
-; Device                             ; EP2C35F672C6                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,027 / 33,216 ( 9 % )                          ;
-;     Total combinational functions  ; 2,971 / 33,216 ( 9 % )                          ;
-;     Dedicated logic registers      ; 690 / 33,216 ( 2 % )                            ;
-; Total registers                    ; 690                                             ;
-; Total pins                         ; 109 / 475 ( 23 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 29,696 / 483,840 ( 6 % )                        ;
-; Embedded Multiplier 9-bit elements ; 70 / 70 ( 100 % )                               ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Flow Failed - Tue May 12 16:45:38 2026      ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; main_function_generator                     ;
+; Top-level Entity Name              ; main_function_generator                     ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M08DAF484C8G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------+
@@ -64,83 +66,68 @@ applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 01/19/2026 11:13:42     ;
+; Start date & time ; 05/12/2026 16:45:28     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; main_function_generator ;
 +-------------------+-------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                                         ;
-+--------------------------------------+----------------------------------------------------------------------+--------------------------------+-------------+-----------------------------+
-; Assignment Name                      ; Value                                                                ; Default Value                  ; Entity Name ; Section Id                  ;
-+--------------------------------------+----------------------------------------------------------------------+--------------------------------+-------------+-----------------------------+
-; COMPILER_SIGNATURE_ID                ; 224022951945805.176881762226992                                      ; --                             ; --          ; --                          ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                   ; --                             ; --          ; tb_DDFS_frequency_converter ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                   ; --                             ; --          ; tb_keypad_module            ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_keypad_module                                                     ; --                             ; --          ; eda_simulation              ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                                 ; --                             ; --          ; eda_simulation              ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                               ; <None>                         ; --          ; --                          ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                      ; --                             ; --          ; eda_simulation              ;
-; EDA_TEST_BENCH_FILE                  ; modules/Keypad_frequency_select_module/tb_DDFS_frequency_converter.v ; --                             ; --          ; tb_DDFS_frequency_converter ;
-; EDA_TEST_BENCH_FILE                  ; modules/Keypad_frequency_select_module/tb_keypad_module.v            ; --                             ; --          ; tb_keypad_module            ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_DDFS_frequency_converter                                          ; --                             ; --          ; tb_DDFS_frequency_converter ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_keypad_module                                                     ; --                             ; --          ; tb_keypad_module            ;
-; EDA_TEST_BENCH_NAME                  ; tb_DDFS_frequency_converter                                          ; --                             ; --          ; eda_simulation              ;
-; EDA_TEST_BENCH_NAME                  ; tb_keypad_module                                                     ; --                             ; --          ; eda_simulation              ;
-; IP_TOOL_NAME                         ; ALTPLL                                                               ; --                             ; --          ; --                          ;
-; IP_TOOL_VERSION                      ; 13.0                                                                 ; --                             ; --          ; --                          ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                                                   ; --                             ; --          ; --                          ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                                                    ; --                             ; --          ; --                          ;
-; MISC_FILE                            ; PLL/ALTPLLa.bsf                                                      ; --                             ; --          ; --                          ;
-; MISC_FILE                            ; PLL/ALTPLLa_bb.v                                                     ; --                             ; --          ; --                          ;
-; MISC_FILE                            ; PLL/ALTPLLa.ppf                                                      ; --                             ; --          ; --                          ;
-; OPTIMIZE_HOLD_TIMING                 ; All Paths                                                            ; IO Paths and Minimum TPD Paths ; --          ; --                          ;
-; PARTITION_COLOR                      ; 16764057                                                             ; --                             ; --          ; Top                         ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                                ; --                             ; --          ; Top                         ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                                               ; --                             ; --          ; Top                         ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                  ; --                             ; --          ; --                          ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                ; --                             ; --          ; --                          ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                         ; --                             ; --          ; --                          ;
-; ROUTER_TIMING_OPTIMIZATION_LEVEL     ; MAXIMUM                                                              ; Normal                         ; --          ; --                          ;
-+--------------------------------------+----------------------------------------------------------------------+--------------------------------+-------------+-----------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                        ;
++--------------------------------------+----------------------------------------------------------------------+---------------+-------------+-----------------------------+
+; Assignment Name                      ; Value                                                                ; Default Value ; Entity Name ; Section Id                  ;
++--------------------------------------+----------------------------------------------------------------------+---------------+-------------+-----------------------------+
+; COMPILER_SIGNATURE_ID                ; 224022951945805.177859712809200                                      ; --            ; --          ; --                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                   ; --            ; --          ; tb_DDFS_frequency_converter ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                   ; --            ; --          ; tb_keypad_module            ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_keypad_module                                                     ; --            ; --          ; eda_simulation              ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                                 ; --            ; --          ; eda_simulation              ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                               ; <None>        ; --          ; --                          ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                      ; --            ; --          ; eda_simulation              ;
+; EDA_TEST_BENCH_FILE                  ; modules/Keypad_frequency_select_module/tb_DDFS_frequency_converter.v ; --            ; --          ; tb_DDFS_frequency_converter ;
+; EDA_TEST_BENCH_FILE                  ; modules/Keypad_frequency_select_module/tb_keypad_module.v            ; --            ; --          ; tb_keypad_module            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_DDFS_frequency_converter                                          ; --            ; --          ; tb_DDFS_frequency_converter ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_keypad_module                                                     ; --            ; --          ; tb_keypad_module            ;
+; EDA_TEST_BENCH_NAME                  ; tb_DDFS_frequency_converter                                          ; --            ; --          ; eda_simulation              ;
+; EDA_TEST_BENCH_NAME                  ; tb_keypad_module                                                     ; --            ; --          ; eda_simulation              ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                   ; --            ; --          ; --                          ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                    ; --            ; --          ; --                          ;
+; MISC_FILE                            ; PLL/ALTPLLa.bsf                                                      ; --            ; --          ; --                          ;
+; MISC_FILE                            ; PLL/ALTPLLa_bb.v                                                     ; --            ; --          ; --                          ;
+; MISC_FILE                            ; PLL/ALTPLLa.ppf                                                      ; --            ; --          ; --                          ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                               ; --            ; --          ; Top                         ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                               ; --            ; --          ; Top                         ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                               ; --            ; --          ; Top                         ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                  ; --            ; --          ; --                          ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                ; --            ; --          ; --                          ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                         ; --            ; --          ; --                          ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL     ; MAXIMUM                                                              ; Normal        ; --          ; --                          ;
++--------------------------------------+----------------------------------------------------------------------+---------------+-------------+-----------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4659 MB             ; 00:00:08                           ;
-; Fitter                    ; 00:00:22     ; 1.0                     ; 4930 MB             ; 00:00:20                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4582 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4592 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4561 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:33                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4737 MB             ; 00:00:20                           ;
+; Total                  ; 00:00:11     ; --                      ; --                  ; 00:00:20                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Mario            ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Mario            ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Mario            ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Mario            ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Mario            ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; Mario            ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off main_function_generator -c main_function_generator
-quartus_fit --read_settings_files=off --write_settings_files=off main_function_generator -c main_function_generator
-quartus_asm --read_settings_files=off --write_settings_files=off main_function_generator -c main_function_generator
-quartus_sta main_function_generator -c main_function_generator
-quartus_eda --read_settings_files=off --write_settings_files=off main_function_generator -c main_function_generator
+quartus_map --read_settings_files=on --write_settings_files=off main_function_generator -c main_function_generator --analysis_and_elaboration
 
 
 

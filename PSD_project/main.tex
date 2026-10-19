@@ -1,0 +1,108 @@
+\documentclass{article}
+
+% Language setting
+\usepackage[english]{babel}
+
+% Set page size and margins
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{pgfplots}
+\usepackage{callouts-box}
+\usepackage{stix}
+\usepackage{amsmath}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=blue,filecolor=blue]{hyperref}
+\usepackage[all]{hypcap} % Load this *after* hyperref
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{placeins}
+
+\titleformat{\section}
+    {\normalfont\huge\bfseries}
+    {\thesection}{1em}{}
+
+\pgfplotsset{width=10cm,compat=1.9}
+
+\definecolor{backcolour}{rgb}{0.97,0.97,0.95}
+\definecolor{keywordcolor}{rgb}{0.86,0.12,0.34}
+\definecolor{commentcolor}{rgb}{0.34,0.54,0.32}
+\definecolor{stringcolor}{rgb}{0.76,0.38,0.11}
+\definecolor{identifiercolor}{rgb}{0.20,0.20,0.7}
+\definecolor{linenumbergray}{gray}{0.4}
+
+\lstset{
+    backgroundcolor=\color{backcolour},   
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{commentcolor}\itshape,
+    keywordstyle=\color{keywordcolor}\bfseries,
+    stringstyle=\color{stringcolor},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{linenumbergray},
+    tabsize=2,
+    captionpos=b,
+    literate={~}{{\raisebox{0.6ex}{\texttildelow}}}{1}
+}
+
+\lstdefinelanguage{sdc}{
+    keywords={create_clock, create_generated_clock, set_input_delay, set_output_delay, set_false_path, set_max_delay}, 
+    comment=[l]{\#}   
+}
+
+\begin{document}
+    
+    \begin{titlepage}
+        
+        \centering
+        
+        \vspace*{2cm}
+        
+        \includegraphics[width=0.3\linewidth]{img/Stemma_unipi.jpg}
+        
+        {\LARGE \textbf{University of Pisa}\\[1em]}
+        {\Large Department of Information Engineering\\[1em]}
+        {\large Master’s Degree in Electronic Engineering\\}
+        {\large Microelectronic System Design\\[3em]}
+        {\huge \textbf{Design of a function generator using CycloneII FPGA}\\[1em]}
+        {\large Academic Year 2025/2026}
+        
+        \vfill
+        
+        \begin{flushleft}
+            \textbf{Students:}\\
+            Dario Aliberti\\
+            Tommaso Tonarini
+        \end{flushleft}
+        
+        \vspace{1cm}
+        
+    \end{titlepage}
+    
+    \newpage
+    \tableofcontents
+    
+    
+    \newpage
+    \input{chapters/Introduction}
+    
+    \newpage
+    \input{chapters/Description_architecture}
+
+    \newpage
+    \input{chapters/Test_plan}
+    
+    \newpage
+    \input{chapters/Implementation_on_Quartus}
+
+    \newpage
+    \input{chapters/Conclusions}
+    
+    
+\end{document}
+
